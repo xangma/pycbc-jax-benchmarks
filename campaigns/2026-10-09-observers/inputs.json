@@ -1,0 +1,18 @@
+{
+  "inspiral_bank": {
+    "filename": "o2-compressed-1536.hdf",
+    "sha256": "4c56fde141e3ece6ab39802e94fbe482c6ccf7d390cc503fa613327107603635"
+  },
+  "live_bank": {
+    "filename": "o2-subset-1024.hdf",
+    "sha256": "542e341ea3994ba0f52bfd238406af1c05b79f20aac8c0832f468e5f86e70693"
+  },
+  "h1_frame": {
+    "filename": "H-H1_LOSC_CLN_4_V1-1187007040-2048.gwf",
+    "sha256": "580e238054474fd09be900c47217bbcd0497ab84d1756f886647e934352e4865"
+  },
+  "l1_frame": {
+    "filename": "L-L1_LOSC_CLN_4_V1-1187007040-2048.gwf",
+    "sha256": "ff9743efc1555a47bc3f2effcaabba252a2244f10fd3a8f85a7c5f677b3c772e"
+  }
+}

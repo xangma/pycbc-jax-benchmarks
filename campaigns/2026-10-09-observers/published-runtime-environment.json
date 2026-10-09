@@ -1,0 +1,23 @@
+{
+  "inspiral": {
+    "original_record_sha256": "2a1386e8aef098c332db7e1af9f05d03539b5ba28adf87dd46ed81e43a9b9620",
+    "observed_runtime_fields": {
+      "python": "3.12.8 | packaged by conda-forge | (main, Dec  5 2024, 14:24:40) [GCC 13.3.0]",
+      "numpy": "2.2.6",
+      "jax": "0.11.2",
+      "jaxlib": "0.11.2",
+      "lal": "7.7.1",
+      "lalsimulation": "6.2.1",
+      "lalframe": "3.0.8",
+      "device_kind": "NVIDIA GeForce RTX 4090"
+    }
+  },
+  "live": {
+    "original_record_sha256": "4a980daae9f375b1fd64bb7bf6483d0a58361a8c26a7b360ed852cda8d686a14",
+    "observed_runtime_fields": {
+      "jax": "0.11.2",
+      "numpy": "2.2.6",
+      "python": "3.12.8 | packaged by conda-forge | (main, Dec  5 2024, 14:24:40) [GCC 13.3.0]"
+    }
+  }
+}

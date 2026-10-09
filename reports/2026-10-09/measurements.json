@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-09",
+  "source_commit": "366c7a955570deabaa1219d353f7847b21384698",
+  "qualified_speedup": null,
+  "steady_state_capacity": null,
+  "inspiral": {
+    "template_count": 1536,
+    "segments": 5,
+    "segment_length_seconds": 512,
+    "valid_detector_seconds": {
+      "H1": 1904
+    },
+    "template_detector_seconds": 2924544,
+    "batch_size": 64,
+    "prime_wall_seconds": 131.784,
+    "full_process_wall_seconds": [
+      40.001760294195265,
+      41.252431133762,
+      41.250506738200784
+    ],
+    "full_process_median_seconds": 41.250506738200784,
+    "application_host_search_seconds": [
+      19.668517351150513,
+      20.5345721244812,
+      20.537684679031376
+    ],
+    "application_host_search_median_seconds": 20.5345721244812,
+    "application_timer_scope": "HDF run_time * (1 - setup_time_fraction); excludes setup/output and has no additional device fence; not qualified warm compute.",
+    "profile": {
+      "observer_wall_seconds": 56.737608714,
+      "outer_nsys_wall_seconds": 109.44156,
+      "outer_scope": "Includes capture/report processing; excluded from timing samples.",
+      "scope_seconds": 56.715658819,
+      "kernel_copy_union_seconds": 3.8205593,
+      "filtering_scope_seconds": 28.553052606,
+      "filtering_kernel_copy_union_seconds": 3.513182207,
+      "ordered_point_chisq_summed_filtering_seconds": 2.502043891
+    },
+    "original_cpu_single_control_wall_seconds": 239.8629002077505
+  },
+  "live": {
+    "template_count": 1024,
+    "detectors": [
+      "H1",
+      "L1"
+    ],
+    "valid_blocks_per_detector": 26,
+    "block_seconds": 8,
+    "valid_detector_seconds": {
+      "H1": 208,
+      "L1": 208
+    },
+    "template_detector_seconds": 425984,
+    "suffix_valid_detector_seconds": {
+      "H1": 192,
+      "L1": 192
+    },
+    "suffix_template_detector_seconds": 393216,
+    "prime_wall_seconds": 269.18355,
+    "full_process_wall_seconds": [
+      72.44835210032761,
+      67.68714898591861,
+      90.6797370519489
+    ],
+    "full_process_median_seconds": 72.44835210032761,
+    "suffix_after_two_valid_blocks_seconds": [
+      36.294708689,
+      31.391130172,
+      55.010582223
+    ],
+    "suffix_median_seconds": 36.294708689,
+    "zero_warm_compilation": false,
+    "suffix_scope": "Observed suffix after two valid blocks; tracing/lowering/cache activity continues; not qualified steady-state.",
+    "profile": {
+      "public_search_scope_seconds": 81.361374405,
+      "kernel_copy_union_seconds": 2.766239214,
+      "suffix_scope_seconds": 41.681733657,
+      "suffix_kernel_copy_union_seconds": 2.262093558
+    }
+  },
+  "full_process_scope": "Fresh observer process launch through completion/output/shutdown; includes observer imports and in-process source checks, excludes separate prime and profile. Native-command runner scope is different.",
+  "gpu_activity_definition": "Exact union of captured selected-application GPU kernel/memcpy intervals; memsets and unrelated processes excluded. Not SM occupancy, saturation or whole-device utilization.",
+  "numeric_precision_note": "Sample values preserve receipt precision; prime and outer profiler values shown here are rounded diagnostic context. Exact profile interval summaries are under profiles/."
+}

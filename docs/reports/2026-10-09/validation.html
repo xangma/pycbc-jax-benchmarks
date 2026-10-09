@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Validation — 9 October 2026</title><style>
+body{max-width:1100px;margin:2rem auto;padding:0 1.2rem;font:17px/1.6 system-ui,sans-serif;color:#172a3a;background:#fff}
+a{color:#165b94}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto}td,th{padding:.45rem .8rem;border:1px solid #c6d2dc;text-align:left}pre{padding:1rem;overflow:auto;background:#eef3f7;border-radius:5px}code{font-size:.88em}h1,h2,h3{line-height:1.2}nav{font-size:.9rem;border-bottom:1px solid #c6d2dc;padding-bottom:1rem}
+</style></head><body><nav><a href="https://xangma.github.io/pycbc-jax-benchmarks/">Campaign index</a> · <a href="https://github.com/xangma/pycbc-jax-benchmarks/releases/tag/2026-10-09-full-stack">Frozen release</a> · <a href="https://github.com/xangma/pycbc-jax-benchmarks/blob/2026-10-09-full-stack/reports/2026-10-09/validation.md">Source</a></nav><h1>Validation — 9 October 2026</h1>
+<p>Fresh profiles preserve the saved scientific outputs of their unprofiled
+reference runs. A separate two-template control also reproduces native original
+PyCBC exactly with original calculation routes selected. <strong>The default complete
+searches are not scientifically qualified</strong>, and these checks support no
+qualified speedup, capacity or compilation-free steady-state claim.</p>
+<p>The measured JAX source is <code>366c7a955570deabaa1219d353f7847b21384698</code>; the pristine
+CPU source is <code>454ee900e6faca88a066e71ade489fca9fb221a5</code>. Waveforms use the original
+PyCBC/LAL route; diffGW generation is disabled. Default conditioning remains on
+the selected JAX device. See <a href="https://raw.githubusercontent.com/xangma/pycbc-jax-benchmarks/2026-10-09-full-stack/reports/2026-10-09/validation.json">validation.json</a> for full-precision
+differences, input/source identifiers, comparison outcomes and evidence hashes.</p>
+<h2>Exact comparison scope</h2>
+<p>Comparisons preserve dataset order, dtype, shape and floating-point bits, and
+check scientific attribute inventories and values. Compression and chunk layout
+are outside this scientific-value check. Whole-file hashes can therefore differ
+when excluded timing fields differ.</p>
+<p>Inspiral excludes exactly four timing/rate datasets: <code>H1/search/run_time</code>,
+<code>filter_rate_per_core</code>, <code>setup_time_fraction</code> and <code>templates_per_core</code> within the
+same search group. Search start/end times and gating values remain checked.
+Live excludes no datasets: the expected executable is verified before normalizing
+its name and the output destination in <code>command_line</code>; every other argument and
+attribute remains checked. No extra scientific exclusions or fitted tolerances
+were introduced. Profiled timings are excluded from benchmark samples.</p>
+<table>
+<thead>
+<tr>
+<th>Comparison</th>
+<th>Saved output result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Inspiral sample 1 versus samples 2 and 3</td>
+<td>Exact: 18 scientific datasets each</td>
+</tr>
+<tr>
+<td>Inspiral sample 1 versus separate Nsight profile</td>
+<td>Exact: 18 scientific datasets</td>
+</tr>
+<tr>
+<td>Live sample 1 versus sample 2</td>
+<td>Exact: 33 files, 1,067 datasets, 203 attributes</td>
+</tr>
+<tr>
+<td>Live sample 1 versus separate Nsight profile</td>
+<td>Exact: 33 files, 1,067 datasets, 203 attributes</td>
+</tr>
+<tr>
+<td>Live sample 1 versus sample 3</td>
+<td>Strict failure: one detector-order string; all remaining datasets and attributes exact</td>
+</tr>
+</tbody>
+</table>
+<h2>Default Inspiral differences</h2>
+<p>The large workload completes 1,536 distinct compressed IMRPhenomD templates over
+1,904 valid H1 seconds: five 512-second FFT segments at 2,048 Hz, with observed
+complex64 signal arrays and batch size 64. The default device-decompression
+search produces 3,674 triggers in each sample and the profile.</p>
+<p>Changing only the decompression route to original <code>inline_linear</code>, while keeping
+other numerical stages on JAX, produces 3,675 triggers. The fresh pristine CPU
+search uses NumPy FFTs and original inline decompression and produces 3,676.
+Matching template hash and sample-grid end time finds all 3,674 default-JAX
+triggers in each comparison, with no duplicate or off-grid identities:</p>
+<table>
+<thead>
+<tr>
+<th>Reference versus default JAX</th>
+<th style="text-align: right;">Matched</th>
+<th style="text-align: right;">Reference-only</th>
+<th style="text-align: right;">JAX-only</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Current JAX with original inline decompression</td>
+<td style="text-align: right;">3,674</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>Pristine original CPU</td>
+<td style="text-align: right;">3,674</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Matched saved field</th>
+<th style="text-align: right;">Inline versus device decompression</th>
+<th style="text-align: right;">Pristine CPU versus default JAX</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Maximum relative chi-square difference</td>
+<td style="text-align: right;">0.4284750453%</td>
+<td style="text-align: right;">0.9192256080%</td>
+</tr>
+<tr>
+<td>Maximum absolute chi-square difference</td>
+<td style="text-align: right;">0.166595458984375</td>
+<td style="text-align: right;">0.2530632019042969</td>
+</tr>
+<tr>
+<td>Maximum relative SNR difference</td>
+<td style="text-align: right;">0.008217674890%</td>
+<td style="text-align: right;">0.008184867116%</td>
+</tr>
+<tr>
+<td>Maximum relative normalization, <code>sigmasq</code>, difference</td>
+<td style="text-align: right;">0.00001189873604%</td>
+<td style="text-align: right;">0.00001963275942%</td>
+</tr>
+<tr>
+<td>Maximum circular coalescence-phase difference</td>
+<td style="text-align: right;">0.00007915496826171875 radians</td>
+<td style="text-align: right;">0.00007915496826171875 radians</td>
+</tr>
+</tbody>
+</table>
+<p>These are descriptive errors in the composed search, without renormalizing saved
+chi-square values or evaluating a tolerance gate. The pristine comparison does
+not isolate individual numerical stages. Per-field maxima can occur at different
+triggers; subtracting maxima does not measure a stage's contribution. The two
+missing default trigger identities already prevent complete output agreement.</p>
+<h2>Bounded original-route agreement</h2>
+<p>The first two physically distinct bank rows retain IDs 0 and 1, their exact
+parameters, header and compressed waveform arrays. Both native original CPU and
+current JAX with all 298 registered original selectors selected complete the
+same five segments and 1,904 valid H1 seconds and save five triggers. Their
+18 scientific datasets match exactly; both attribute inventories are empty.
+All 25 source/input/argument/workload contract checks pass. Selecting every
+registered control does not imply this search exercises every registered API.</p>
+<p>The current CLI's <code>device_linear</code> option remains present, but the selected
+<code>decompress</code> reference control overrides that calculation with its original
+route. Original CPU and JAX execution/batch/reference options differ explicitly;
+their science arguments otherwise agree. The JAX signal dtype is observed as
+complex64; native CPU intermediate signal dtype is not independently captured.</p>
+<p>This proves composed original-route agreement for these <strong>two templates and saved
+outputs only</strong>. The full 1,536-template all-original attempt was stopped with its
+first 64-template batch still at segment 2 of 5 after approximately 11 minutes.
+It remains incomplete and supplies no full-bank agreement result.</p>
+<h2>Live ordering and timing limits</h2>
+<p>Live uses 1,024 distinct TaylorF2 templates, two MPI ranks and 2,048 Hz sampling.
+The worker reports complex64 arrays. Its 33 blocks include 26 valid eight-second
+blocks for each detector: 208 valid H1 seconds and 208 valid L1 seconds. Source,
+input, argument and workload contracts pass for all samples and the profile.</p>
+<p>The sample-3 strict failure is <code>foreground/type</code>: <code>H1-L1</code> becomes <code>L1-H1</code> in one
+foreground file. All 1,014 numeric or structured datasets, the other 52 string
+datasets and all compared attributes remain exact. Detector membership is the
+same. Source tracing shows the native event manager constructs a detector set,
+whose iteration order passes through combinations into the original/JAX label
+join. Isolated hash-seed controls reproduce both labels, and the pristine native
+source shares this construction. The failure remains recorded; no dataset was
+excluded and no production fix was applied.</p>
+<p>All recorded Live <code>zero_warm_compilation</code> flags are false. Compilation-free
+steady-state timing is therefore uncertified; those flags alone do not prove
+uncached compilation. No fresh pristine-CPU complete-search comparison is
+available for this Live workload.</p>
+<p>Full conditioned-strain arrays, complete PSD comparison coverage and early/later
+decision audits are missing. Full-bank composed reference agreement is also
+unestablished. Scientific qualification and qualified capacity/speedup claims
+remain unavailable; diagnostic elapsed measurements do not relax these gates.</p></body></html>

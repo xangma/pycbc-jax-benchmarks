@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PyCBC JAX benchmarks</title><style>
+body{max-width:1100px;margin:2rem auto;padding:0 1.2rem;font:17px/1.6 system-ui,sans-serif;color:#172a3a;background:#fff}
+a{color:#165b94}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto}td,th{padding:.45rem .8rem;border:1px solid #c6d2dc;text-align:left}pre{padding:1rem;overflow:auto;background:#eef3f7;border-radius:5px}code{font-size:.88em}h1,h2,h3{line-height:1.2}nav{font-size:.9rem;border-bottom:1px solid #c6d2dc;padding-bottom:1rem}
+</style></head><body><nav><a href="https://xangma.github.io/pycbc-jax-benchmarks/">Campaign index</a> · <a href="https://github.com/xangma/pycbc-jax-benchmarks/releases/tag/2026-10-09-full-stack">Frozen release</a> · <a href="https://github.com/xangma/pycbc-jax-benchmarks/blob/2026-10-09-full-stack/README.md">Source</a></nav><h1>PyCBC JAX benchmarks</h1>
+<p>Reproducible workloads and dated evidence for the PyCBC JAX stack. General usage,
+reference switches and the benchmark protocol belong in the
+<a href="https://github.com/xangma/pycbc/blob/jax-pr47-performance-evidence/docs/jax.rst">PyCBC documentation</a>.
+Measurements, plots and campaign receipts live here so they can be cited from PRs
+without adding machine-specific results to the PyCBC source stack.</p>
+<p>The <a href="reports/2026-10-09/index.html">9 October 2026 report</a> contains fresh Inspiral
+and Live measurements, seven Nsight timeline views, portable plotting data and
+explicit validation limits. The report measures the complete stack at
+<code>366c7a955570deabaa1219d353f7847b21384698</code>; it does not measure each branch's
+incremental performance. It establishes <strong>no qualified CPU/GPU speedup or
+steady-state capacity claim</strong>. The default full-bank outputs still differ from
+pristine PyCBC; a two-template all-original-route control matches exactly within
+its saved-output scope.</p>
+<table>
+<thead>
+<tr>
+<th>Evidence</th>
+<th>Stable reference</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Readable report and figures</td>
+<td><a href="https://xangma.github.io/pycbc-jax-benchmarks/reports/2026-10-09/">Benchmark site</a></td>
+</tr>
+<tr>
+<td>Frozen report, protocol, inputs, code and plotting data</td>
+<td><a href="https://github.com/xangma/pycbc-jax-benchmarks/releases/tag/2026-10-09-full-stack">Dated release</a></td>
+</tr>
+<tr>
+<td>General four-arm method</td>
+<td><a href="https://github.com/xangma/pycbc/blob/jax-pr47-performance-evidence/docs/jax_benchmark_protocol.rst">Canonical PyCBC protocol</a></td>
+</tr>
+<tr>
+<td>Exact input acquisition and bank generation</td>
+<td><a href="campaigns/INPUTS.html">Input recipe</a></td>
+</tr>
+<tr>
+<td>Timing boundaries used in the dated report</td>
+<td><a href="campaigns/2026-10-09-observers/index.html">Archived observer controllers</a></td>
+</tr>
+<tr>
+<td>Regenerate timeline plots without Nsight</td>
+<td><a href="reports/2026-10-09/profiles/index.html">Profile data and renderer</a></td>
+</tr>
+</tbody>
+</table>
+<h2>Reproduce a workload</h2>
+<p>Use an isolated application environment outside the source checkouts. PyCBC
+requires its normal build dependencies, including LALSuite. CPU and CUDA
+application environments may be separate; select their interpreters explicitly.
+The dated <a href="https://raw.githubusercontent.com/xangma/pycbc-jax-benchmarks/2026-10-09-full-stack/reports/2026-10-09/provenance.json">runtime manifest</a> records observed
+versions and extension hashes. A new build records its own hashes rather than
+claiming byte identity with the measured runtime.</p>
+<pre><code class="language-sh">git clone https://github.com/xangma/pycbc.git sources/candidate
+git -C sources/candidate checkout --detach jax-benchmark-2026-10-09
+git clone https://github.com/xangma/pycbc.git sources/original
+git -C sources/original checkout --detach jax-benchmark-original-2026-10-09
+python tools/prepare_inputs.py plan
+</code></pre>
+<p>Follow the <a href="campaigns/INPUTS.html">input recipe</a> to fetch and verify the public
+frames and bank XML and regenerate the exact bank files. The input-generation
+checkout and environment are separately pinned. Install/build each benchmark
+source in its matching application environment. Keep the source checkout clean;
+ignored native extensions are hashed before and after execution.</p>
+<p>The native-command runner uses only the Python standard library. It launches
+one excluded prime per arm, then at least three fresh processes in rotated arm
+order, followed by a separate profile when configured. Each arm gets private
+caches and temporary directories. Scientific/backend selectors come from the
+manifest; inherited PyCBC/JAX settings are cleared. Source imports, exact input
+hashes, return codes, deadlines and descendant cleanup are checked. Resolved
+receipts remain private because they contain paths, commands and process IDs.</p>
+<pre><code class="language-sh">python -m pycbc_jax_benchmarks run campaigns/inspiral-1536-four-arm.json \
+    --sources sources --inputs inputs --output results/four-arm \
+    --python original-cpu=&quot;$CPU_PYTHON&quot; --python branch-cpu=&quot;$CPU_PYTHON&quot; \
+    --python jax-cpu=&quot;$JAX_CPU_PYTHON&quot; --python cuda=&quot;$CUDA_PYTHON&quot; --plan
+</code></pre>
+<p>Set those interpreter variables to your installed runtimes. Add <code>--cpus ARM=IDs</code>
+for each arm to choose physical-core-aware affinity for your hardware. Inspect
+<code>--plan</code>, then omit it to execute into a new output directory. The plan checks
+source/input hashes and does not import or launch the applications. Diagnostic
+manifests for <a href="https://raw.githubusercontent.com/xangma/pycbc-jax-benchmarks/2026-10-09-full-stack/campaigns/inspiral-1536-diagnostic.json">Inspiral</a> and
+<a href="https://raw.githubusercontent.com/xangma/pycbc-jax-benchmarks/2026-10-09-full-stack/campaigns/live-1024-diagnostic.json">Live</a> define the corresponding smaller
+measurement campaigns. Their <code>work.expected</code> values are contracts to check,
+not observed completion evidence.</p>
+<p>The general runner measures native CLI launch through exit and log closure.
+It excludes source/input guards and preflight imports. <strong>It does not reproduce
+the dated observer timings or named profile windows</strong>, which include passive
+observers, in-process checks, final synchronization and Live suffix accounting.
+Use the archived controllers for those boundaries. Profiling and unprofiled
+samples are always separate.</p>
+<p>Successful execution leaves scientific qualification, completed warm-up, verified
+work and realtime capacity marked unavailable. Validate them using the protocol
+before making a performance claim. The four-arm manifest is a reproducible
+starting point, not evidence that those four arms have already passed.</p>
+<h2>Publish a new campaign</h2>
+<p>Freeze a new source revision, input hashes, manifest and protocol version before
+running. Keep failed runs and unmet gates explicit. Publish a new dated directory
+and release; do not overwrite an earlier campaign. A PR should cite the release,
+name the exact relevant workload and timing scope, and state qualification limits.
+A full-stack result must not be described as an individual PR's measured speedup.</p>
+<p>Raw Nsight/SQLite captures and bank/frame data are not distributed here. The
+portable profile data preserve exact selected application intervals and their
+independent checks without private metadata. See <a href="campaigns/INPUTS.html">input attribution</a>.
+Source code is distributed under <a href="https://github.com/xangma/pycbc-jax-benchmarks/blob/2026-10-09-full-stack/LICENSE">GPL version 3</a>, retaining the license
+and notices of PyCBC-derived files.</p>
+<p>To check the runner and rebuild the static site:</p>
+<pre><code class="language-sh">python -m unittest -v test_runner
+python -m pip install Markdown==3.10.3
+python tools/build_site.py
+</code></pre></body></html>

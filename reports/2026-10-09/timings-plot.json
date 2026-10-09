@@ -1,0 +1,107 @@
+{
+  "excluded": [
+    "prime",
+    "profile",
+    "single original CPU control"
+  ],
+  "input": "reports/2026-10-09/measurements.json",
+  "input_sha256": "1c681e943107b4ddb5dd3e4443284d4eb70715383e3913106bbd1f79bab78397",
+  "matplotlib_version": "3.11.1",
+  "note": "Recorded observer timings. Full and secondary scopes differ; Live work counts also differ. No speedup or capacity is inferred.",
+  "panels": {
+    "inspiral": [
+      {
+        "display_median_seconds": "41.25",
+        "label": "Full observer process",
+        "median_seconds": 41.250506738200784,
+        "median_source_key": "full_process_median_seconds",
+        "samples_seconds": [
+          40.001760294195265,
+          41.252431133762,
+          41.250506738200784
+        ],
+        "scope": "Fresh observer process launch through completion/output/shutdown; includes observer imports and in-process source checks, excludes separate prime and profile. Native-command runner scope is different.",
+        "source_key": "full_process_wall_seconds",
+        "work": {
+          "template_detector_seconds": 2924544,
+          "valid_detector_seconds": {
+            "H1": 1904
+          }
+        }
+      },
+      {
+        "display_median_seconds": "20.53",
+        "label": "Application host search timer\nNo additional device fence",
+        "median_seconds": 20.5345721244812,
+        "median_source_key": "application_host_search_median_seconds",
+        "samples_seconds": [
+          19.668517351150513,
+          20.5345721244812,
+          20.537684679031376
+        ],
+        "scope": "HDF run_time * (1 - setup_time_fraction); excludes setup/output and has no additional device fence; not qualified warm compute.",
+        "source_key": "application_host_search_seconds",
+        "work": {
+          "template_detector_seconds": 2924544,
+          "valid_detector_seconds": {
+            "H1": 1904
+          }
+        }
+      }
+    ],
+    "live": [
+      {
+        "display_median_seconds": "72.45",
+        "label": "Full observer process\n208 s per detector",
+        "median_seconds": 72.44835210032761,
+        "median_source_key": "full_process_median_seconds",
+        "samples_seconds": [
+          72.44835210032761,
+          67.68714898591861,
+          90.6797370519489
+        ],
+        "scope": "Fresh observer process launch through completion/output/shutdown; includes observer imports and in-process source checks, excludes separate prime and profile. Native-command runner scope is different.",
+        "source_key": "full_process_wall_seconds",
+        "work": {
+          "template_detector_seconds": 425984,
+          "valid_detector_seconds": {
+            "H1": 208,
+            "L1": 208
+          }
+        }
+      },
+      {
+        "display_median_seconds": "36.29",
+        "label": "Suffix after two valid blocks\n192 s per detector",
+        "median_seconds": 36.294708689,
+        "median_source_key": "suffix_median_seconds",
+        "samples_seconds": [
+          36.294708689,
+          31.391130172,
+          55.010582223
+        ],
+        "scope": "Observed suffix after two valid blocks; tracing/lowering/cache activity continues; not qualified steady-state.",
+        "source_key": "suffix_after_two_valid_blocks_seconds",
+        "work": {
+          "template_detector_seconds": 393216,
+          "valid_detector_seconds": {
+            "H1": 192,
+            "L1": 192
+          }
+        }
+      }
+    ]
+  },
+  "plot_sha256": "9535efb9a8e7ecb022925d327287b44fddb6ce6d8f19a1e59184da83e4da70c9",
+  "python_version": "3.12.7",
+  "qualification": {
+    "qualified_speedup": null,
+    "steady_state_capacity": null,
+    "steady_warm_verified": null
+  },
+  "schema_version": 1,
+  "script": "tools/plot_measurements.py",
+  "script_sha256": "e32853e933670365d5220d80eac3d85510f071e8885cfc568bdd31843692bf42",
+  "source_commit": "366c7a955570deabaa1219d353f7847b21384698",
+  "unit": "seconds"
+}

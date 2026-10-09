@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Benchmark inputs</title><style>
+body{max-width:1100px;margin:2rem auto;padding:0 1.2rem;font:17px/1.6 system-ui,sans-serif;color:#172a3a;background:#fff}
+a{color:#165b94}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto}td,th{padding:.45rem .8rem;border:1px solid #c6d2dc;text-align:left}pre{padding:1rem;overflow:auto;background:#eef3f7;border-radius:5px}code{font-size:.88em}h1,h2,h3{line-height:1.2}nav{font-size:.9rem;border-bottom:1px solid #c6d2dc;padding-bottom:1rem}
+</style></head><body><nav><a href="https://xangma.github.io/pycbc-jax-benchmarks/">Campaign index</a> · <a href="https://github.com/xangma/pycbc-jax-benchmarks/releases/tag/2026-10-09-full-stack">Frozen release</a> · <a href="https://github.com/xangma/pycbc-jax-benchmarks/blob/2026-10-09-full-stack/campaigns/INPUTS.md">Source</a></nav><h1>Benchmark inputs</h1>
+<p>The complete input contract is <a href="https://raw.githubusercontent.com/xangma/pycbc-jax-benchmarks/2026-10-09-full-stack/campaigns/inputs.json">inputs.json</a>. File names are local
+to the directory you choose; no bank or frame data are stored in this repository.</p>
+<p>The frames are the <strong>cleaned GW170817-v2 release</strong>, 2048 seconds starting at GPS
+1187007040, sampled at 4096 Hz. The benchmark commands resample to 2048 Hz.
+Use the exact H1/L1 URLs in the manifest, rather than the latest GW170817 release:
+the event API distinguishes cleaned data from data containing the original L1
+glitch. <a href="https://gwosc.org/eventapi/html/O1_O2-Preliminary/GW170817/v2/">GWOSC release</a>,
+<a href="https://gwosc.org/api/v2/event-versions/GW170817-v2/strain-files?format=api">file API</a>.</p>
+<p>GWOSC distributes its data under CC BY 4.0; follow its
+<a href="https://gwosc.org/acknowledgement/">attribution guidance</a>, including the cited
+open-data paper and dataset DOI <a href="https://doi.org/10.7935/K5B8566F">10.7935/K5B8566F</a>.
+The O2 bank is fetched from the pinned <code>gwastro/pycbc-config</code> commit used by the
+<a href="https://github.com/gwastro/pycbc/blob/master/examples/live/run.sh">original PyCBC Live example</a>.
+An explicit redistribution license for that bank has not been established here,
+so the XML and derived banks are downloaded/generated locally and are not
+rehosted as release assets.</p>
+<h2>Fetch and verify public files</h2>
+<p>From the repository root:</p>
+<pre><code class="language-sh">python tools/prepare_inputs.py plan
+python tools/prepare_inputs.py fetch --input-dir inputs
+python tools/prepare_inputs.py verify --input-dir inputs --scope public
+</code></pre>
+<p><code>plan</code> performs no downloads or generation. <code>fetch</code> downloads only the XML and
+two GWF files, verifies SHA-256 and size before accepting them, and checks existing
+files without replacing them. Any mismatch fails. All three public URLs were
+streamed and verified against the manifest on 2026-10-09.</p>
+<h2>Generate the two benchmark banks</h2>
+<p>Input generation uses the historical original PyCBC checkout at commit
+<code>40e94792b3edf59f39b18b65102b28a4f74433a7</code>, separate from the source revisions being
+benchmarked. Use a clean checkout with its runtime already installed and built.
+The pinned generation environment is Python 3.11.9, NumPy 1.26.4, h5py 3.11.0,
+SciPy 1.13.0, LALSuite 7.21 and igwn-ligolw 2.1.1. This is the <strong>input-generation</strong>
+environment; application benchmark dependencies are recorded with each campaign.</p>
+<p>Obtain that source and select your Python 3.11.9 interpreter. Install the source
+and pinned packages in an isolated environment; PyCBC's
+<a href="https://pycbc.org/pycbc/latest/html/install.html">installation guide</a> covers
+system build dependencies.</p>
+<pre><code class="language-sh">git clone https://github.com/gwastro/pycbc.git original-pycbc
+git -C original-pycbc checkout --detach 40e94792b3edf59f39b18b65102b28a4f74433a7
+export INPUT_SOURCE=&quot;$PWD/original-pycbc&quot;
+export INPUT_PYTHON=/path/to/generation-environment/bin/python
+&quot;$INPUT_PYTHON&quot; -m pip install -e &quot;$INPUT_SOURCE&quot; \
+    numpy==1.26.4 h5py==3.11.0 scipy==1.13.0 lalsuite==7.21 igwn-ligolw==2.1.1
+python tools/prepare_inputs.py plan --input-dir inputs \
+    --input-source &quot;$INPUT_SOURCE&quot; --python &quot;$INPUT_PYTHON&quot;
+python tools/prepare_inputs.py generate --input-dir inputs \
+    --input-source &quot;$INPUT_SOURCE&quot; --python &quot;$INPUT_PYTHON&quot;
+python tools/prepare_inputs.py verify --input-dir inputs
+</code></pre>
+<p><code>generate</code> requires both options explicitly and runs selection, conversion and
+compression in that interpreter. It refuses a different revision, dirty checkout,
+different recorded dependency versions, or existing generated outputs. It sets
+the recorded single-thread environment and <code>PYTHONHASHSEED=0</code>.</p>
+<p>The recipe is:</p>
+<ol>
+<li>Convert the pinned XML using <code>bin/bank/pycbc_coinc_bank2hdf</code>.</li>
+<li>Keep rows with <code>mass1 &lt;= 10</code>, <code>mass2 &lt;= 3</code>, chirp mass <code>&gt;= 1.2</code>, and both
+   aligned spin magnitudes <code>&lt;= 0.2</code>. These cuts yield 32655 rows. Permute with
+   <code>numpy.random.default_rng(20260919)</code>, retain the first 1536 distinct
+   <code>(mass1, mass2, spin1z, spin2z)</code> tuples, then sort their source row IDs.</li>
+<li>Write those rows as <code>o2-subset-1536.hdf</code>, preserving root attributes. Copy its
+   <strong>first 1024 sorted rows</strong> to <code>o2-subset-1024.hdf</code> for Live. Selecting 1024 rows
+   independently from the random permutation would produce a different bank.</li>
+<li>Compress the 1536-row bank with <code>bin/pycbc_compress_bank</code> using IMRPhenomD,
+   <code>aLIGOZeroDetHighPower</code>, sample rate 2048, segment length 512, low-frequency
+   cutoff 30, single precision, <code>inline_linear</code>, <code>mchirp</code>, one process and
+   tolerance 0.001. <code>plan</code> prints the exact CLI arguments.</li>
+<li>Check all three generated SHA-256 values and sizes before writing a
+   <code>generation.json</code> receipt with source row IDs and dependency versions.</li>
+</ol>
+<p>HDF5 bytes can depend on serialization and dependency versions. A mismatch is
+reported as a different input; the script never rewrites expected hashes to
+accept it. Preserve any failed output for diagnosis or use a new output directory
+for a subsequent attempt.</p>
+<p>The retained 2026-10-08 receipt records an exact regeneration of the 1536-row
+subset and compressed bank. The Live bank's six datasets, dtypes and attributes
+match the first 1024 rows of that subset; an independent in-memory recreation on
+2026-10-09 also matched its full file hash. Those checks establish the recovered
+recipe's provenance. A new full compression run using this CLI has not been
+performed as part of publication preparation.</p></body></html>

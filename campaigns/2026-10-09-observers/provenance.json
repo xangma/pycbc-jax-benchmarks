@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "revision": "366c7a955570deabaa1219d353f7847b21384698",
+  "tree": "d43edf428d9bba23fc0243f41a4c66faf7d4de5f",
+  "archived_files_sha256": {
+    "inspiral/run_campaign.py": "3cd442bee3b8e959edc9ab4c4edad2635f98a1e51940a479a40c7f6d5f652f1b",
+    "inspiral/search_driver.py": "b4ca0dc5ff057d535bfbb16cb95c862d1996f265c830ae2631e720443fce5c5a",
+    "inspiral/source-manifest.json": "c8fde180cbd9f159f26beefd7911efaee5866c2f92178d698f330907a88f52c3",
+    "live/run-v2.py": "2bb4dea3aade0cb01044d45139f3a69f12d36830d3cd3d117c585557bccc3559",
+    "live/entry-v2.py": "2a08ae050ef3c9268d76199e0af617577259de03c4332ad0c1cf9e3097472a7f",
+    "live/source-manifest.json": "e291632441c1591be045fc5bdd8fd85c4f5c7b8c162ffcbde80fd152e10995b2",
+    "published-runtime-files.json": "e2dbf51730347ddc67bdb680146a8aaa8b4472d1a8ef5f5994c7cc96d11f514c",
+    "inspiral/published-harness-manifest.json": "d0ba10bec26d0ad16fa454d4ae56dcb2790a5b9e75166a48f40245f27fba9752",
+    "published-runtime-environment.json": "009c9b4a2afe81fa1e3404129d69748cf0293bd6da01d9597f2fdfba0b3c0ba8",
+    "inputs.json": "fb01840f14434037d570ebc09d4b0e56bf6bfbe53881bad65f10a2b3ff8e14ae",
+    "live/published-harness-manifest.json": "6a592ca9b0cffe279360dc9780d71d4deea2573d6b0e8b1ad5c84089a6889af3"
+  },
+  "published_configurations": {
+    "inspiral": {
+      "original_filename": "campaign_config_64.json",
+      "sha256": "0b1a9f86cda24b67fc9b9b55044bdde7244faaeaa0cd70dd8179281422bc2bfe",
+      "batch_size": 64,
+      "template_fingerprint": "77050d2d0d0e4378034517a23418392ba983e96dee4b9d8f6d0e894a8df1d8e5"
+    },
+    "live": {
+      "original_filename": "config-v2.json",
+      "sha256": "f46da40e8cef867f1ea72ca17e3b0606730894524485ac0e7a8e2eb9cb734a96",
+      "ranks": 2,
+      "manifest_sha256": "63e9630fa4c27c9ade1234b895908f60a319f89f8a3711374afa6acdbc8e37b2"
+    }
+  },
+  "public_templates": {
+    "inspiral/config.template.json": "5c6e7bbb5e7c2b8b06461ec8890e00945637e61a6433b8780c767419d5fee661",
+    "live/config.template.json": "2a4affb28ba2ac1682b54228340be02d089139385bce910fcab900bac889b63d"
+  },
+  "configuration_changes": [
+    "Machine-resolved paths replaced with logical tokens; source, interpreter, tool, CPU and GPU bindings supplied at configure time.",
+    "Live CUDA visibility is explicit and nsys selection uses a private PATH shim; neither changes the frozen wrapper code.",
+    "A new private runtime manifest records this build; published native hashes are provenance only.",
+    "Live receives the new runtime manifest path as receipt metadata; its unchanged observer continues to guard its original source list and record loaded module hashes."
+  ],
+  "qualification": {
+    "scientific_gates": "not supplied by these observers",
+    "fully_warm": "not established by a prime or a fixed block cutoff",
+    "timing_scope": "passive-observer process scope; not the generic runner native-CLI scope"
+  }
+}

@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Reproduce the profile figures</title><style>
+body{max-width:1100px;margin:2rem auto;padding:0 1.2rem;font:17px/1.6 system-ui,sans-serif;color:#172a3a;background:#fff}
+a{color:#165b94}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto}td,th{padding:.45rem .8rem;border:1px solid #c6d2dc;text-align:left}pre{padding:1rem;overflow:auto;background:#eef3f7;border-radius:5px}code{font-size:.88em}h1,h2,h3{line-height:1.2}nav{font-size:.9rem;border-bottom:1px solid #c6d2dc;padding-bottom:1rem}
+</style></head><body><nav><a href="https://xangma.github.io/pycbc-jax-benchmarks/">Campaign index</a> · <a href="https://github.com/xangma/pycbc-jax-benchmarks/releases/tag/2026-10-09-full-stack">Frozen release</a> · <a href="https://github.com/xangma/pycbc-jax-benchmarks/blob/2026-10-09-full-stack/reports/2026-10-09/profiles/README.md">Source</a></nav><h1>Reproduce the profile figures</h1>
+<p>These data and figures describe PyCBC commit
+<code>366c7a955570deabaa1219d353f7847b21384698</code>. They are instrumented diagnostics;
+use the campaign's separate unprofiled samples for performance comparisons.</p>
+<p>The two <code>*-intervals.json.gz</code> files contain integer event boundaries, application
+or MPI rank labels, GPU device indices, copy directions/bytes and selected host
+phase names. They contain no strain samples, arbitrary kernel labels, launch
+commands, PIDs, hostnames, private paths or raw Nsight tables. Raw <code>.nsys-rep</code> and
+SQLite captures are retained privately. Export input hashes connect the public
+derived data to those captures without publishing them.</p>
+<p>From the repository root, install Python and Matplotlib, then run:</p>
+<pre><code class="language-sh">python -m pip install matplotlib==3.11.1
+python tools/render_profile.py \
+  --input reports/2026-10-09/profiles/inspiral-intervals.json.gz \
+  --output reproduced/inspiral
+python tools/render_profile.py \
+  --input reports/2026-10-09/profiles/live-intervals.json.gz \
+  --output reproduced/live
+</code></pre>
+<p>The renderer checks every plotted scope against the original verified summary:
+exact integer kernel, copy and combined interval unions; overlapping event
+counts; and completed transfer bytes per application/rank, device and direction.
+It aborts on disagreement. Matplotlib or font changes can change PNG bytes while
+these numerical checks remain exact. The published figures used Matplotlib
+3.11.1. <code>manifest.json</code> records the portable file checksums and verification.
+<code>independent-verification.json</code> records a second implementation's direct SQLite
+union/count checks, which also agree with the public renderer.</p>
+<table>
+<thead>
+<tr>
+<th>View</th>
+<th>Inspiral</th>
+<th>Live</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>whole.png</code></td>
+<td>Selected application GPU/host extent</td>
+<td>Selected application GPU/host extent</td>
+</tr>
+<tr>
+<td><code>search.png</code></td>
+<td>First through last of 24 filtering batches</td>
+<td>Combined CLI entry through final completion scope</td>
+</tr>
+<tr>
+<td><code>warm.png</code></td>
+<td>Repeated batch 13/24, without proof of completed warm-up</td>
+<td>Common valid-data suffix after two valid blocks; compilation/tracing continues</td>
+</tr>
+<tr>
+<td><code>detail.png</code></td>
+<td>—</td>
+<td>Central 400 ms of the same suffix</td>
+</tr>
+</tbody>
+</table>
+<p>“Warm” is a legacy file/window key, <strong>not a qualified warmed throughput claim</strong>.
+Times are relative to the capture's session start. GPU lanes show selected
+application kernel and memcpy intervals, merging overlapping streams. Memsets
+are excluded. Combined interval union measures recorded activity duration; it
+is not GPU occupancy, saturation or whole-device utilization. Transfer bytes
+count each whole copy when its completion lies in the window, including a copy
+that starts before the window.</p>
+<p>Host phases measure submission and waiting without inserted stage completion
+fences. Only the explicitly marked final completion scope has a completion
+fence. JAX callback points mark tracing, lowering, backend and cache events;
+backend notifications can include cache retrieval and are not cold compilation
+durations. Live has <strong>132 native stage starts without matching ends</strong>, which
+are excluded rather than given invented durations.</p>
+<p>For dense lanes, the plot merges events into at most 12,000 display bins per
+lane. A displayed bin means that an event intersects the bin; it does not mean
+the GPU was active throughout the bin. Exact event intervals remain available
+in the compressed files and all reported unions use those exact intervals.
+Compact host lanes show allowlisted native and observer phases rather than raw
+compiler labels. This is a presentation filter, not causal GPU attribution.</p>
+<h2>Export a new private capture</h2>
+<p><code>tools/export_profile.py</code> requires a read-only Nsight SQLite capture, its
+matching observer reports and a verified summary that has already established
+window boundaries and any mixed NVTX clock domains. It rejects unknown native
+stage names and monitoring events; review its explicit allowlists when updating
+instrumentation. GPU events are admitted only for application PIDs identified
+in the matching observer reports, then relabelled <code>search</code>, <code>rank 0</code>, etc.
+It does not export Nsight's <code>StringIds</code> table or arbitrary metadata.</p>
+<p>For example, with a private collection organized using these generic filenames:</p>
+<pre><code class="language-sh">python tools/export_profile.py --app inspiral \
+  --revision 366c7a955570deabaa1219d353f7847b21384698 \
+  --sqlite private-capture/inspiral.sqlite \
+  --summary private-capture/inspiral-verified-summary.json \
+  --report private-capture/inspiral-observation.json \
+  --output inspiral-intervals.json.gz
+python tools/export_profile.py --app live \
+  --revision 366c7a955570deabaa1219d353f7847b21384698 \
+  --sqlite private-capture/live.sqlite \
+  --summary private-capture/live-verified-summary.json \
+  --report private-capture/live-profile-status.json \
+  --report private-capture/rank-0.json \
+  --report private-capture/rank-1.json \
+  --stages private-capture/rank-0.stages.jsonl \
+  --stages private-capture/rank-1.stages.jsonl \
+  --output live-intervals.json.gz
+</code></pre>
+<p>The exporter uses only the Python standard library. Run the renderer on each
+new export before publication and inspect all public strings and images.
+Publishing a new capture also requires new immutable source/input/runtime
+manifests and independent boundary verification; changing a filename alone
+does not establish a valid campaign.</p></body></html>

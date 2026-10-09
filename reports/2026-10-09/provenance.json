@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "campaign_date": "2026-10-09",
+  "measured_candidate_commit": "366c7a955570deabaa1219d353f7847b21384698",
+  "measured_candidate_tree": "d43edf428d9bba23fc0243f41a4c66faf7d4de5f",
+  "original_cpu_commit": "454ee900e6faca88a066e71ade489fca9fb221a5",
+  "candidate_source_tag": "https://github.com/xangma/pycbc/tree/jax-benchmark-2026-10-09",
+  "hardware": {
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "cpu": "AMD Ryzen Threadripper PRO 3995WX",
+    "logical_cpu_count": 128,
+    "dedicated_system": false
+  },
+  "software": {
+    "python": "3.12.8",
+    "jax": "0.11.2",
+    "jaxlib": "0.11.2",
+    "numpy": "2.2.6",
+    "scipy": "1.16.3",
+    "lalsuite": "7.26.15",
+    "h5py": "3.16.0",
+    "mpi4py": "4.0.0",
+    "nsight_systems": "2026.1.3.425",
+    "plot_matplotlib": "3.11.1"
+  },
+  "execution": {
+    "waveform_source": "Original PyCBC/LAL; waveform reference selector enabled",
+    "signal_dtype": "complex64",
+    "jax_enable_x64": true,
+    "numerical_thread_pools": 1,
+    "private_persistent_cache": true,
+    "fresh_process_samples": 3,
+    "profile_separate_from_timed_samples": true,
+    "intrusive_stage_synchronization": false,
+    "inspiral_host_cpu_allocation": 1,
+    "live_host_cpu_allocation": 2,
+    "live_mpi_ranks": 2
+  },
+  "runtime_file_sha256": {
+    "pycbc/vetoes/chisq_cpu.cpython-312-x86_64-linux-gnu.so": "2d3b803d63ea21c685085322b8c83ea3b23f46458fbfe8dbb49e1897b48b7e0c",
+    "pycbc/waveform/decompress_cpu_cython.cpython-312-x86_64-linux-gnu.so": "3e962f76e92f82e7ab4ac3c0bd2b77e185c5166a9886fd9c328cf0cbb7569af5",
+    "pycbc/waveform/utils_cpu.cpython-312-x86_64-linux-gnu.so": "811c2e307348be164808c5a2a9a573e4681da2fdec187495b6368b21f78aa7e3",
+    "pycbc/waveform/spa_tmplt_cpu.cpython-312-x86_64-linux-gnu.so": "f276ecf190bb5e5ef84964df2d3cf3e48081fe821093de2bce03cfd573e6bb57",
+    "pycbc/events/simd_threshold_cython.cpython-312-x86_64-linux-gnu.so": "62bd3cd8e3be846a650a461704b50deb61a8995917c8a480f0286f1bf40f68df",
+    "pycbc/events/eventmgr_cython.cpython-312-x86_64-linux-gnu.so": "6cfba18e44e51b1596bb5c06bc8cd41a82ae813e0f8b52a24197a00360fcfd68",
+    "pycbc/filter/simd_correlate_cython.cpython-312-x86_64-linux-gnu.so": "1eab5511f9136441801db57ec7dd2ce91c6a720bb48dbe508130f45f2e4b31dd",
+    "pycbc/filter/matchedfilter_cpu.cpython-312-x86_64-linux-gnu.so": "9dd86b75c143a916b2f032c452349a29474191ef87daa8520e83f3d000e84c8d",
+    "pycbc/fft/fftw_pruned_cython.cpython-312-x86_64-linux-gnu.so": "a84f7d4157e2943447be113951778545cf1952aa358c7cfef048756b5fb3288b",
+    "pycbc/types/array_cpu.cpython-312-x86_64-linux-gnu.so": "e36da16d4e529b6d7cef914934199c1ec813164101297ec48b122768442219e8",
+    "pycbc/inference/models/relbin_cpu.cpython-312-x86_64-linux-gnu.so": "22e85ac0ede2f266298094a0924d57bcfd13e1537358ccffd608a38ee5acf194",
+    "pycbc/version.py": "89eac9f8268f5c6979cb3bb90015f5aea48f0a8a3922130a7a2f3256dece0489"
+  },
+  "native_source_compatibility_verified": true,
+  "runtime_provenance_note": "Compiled extensions and generated version.py were carried into the staged clean candidate after native source compatibility checks. These are observed runtime hashes, not proof that a future rebuild has the same bytes. Reproduction records its own hashes.",
+  "input_manifest": "../../campaigns/inputs.json",
+  "raw_profiles_published": false,
+  "qualification": "Diagnostic; not a qualified scientific speedup or steady-state capacity measurement.",
+  "documentation_publication_commit": "3f3a00532dd45c2786211243b8db17bf03af70cf",
+  "documentation_restack_verification": "All non-RST Git entries are identical at each of the 47 corresponding branch boundaries; measured production source is unchanged."
+}

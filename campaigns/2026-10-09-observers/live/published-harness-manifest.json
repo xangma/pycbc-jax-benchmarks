@@ -1,0 +1,31 @@
+{
+  "original_manifest_sha256": "63e9630fa4c27c9ade1234b895908f60a319f89f8a3711374afa6acdbc8e37b2",
+  "source_revision": "366c7a955570deabaa1219d353f7847b21384698",
+  "files_sha256": {
+    "entry-v2.py": "2a08ae050ef3c9268d76199e0af617577259de03c4332ad0c1cf9e3097472a7f",
+    "run-v2.py": "2bb4dea3aade0cb01044d45139f3a69f12d36830d3cd3d117c585557bccc3559",
+    "config-v2.json": "f46da40e8cef867f1ea72ca17e3b0606730894524485ac0e7a8e2eb9cb734a96",
+    "source-manifest.json": "e291632441c1591be045fc5bdd8fd85c4f5c7b8c162ffcbde80fd152e10995b2",
+    "reproduce-recorder.py": "a8fce96905d564f5d5a3d48b099c54bf1c6058a60a3de9fa445583ece885525b",
+    "recorder-reproduction.json": "a7fc0f8ddf5bd3455eac380235d8c880e4b37f38ed1568a2fd7ab0d9f29c44b9",
+    "test-recorder-v2.py": "6649f0e2ed27d844c08b1e0e99de8af90b9e2be2ebf3a883f42d1d7ff4211457",
+    "recorder-v2-checks.json": "dbb43ccd56fdb727375b78e8425cfb5c0b17fb79436f6e84a51a0a77b2a50f00"
+  },
+  "passed": true,
+  "local_checks": [
+    "v1_adjacent_and_concurrent_failure_reproduced",
+    "v2_adjacent_and_concurrent_complete_events_preserved",
+    "malformed_retained_and_rejected",
+    "32concurrent_observers_once",
+    "no_unregister_APIs",
+    "AST",
+    "F401_F821",
+    "help"
+  ],
+  "omitted_fields": [
+    "output_root",
+    "jax_cache",
+    "codec_cache"
+  ],
+  "scope": "Historical freeze receipt; machine-resolved paths omitted. Run results are separate evidence."
+}

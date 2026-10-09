@@ -1,0 +1,110 @@
+{
+  "files": [
+    {
+      "bytes": 5318,
+      "file": "README.md",
+      "sha256": "5b054118975a78ea68ebaf30272ffcf9b364b6f24cecc345954cf3f70f8593cc"
+    },
+    {
+      "bytes": 2076,
+      "file": "independent-verification.json",
+      "sha256": "f27add0a85736c4ccdd53abc0d45ec37c141e4a90932078df031836f9561c8ee"
+    },
+    {
+      "bytes": 929275,
+      "file": "inspiral-intervals.json.gz",
+      "sha256": "6caedc314554283e0c027e126ea6f2aea000c34eed302c1cca745ffba47b2094"
+    },
+    {
+      "bytes": 81282,
+      "file": "inspiral-overview/search.png",
+      "sha256": "1b6a839e8bddf17041e74669365d2a3bd43bc3196a36e253d834e0ba8779db6f"
+    },
+    {
+      "bytes": 4651,
+      "file": "inspiral-overview/summary.json",
+      "sha256": "95af2197c948922998986c28af7570be17146d317b890875a05ae68f91f16e3b"
+    },
+    {
+      "bytes": 82586,
+      "file": "inspiral-overview/warm.png",
+      "sha256": "28c65a822985685da879d158072ea8146dd4934b14a395209921a6ed1dfbbdd0"
+    },
+    {
+      "bytes": 101380,
+      "file": "inspiral-overview/whole.png",
+      "sha256": "8a438793b4f7c5b0aa1a155f884e86826f81a08103d6931ea2b51612d399d971"
+    },
+    {
+      "bytes": 12347192,
+      "file": "live-intervals.json.gz",
+      "sha256": "5716f6cab0e88d4107cde3528666f486f6488d94da4b351989cbf4521786cbe7"
+    },
+    {
+      "bytes": 117409,
+      "file": "live-overview/detail.png",
+      "sha256": "37bfa66293e224c66e361c115fdade625113dab53420f4da71251648843eb53b"
+    },
+    {
+      "bytes": 306058,
+      "file": "live-overview/search.png",
+      "sha256": "1f903deb02c32e6171c9e65df4c76475e1ba0bf3024bca32b61c32de2f9ca8e3"
+    },
+    {
+      "bytes": 6613,
+      "file": "live-overview/summary.json",
+      "sha256": "5b9746a3382d7a854198823d93dab5f547037dceb364cefe0e79bc07f64ac31e"
+    },
+    {
+      "bytes": 272657,
+      "file": "live-overview/warm.png",
+      "sha256": "1d40cbc1095aa1e31613e6649cc21bfd8ed70c70189194f509dbbf182b0e1f44"
+    },
+    {
+      "bytes": 305707,
+      "file": "live-overview/whole.png",
+      "sha256": "5db82e22ceb59bb9cb6ba097e6b540d9f8ecbd04d5316dab6f469ef49322e07b"
+    }
+  ],
+  "public_file_privacy": "Allowlisted interval data, relative integer timestamps and generic application/rank labels; no private hosts, paths, PIDs, commands, raw strain or arbitrary compiler/kernel names.",
+  "source_revision": "366c7a955570deabaa1219d353f7847b21384698",
+  "tools": [
+    {
+      "file": "tools/export_profile.py",
+      "sha256": "b45c8263fd860bc9d10d8a818d4f1fe91cda56efa79abd130818c75d9918ade4"
+    },
+    {
+      "file": "tools/render_profile.py",
+      "sha256": "8fb4977476190580fb3331908b754e6268232e961cd2e1cb436770bbb866dc7a"
+    }
+  ],
+  "verification": {
+    "inspiral": {
+      "all_event_boundaries_integer_ns_without_time_clipping": true,
+      "all_windows_match_independent_direct_sql_union_and_counts": true,
+      "all_windows_match_original_completed_transfer_bytes": true,
+      "gpu_event_count": 85771,
+      "host_event_count": 322,
+      "privacy_scan_passed": true,
+      "processes": [
+        "search"
+      ],
+      "status": "passed",
+      "unpaired_native_stage_starts_excluded": 0
+    },
+    "live": {
+      "all_event_boundaries_integer_ns_without_time_clipping": true,
+      "all_windows_match_independent_direct_sql_union_and_counts": true,
+      "all_windows_match_original_completed_transfer_bytes": true,
+      "gpu_event_count": 1393588,
+      "host_event_count": 13846,
+      "privacy_scan_passed": true,
+      "processes": [
+        "rank 0",
+        "rank 1"
+      ],
+      "status": "passed",
+      "unpaired_native_stage_starts_excluded": 132
+    }
+  }
+}

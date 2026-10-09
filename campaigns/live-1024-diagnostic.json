@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "campaign_id": "live-1024-2048-lal",
+  "purpose": "diagnostic",
+  "sources": {
+    "original": {
+      "commit": "454ee900e6faca88a066e71ade489fca9fb221a5",
+      "required_modules": [
+        "pycbc"
+      ]
+    },
+    "candidate": {
+      "commit": "366c7a955570deabaa1219d353f7847b21384698",
+      "required_modules": [
+        "pycbc"
+      ]
+    }
+  },
+  "inputs": {
+    "bank": {
+      "path": "o2-subset-1024.hdf",
+      "sha256": "542e341ea3994ba0f52bfd238406af1c05b79f20aac8c0832f468e5f86e70693"
+    },
+    "frame_h1": {
+      "path": "H-H1_LOSC_CLN_4_V1-1187007040-2048.gwf",
+      "sha256": "580e238054474fd09be900c47217bbcd0497ab84d1756f886647e934352e4865"
+    },
+    "frame_l1": {
+      "path": "L-L1_LOSC_CLN_4_V1-1187007040-2048.gwf",
+      "sha256": "ff9743efc1555a47bc3f2effcaabba252a2244f10fd3a8f85a7c5f677b3c772e"
+    }
+  },
+  "work": {
+    "description": "1024 distinct TaylorF2 LAL templates; 2 MPI ranks; 26 valid 8-second blocks per detector",
+    "expected": {
+      "templates": 1024,
+      "valid_detector_seconds": 416,
+      "template_detector_seconds": 425984,
+      "sample_rate": 2048,
+      "signal_dtype": "complex64",
+      "ranks": 2
+    }
+  },
+  "repeats": 3,
+  "prime_runs": 1,
+  "arms": [
+    {
+      "id": "jax_cuda",
+      "source": "candidate",
+      "argv": [
+        "mpiexec",
+        "-n",
+        "2",
+        "{python}",
+        "{source}/bin/pycbc_live_jax",
+        "--bank-file",
+        "{input:bank}",
+        "--approximant",
+        "TaylorF2",
+        "--sample-rate",
+        "2048",
+        "--low-frequency-cutoff",
+        "30",
+        "--highpass-frequency",
+        "13",
+        "--highpass-bandwidth",
+        "5",
+        "--highpass-reduction",
+        "200",
+        "--src-class-mchirp-to-delta",
+        "0.01",
+        "--src-class-eff-to-lum-distance",
+        "0.74899",
+        "--src-class-lum-distance-to-delta",
+        "-0.51557",
+        "-0.32195",
+        "--max-length",
+        "512",
+        "--chisq-bins",
+        "16",
+        "--analysis-chunk",
+        "8",
+        "--psd-samples",
+        "30",
+        "--psd-segment-length",
+        "4",
+        "--psd-inverse-length",
+        "3.5",
+        "--trim-padding",
+        "0.5",
+        "--channel-name",
+        "H1:LOSC-STRAIN",
+        "L1:LOSC-STRAIN",
+        "--frame-src",
+        "H1:{input:frame_h1}",
+        "L1:{input:frame_l1}",
+        "--frame-read-timeout",
+        "30",
+        "--snr-threshold",
+        "5.5",
+        "--ranking-statistic",
+        "single_ranking_only",
+        "--sngl-ranking",
+        "snr",
+        "--pvalue-combination-livetime",
+        "0.0005",
+        "--ifar-double-followup-threshold",
+        "1e9",
+        "--ifar-upload-threshold",
+        "1e9",
+        "--start-time",
+        "1187007080",
+        "--end-time",
+        "1187007336",
+        "--store-psd",
+        "--enable-background-estimation",
+        "--max-batch-size",
+        "134217728",
+        "--processing-scheme",
+        "jax:cuda:0",
+        "--jax-reference-operations",
+        "waveform",
+        "--fft-backends",
+        "numpy",
+        "--replay-clock",
+        "--replay-rate",
+        "0",
+        "--output-path",
+        "{output}/outputs"
+      ],
+      "deadline_seconds": 900,
+      "env": {
+        "JAX_PLATFORMS": "cuda,cpu",
+        "CUDA_VISIBLE_DEVICES": "0",
+        "PYCBC_GWF_CUDA_DECOMPRESS": "deflate"
+      }
+    }
+  ],
+  "profile": {
+    "arm": "jax_cuda",
+    "prefix": [
+      "nsys",
+      "profile",
+      "--trace=cuda,nvtx,osrt",
+      "--sample=none",
+      "--cpuctxsw=none",
+      "--force-overwrite=true",
+      "--output={output}/cuda"
+    ],
+    "deadline_seconds": 1800
+  }
+}

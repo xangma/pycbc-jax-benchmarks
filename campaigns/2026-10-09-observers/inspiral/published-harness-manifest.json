@@ -1,0 +1,32 @@
+{
+  "status": "frozen_syntax_checked_not_executed",
+  "files_sha256": {
+    "source-manifest.json": "c8fde180cbd9f159f26beefd7911efaee5866c2f92178d698f330907a88f52c3",
+    "search_driver.py": "b4ca0dc5ff057d535bfbb16cb95c862d1996f265c830ae2631e720443fce5c5a",
+    "source.tar": "a49c1fa73ca430b4808965059358cd225cefaa2dbb7b6558565adc6c6a875f30",
+    "campaign_config.json": "c6b830f2ba8d24d254e236cd94bfafd5c15f48797817007b059951650e3d16e0",
+    "run_campaign.py": "3cd442bee3b8e959edc9ab4c4edad2635f98a1e51940a479a40c7f6d5f652f1b",
+    "README.md": "4174f956bd1014fe4b33c843d6c41ed3a0f16181ef73d3920b6359dc747846c5"
+  },
+  "runtime_imports": [
+    "h5py",
+    "numpy",
+    "jax",
+    "jaxlib",
+    "lal",
+    "lalsimulation",
+    "lalframe",
+    "pycbc.strain",
+    "pycbc.psd",
+    "pycbc.filter.matchedfilter_jax",
+    "pycbc.waveform.bank_jax",
+    "pycbc.vetoes.chisq_jax",
+    "pycbc.events.eventmgr_jax"
+  ],
+  "unsupported_claims": [
+    "current optimum batch size",
+    "complete numerical qualification",
+    "zero new compiles",
+    "synchronized warm device-compute timer"
+  ]
+}

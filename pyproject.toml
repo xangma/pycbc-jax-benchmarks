@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pycbc-jax-benchmarks"
+version = "0.1.0"
+description = "Reproducible native-command PyCBC benchmark receipts"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+plots = ["matplotlib>=3.8"]
+inputs = ["h5py>=3.16", "numpy>=2.2"]
+
+[project.scripts]
+pycbc-jax-benchmarks = "pycbc_jax_benchmarks.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["pycbc_jax_benchmarks*"]

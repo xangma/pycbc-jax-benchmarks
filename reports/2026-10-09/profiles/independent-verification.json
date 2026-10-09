@@ -1,0 +1,74 @@
+{
+  "inspiral": {
+    "active_gpu_process_count": 1,
+    "direct_sql_union_and_counts": {
+      "search": {
+        "all_union_ns": 3513182207,
+        "copy_events": 53734,
+        "copy_union_ns": 55196582,
+        "kernel_events": 21777,
+        "kernel_union_ns": 3458141755
+      },
+      "warm": {
+        "all_union_ns": 147250773,
+        "copy_events": 2275,
+        "copy_union_ns": 2319321,
+        "kernel_events": 821,
+        "kernel_union_ns": 144936188
+      },
+      "whole": {
+        "all_union_ns": 3820559300,
+        "copy_events": 57366,
+        "copy_union_ns": 73049496,
+        "kernel_events": 28405,
+        "kernel_union_ns": 3747666062
+      }
+    },
+    "gpu_events_attributed_to_exact_profiled_rank_pids": true,
+    "independent_receipt_boundary_check": true,
+    "selected_process_count": 1,
+    "status": "passed",
+    "wrapper_nvtx_timestamp_bracket": {
+      "nvtx_to_wrapper_end_ns": 3995,
+      "wrapper_to_nvtx_start_ns": 4393
+    }
+  },
+  "live": {
+    "active_gpu_process_count": 2,
+    "direct_sql_union_and_counts": {
+      "detail": {
+        "all_union_ns": 18977466,
+        "copy_events": 6320,
+        "copy_union_ns": 5767728,
+        "kernel_events": 12720,
+        "kernel_union_ns": 13209834
+      },
+      "search": {
+        "all_union_ns": 2766239214,
+        "copy_events": 477458,
+        "copy_union_ns": 556318511,
+        "kernel_events": 916130,
+        "kernel_union_ns": 2214001916
+      },
+      "warm": {
+        "all_union_ns": 2262093558,
+        "copy_events": 417007,
+        "copy_union_ns": 382143850,
+        "kernel_events": 824524,
+        "kernel_union_ns": 1882729056
+      },
+      "whole": {
+        "all_union_ns": 2766239214,
+        "copy_events": 477458,
+        "copy_union_ns": 556318511,
+        "kernel_events": 916130,
+        "kernel_union_ns": 2214001916
+      }
+    },
+    "gpu_events_attributed_to_exact_profiled_rank_pids": true,
+    "independent_receipt_boundary_check": true,
+    "selected_process_count": 4,
+    "status": "passed",
+    "wrapper_nvtx_timestamp_bracket": null
+  }
+}

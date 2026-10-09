@@ -1,0 +1,14 @@
+{
+  "pycbc/vetoes/chisq_cpu.cpython-312-x86_64-linux-gnu.so": "2d3b803d63ea21c685085322b8c83ea3b23f46458fbfe8dbb49e1897b48b7e0c",
+  "pycbc/waveform/decompress_cpu_cython.cpython-312-x86_64-linux-gnu.so": "3e962f76e92f82e7ab4ac3c0bd2b77e185c5166a9886fd9c328cf0cbb7569af5",
+  "pycbc/waveform/utils_cpu.cpython-312-x86_64-linux-gnu.so": "811c2e307348be164808c5a2a9a573e4681da2fdec187495b6368b21f78aa7e3",
+  "pycbc/waveform/spa_tmplt_cpu.cpython-312-x86_64-linux-gnu.so": "f276ecf190bb5e5ef84964df2d3cf3e48081fe821093de2bce03cfd573e6bb57",
+  "pycbc/events/simd_threshold_cython.cpython-312-x86_64-linux-gnu.so": "62bd3cd8e3be846a650a461704b50deb61a8995917c8a480f0286f1bf40f68df",
+  "pycbc/events/eventmgr_cython.cpython-312-x86_64-linux-gnu.so": "6cfba18e44e51b1596bb5c06bc8cd41a82ae813e0f8b52a24197a00360fcfd68",
+  "pycbc/filter/simd_correlate_cython.cpython-312-x86_64-linux-gnu.so": "1eab5511f9136441801db57ec7dd2ce91c6a720bb48dbe508130f45f2e4b31dd",
+  "pycbc/filter/matchedfilter_cpu.cpython-312-x86_64-linux-gnu.so": "9dd86b75c143a916b2f032c452349a29474191ef87daa8520e83f3d000e84c8d",
+  "pycbc/fft/fftw_pruned_cython.cpython-312-x86_64-linux-gnu.so": "a84f7d4157e2943447be113951778545cf1952aa358c7cfef048756b5fb3288b",
+  "pycbc/types/array_cpu.cpython-312-x86_64-linux-gnu.so": "e36da16d4e529b6d7cef914934199c1ec813164101297ec48b122768442219e8",
+  "pycbc/inference/models/relbin_cpu.cpython-312-x86_64-linux-gnu.so": "22e85ac0ede2f266298094a0924d57bcfd13e1537358ccffd608a38ee5acf194",
+  "pycbc/version.py": "89eac9f8268f5c6979cb3bb90015f5aea48f0a8a3922130a7a2f3256dece0489"
+}

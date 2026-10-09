@@ -1,0 +1,7 @@
+application,sample,full_observer_process_wall_seconds,secondary_seconds,secondary_scope
+inspiral,1,40.001760294195265,19.668517351150513,existing unsynchronized HDF application search timer
+inspiral,2,41.252431133762,20.5345721244812,existing unsynchronized HDF application search timer
+inspiral,3,41.250506738200784,20.537684679031376,existing unsynchronized HDF application search timer
+live,1,72.44835210032761,36.294708689,suffix after two valid blocks; warm-up unqualified
+live,2,67.68714898591861,31.391130172,suffix after two valid blocks; warm-up unqualified
+live,3,90.6797370519489,55.010582223,suffix after two valid blocks; warm-up unqualified

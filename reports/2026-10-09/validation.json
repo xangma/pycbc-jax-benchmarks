@@ -1,0 +1,903 @@
+{
+  "comparison_policy": {
+    "additional_scientific_exclusions": [],
+    "exact_values": "Ordered dtype, shape and floating-point bits; scientific attribute inventories and values checked",
+    "inspiral_dataset_exclusions": [
+      "H1/search/filter_rate_per_core",
+      "H1/search/run_time",
+      "H1/search/setup_time_fraction",
+      "H1/search/templates_per_core"
+    ],
+    "live_command_metadata": "Expected executable verified before normalizing executable name and output destination only; all other arguments/attributes retained",
+    "numerical_tolerances_fitted": false,
+    "profiled_timings_excluded_from_benchmark_samples": true,
+    "storage_layout": "Compression and chunk layout are not scientific-value gates"
+  },
+  "evidence_sha256": {
+    "full-reference-stop-receipt.json": "7587773c8de9f03f243f89f212da67d3070f59bc599f3b74e79be30d7fc80843",
+    "inspiral-first2-original-routes-contract.json": "5f80a157409aa5f7c89bc808f344be9ca4d6c6572794dedab49a34a4accb3a51",
+    "inspiral-first2-original-routes-exact.json": "6ca96b712274fdf6e57028eb3c7fe736e8fbb81611ee9f892e48ada8325ef8bc",
+    "inspiral-inline-linear-vs-device-linear-diagnostic.json": "06b51ed2c609b44c8dea35868bf36e16aedca904837cad305469928e8e29b5f4",
+    "inspiral-original-cpu-vs-default-diagnostic.json": "48d597f258f686b4afe9e5c5e741430ed4c28c7dc06208f711f385590d04f836",
+    "inspiral-sample-1-vs-profile.json": "cd2aaa096a19792b00075731ef7584d3b7460049d31cd0d08c59329e09ae9486",
+    "inspiral-sample-1-vs-sample-2.json": "c2d02c8aaa388607200c03ad08d146758aa7ce5fc8d422a3c12b41ec775371ae",
+    "inspiral-sample-1-vs-sample-3.json": "2c4b83e66a5a286763e80e77f2f2333103ec6ac0d1d6efbcd23a3163c38a1718",
+    "live-detector-order-diagnostic.json": "6a07fe8809d6a65df7e781adcd5133dbd6ce85e863e3d61a755619013cf1d69f",
+    "live-sample-01-vs-profile.json": "275033d359bfdfd9d34a3e60d5c8ef2d87bc9b0ef36c1bf7a9ad2c844501fc84",
+    "live-sample-01-vs-sample-02.json": "154bd8a098c40725f9487ef567ec7cfaffab45b2be3e614fa40e25df4b950a0b",
+    "live-sample-01-vs-sample-03.json": "bc90676256b6560b1f0ad1594d94e07bdc81f7b2905c5ee4c24bb20e39c24c37",
+    "live-source-input-contract.json": "07420e78f14144809f5337e3e376ad727ffeba815ca78e41d4d505983a78e4dd",
+    "o2-compressed-first2-manifest.json": "af6ffcd7b6b28f738cdf733be533b29b820031fa545b477b539fb7ecf32471c2",
+    "receipt.json": "1b645bbd60b27952769e09dd59a76975a592f7abaf1698779f46605795aaef4c"
+  },
+  "gates": {
+    "bounded_composed_original_route_saved_output": {
+      "scope": "two templates, five segments, 1904 valid H1 seconds, 18 saved scientific datasets",
+      "status": "passed"
+    },
+    "compilation_free_steady_state_timing": {
+      "reason": "No such scope certified here; all Live zero_warm_compilation flags are false, which alone does not establish uncached compilation",
+      "status": "unavailable"
+    },
+    "complete_pipeline_scientific_qualification": {
+      "missing": [
+        "full conditioned-strain arrays",
+        "full PSD and decision audit coverage for complete comparisons",
+        "early and later search decision audits",
+        "full-bank composed original-route agreement",
+        "fresh pristine-CPU Live complete-search comparison"
+      ],
+      "status": "unavailable"
+    },
+    "default_inspiral_trigger_identity": {
+      "reason": "two pristine-CPU trigger identities absent from default JAX output",
+      "status": "failed"
+    },
+    "default_numerical_field_tolerance_gate": {
+      "reason": "Descriptive matched-field errors are reported without fitting or relaxing a tolerance",
+      "status": "not_evaluated"
+    },
+    "live_numeric_repeatability": {
+      "scope": "all 1014 numeric/structured datasets across 33 files",
+      "status": "passed"
+    },
+    "live_strict_all_saved_fields_repeatability": {
+      "reason": "one detector-order string differs in sample 03; failure retained",
+      "status": "failed"
+    },
+    "profile_saved_output_neutrality": {
+      "scope": "fresh Inspiral and Live saved scientific outputs against unprofiled reference samples",
+      "status": "passed"
+    },
+    "scientifically_qualified_capacity_or_speedup": {
+      "reason": "Scientific and steady-state gates do not support a qualified capacity/speedup claim; elapsed timings remain diagnostic",
+      "status": "unavailable"
+    }
+  },
+  "inspiral": {
+    "bounded_all_original_comparison": {
+      "all_selected_does_not_mean_every_registered_API_exercised": true,
+      "complete_1536_template_agreement_established": false,
+      "complete_scientific_qualification": false,
+      "contract_check_count": 25,
+      "contract_checks_passed": true,
+      "passed": true,
+      "proof_scope": "Exact composed original-route saved-output agreement for two original bank rows only",
+      "registered_original_selectors_selected": 298,
+      "saved_output": {
+        "attribute_exclusions": [],
+        "attributes": 0,
+        "dataset_exclusions": [
+          "H1/search/filter_rate_per_core",
+          "H1/search/run_time",
+          "H1/search/setup_time_fraction",
+          "H1/search/templates_per_core"
+        ],
+        "datasets": 18,
+        "failures": [],
+        "file_hashes": {
+          "output": {
+            "candidate": "69c2b8b0f03630dc4bd1bf78121e219f09926b4e80a835c5fcc56dd66f781608",
+            "reference": "e411175d19d7aff176f5bce974cd0865cfce475c3328fa6f12547a1c3e34559b"
+          }
+        },
+        "files": 1,
+        "passed": true,
+        "storage_layout_compared": false
+      },
+      "selected_decompress_control_overrides_device_linear_option": true,
+      "triggers_each": 5,
+      "workload": {
+        "bank_sha256": "a5c5d28344a2baa064df60b0d7111751b648a200fe5cee9382f56a1233de93d3",
+        "distinct_templates": 2,
+        "fft_segment_seconds": 512,
+        "fft_segments": 5,
+        "frame_sha256": "580e238054474fd09be900c47217bbcd0497ab84d1756f886647e934352e4865",
+        "native_cpu_intermediate_dtype_independently_observed": false,
+        "observed_jax_signal_dtype": "complex64",
+        "parent_bank_sha256": "4c56fde141e3ece6ab39802e94fbe482c6ccf7d390cc503fa613327107603635",
+        "sample_rate_hz": 2048,
+        "source_rows": [
+          0,
+          1
+        ],
+        "template_hashes": [
+          -3164449294112375093,
+          2146621852490462787
+        ],
+        "template_ids": [
+          0,
+          1
+        ],
+        "templates": 2,
+        "valid_H1_seconds": 1904
+      }
+    },
+    "decompression_comparison": {
+      "candidate": "same current JAX search with default device_linear decompression",
+      "candidate_duplicate_identities": 0,
+      "candidate_off_grid_triggers": 0,
+      "candidate_only_triggers": 0,
+      "candidate_triggers": 3674,
+      "complete_scientific_qualification": false,
+      "exact_matched_fields": [
+        "bank_chisq",
+        "bank_chisq_dof",
+        "chisq_dof",
+        "cont_chisq",
+        "cont_chisq_dof",
+        "end_time",
+        "sg_chisq",
+        "template_duration",
+        "template_hash"
+      ],
+      "fields": {
+        "chisq": {
+          "candidate_dtype": "float32",
+          "difference_rule": "stored values; no renormalization",
+          "exact": false,
+          "matched_rows": 3674,
+          "maximum_absolute_difference": 0.166595458984375,
+          "maximum_relative_difference": 0.00428475045290075,
+          "maximum_relative_difference_percent": 0.428475045290075,
+          "nonfinite_rows": 0,
+          "reference_dtype": "float32"
+        },
+        "coa_phase": {
+          "candidate_dtype": "float32",
+          "difference_rule": "circular radians",
+          "exact": false,
+          "matched_rows": 3674,
+          "maximum_absolute_difference": 7.915496826171875e-05,
+          "nonfinite_rows": 0,
+          "reference_dtype": "float32"
+        },
+        "sigmasq": {
+          "candidate_dtype": "float32",
+          "difference_rule": "stored values; no renormalization",
+          "exact": false,
+          "matched_rows": 3674,
+          "maximum_absolute_difference": 0.5,
+          "maximum_relative_difference": 1.1898736044864899e-07,
+          "maximum_relative_difference_percent": 1.18987360448649e-05,
+          "nonfinite_rows": 0,
+          "reference_dtype": "float32"
+        },
+        "snr": {
+          "candidate_dtype": "float32",
+          "difference_rule": "stored values; no renormalization",
+          "exact": false,
+          "matched_rows": 3674,
+          "maximum_absolute_difference": 0.00047779083251953125,
+          "maximum_relative_difference": 8.217674890082447e-05,
+          "maximum_relative_difference_percent": 0.008217674890082446,
+          "nonfinite_rows": 0,
+          "reference_dtype": "float32"
+        }
+      },
+      "identity": [
+        "template_hash",
+        "sample-grid end_time"
+      ],
+      "matched_triggers": 3674,
+      "other_numerical_stages": "default JAX; original LAL waveforms in both",
+      "output_sha256": {
+        "candidate": "92ccd3c8884619ba02d64a14bf978e175fbba63e6f5d180b27ebe4c1282b4614",
+        "reference": "795b365f9b32a45c86e8809423826f0b17f6819240ee3ba84bf910af40d168f8"
+      },
+      "reference": "current JAX search with original inline_linear decompression",
+      "reference_duplicate_identities": 0,
+      "reference_off_grid_triggers": 0,
+      "reference_only_triggers": 1,
+      "reference_triggers": 3675,
+      "sample_origin_gps": 1187007048,
+      "sample_rate_hz": 2048,
+      "tolerance_gate_evaluated": false
+    },
+    "default_trigger_count": 3674,
+    "full_bank_all_original_attempt": {
+      "batch_size": 64,
+      "full_bank_agreement_claim": false,
+      "observed_progress_at_stop": "first batch, segment 2 of 5, after approximately 11 minutes",
+      "reason": "Use a separately disclosed bounded two-template control for composed reference agreement; incomplete attempt does not pass validation",
+      "result_available": false,
+      "status": "incomplete_stopped",
+      "templates": 1536
+    },
+    "pristine_cpu_comparison": {
+      "candidate": "current JAX default numerical stages; device_linear decompression",
+      "candidate_duplicate_identities": 0,
+      "candidate_off_grid_triggers": 0,
+      "candidate_only_triggers": 0,
+      "candidate_triggers": 3674,
+      "complete_scientific_qualification": false,
+      "exact_matched_fields": [
+        "bank_chisq",
+        "bank_chisq_dof",
+        "chisq_dof",
+        "cont_chisq",
+        "cont_chisq_dof",
+        "end_time",
+        "sg_chisq",
+        "template_duration",
+        "template_hash"
+      ],
+      "fields": {
+        "chisq": {
+          "candidate_dtype": "float32",
+          "difference_rule": "stored values; no renormalization",
+          "exact": false,
+          "matched_rows": 3674,
+          "maximum_absolute_difference": 0.2530632019042969,
+          "maximum_relative_difference": 0.009192256079551766,
+          "maximum_relative_difference_percent": 0.9192256079551766,
+          "nonfinite_rows": 0,
+          "reference_dtype": "float32"
+        },
+        "coa_phase": {
+          "candidate_dtype": "float32",
+          "difference_rule": "circular radians",
+          "exact": false,
+          "matched_rows": 3674,
+          "maximum_absolute_difference": 7.915496826171875e-05,
+          "nonfinite_rows": 0,
+          "reference_dtype": "float32"
+        },
+        "sigmasq": {
+          "candidate_dtype": "float32",
+          "difference_rule": "stored values; no renormalization",
+          "exact": false,
+          "matched_rows": 3674,
+          "maximum_absolute_difference": 1.0,
+          "maximum_relative_difference": 1.9632759418693627e-07,
+          "maximum_relative_difference_percent": 1.9632759418693628e-05,
+          "nonfinite_rows": 0,
+          "reference_dtype": "float32"
+        },
+        "snr": {
+          "candidate_dtype": "float32",
+          "difference_rule": "stored values; no renormalization",
+          "exact": false,
+          "matched_rows": 3674,
+          "maximum_absolute_difference": 0.00047588348388671875,
+          "maximum_relative_difference": 8.184867115647907e-05,
+          "maximum_relative_difference_percent": 0.008184867115647908,
+          "nonfinite_rows": 0,
+          "reference_dtype": "float32"
+        }
+      },
+      "identity": [
+        "template_hash",
+        "sample-grid end_time"
+      ],
+      "matched_triggers": 3674,
+      "output_sha256": {
+        "candidate": "92ccd3c8884619ba02d64a14bf978e175fbba63e6f5d180b27ebe4c1282b4614",
+        "reference": "cd9d25412ddbd702c4af42ebdd41c9b03b30310d3ffa8d3a52ab51ee47c2410f"
+      },
+      "reference": "native original PyCBC CPU; NumPy FFT and inline_linear decompression",
+      "reference_duplicate_identities": 0,
+      "reference_off_grid_triggers": 0,
+      "reference_only_triggers": 2,
+      "reference_triggers": 3676,
+      "sample_origin_gps": 1187007048,
+      "sample_rate_hz": 2048,
+      "science_arguments_match_except_explicit_execution_routes": true,
+      "tolerance_gate_evaluated": false
+    },
+    "repeat_and_profile_exact": {
+      "profile": {
+        "attribute_exclusions": [],
+        "attributes": 0,
+        "dataset_exclusions": [
+          "H1/search/filter_rate_per_core",
+          "H1/search/run_time",
+          "H1/search/setup_time_fraction",
+          "H1/search/templates_per_core"
+        ],
+        "datasets": 18,
+        "failures": [],
+        "file_hashes": {
+          "output": {
+            "candidate": "9accfa9ffe0b6bb7bcf6ca1903d9b05c9f8038f8b904821e8145b81110b9ca1f",
+            "reference": "92ccd3c8884619ba02d64a14bf978e175fbba63e6f5d180b27ebe4c1282b4614"
+          }
+        },
+        "files": 1,
+        "passed": true,
+        "storage_layout_compared": false
+      },
+      "sample-2": {
+        "attribute_exclusions": [],
+        "attributes": 0,
+        "dataset_exclusions": [
+          "H1/search/filter_rate_per_core",
+          "H1/search/run_time",
+          "H1/search/setup_time_fraction",
+          "H1/search/templates_per_core"
+        ],
+        "datasets": 18,
+        "failures": [],
+        "file_hashes": {
+          "output": {
+            "candidate": "8e7101330e681d70f5d2240cd7fbf2ea63f09a28eb353c336f8c553518e019d8",
+            "reference": "92ccd3c8884619ba02d64a14bf978e175fbba63e6f5d180b27ebe4c1282b4614"
+          }
+        },
+        "files": 1,
+        "passed": true,
+        "storage_layout_compared": false
+      },
+      "sample-3": {
+        "attribute_exclusions": [],
+        "attributes": 0,
+        "dataset_exclusions": [
+          "H1/search/filter_rate_per_core",
+          "H1/search/run_time",
+          "H1/search/setup_time_fraction",
+          "H1/search/templates_per_core"
+        ],
+        "datasets": 18,
+        "failures": [],
+        "file_hashes": {
+          "output": {
+            "candidate": "e8a7ca5ca5b9107b7fbac06b17e79f24bd8c18592920b8e12a9ac6d16ed4ead0",
+            "reference": "92ccd3c8884619ba02d64a14bf978e175fbba63e6f5d180b27ebe4c1282b4614"
+          }
+        },
+        "files": 1,
+        "passed": true,
+        "storage_layout_compared": false
+      }
+    },
+    "workload": {
+      "approximant": "IMRPhenomD",
+      "bank_sha256": "4c56fde141e3ece6ab39802e94fbe482c6ccf7d390cc503fa613327107603635",
+      "batch_size": 64,
+      "completed_template_detector_seconds": 2924544,
+      "decompression_default": "device_linear",
+      "distinct_templates": 1536,
+      "fft_segment_seconds": 512,
+      "fft_segments": 5,
+      "frame_sha256": "580e238054474fd09be900c47217bbcd0497ab84d1756f886647e934352e4865",
+      "observed_signal_dtype": "complex64",
+      "sample_rate_hz": 2048,
+      "templates": 1536,
+      "valid_H1_seconds": 1904
+    }
+  },
+  "live": {
+    "compilation_free_steady_state_timing_qualified": false,
+    "pristine_cpu_complete_search_comparison_available": false,
+    "repeat_and_profile_exact": {
+      "profile": {
+        "attribute_exclusions": [],
+        "attributes": 203,
+        "dataset_exclusions": [],
+        "datasets": 1067,
+        "failures": [],
+        "file_hashes": {
+          "H1L1-Live-1187007076.069336-8.hdf": {
+            "candidate": "b18be5a3661a13aeb052a47c5df146f46c9840361fa2f28110905f630ba27a48",
+            "reference": "57d03077737684dfe4cf875f367835a56a733542a7bd0d1a81973a4d6b1835d4"
+          },
+          "H1L1-Live-1187007084.069336-8.hdf": {
+            "candidate": "b18be5a3661a13aeb052a47c5df146f46c9840361fa2f28110905f630ba27a48",
+            "reference": "57d03077737684dfe4cf875f367835a56a733542a7bd0d1a81973a4d6b1835d4"
+          },
+          "H1L1-Live-1187007092.069336-8.hdf": {
+            "candidate": "b18be5a3661a13aeb052a47c5df146f46c9840361fa2f28110905f630ba27a48",
+            "reference": "57d03077737684dfe4cf875f367835a56a733542a7bd0d1a81973a4d6b1835d4"
+          },
+          "H1L1-Live-1187007100.069336-8.hdf": {
+            "candidate": "b18be5a3661a13aeb052a47c5df146f46c9840361fa2f28110905f630ba27a48",
+            "reference": "57d03077737684dfe4cf875f367835a56a733542a7bd0d1a81973a4d6b1835d4"
+          },
+          "H1L1-Live-1187007108.069336-8.hdf": {
+            "candidate": "b18be5a3661a13aeb052a47c5df146f46c9840361fa2f28110905f630ba27a48",
+            "reference": "57d03077737684dfe4cf875f367835a56a733542a7bd0d1a81973a4d6b1835d4"
+          },
+          "H1L1-Live-1187007116.069336-8.hdf": {
+            "candidate": "b18be5a3661a13aeb052a47c5df146f46c9840361fa2f28110905f630ba27a48",
+            "reference": "57d03077737684dfe4cf875f367835a56a733542a7bd0d1a81973a4d6b1835d4"
+          },
+          "H1L1-Live-1187007124.069336-8.hdf": {
+            "candidate": "b18be5a3661a13aeb052a47c5df146f46c9840361fa2f28110905f630ba27a48",
+            "reference": "57d03077737684dfe4cf875f367835a56a733542a7bd0d1a81973a4d6b1835d4"
+          },
+          "H1L1-Live-1187007132.069336-8.hdf": {
+            "candidate": "9c7f0e7173e57cb66c2d46db22bcb48512bdbb4c68cb5599f4f65bde3ef7cf24",
+            "reference": "eb6663caeb9f0c3529f6e5080be488e794183d0973cd00a58a0493e06c153858"
+          },
+          "H1L1-Live-1187007140.069336-8.hdf": {
+            "candidate": "d96398441438cb9cb5223a8e3d8387cc3da7902a61c5af6c5651efd9b15430bd",
+            "reference": "679eebb0855869865560c85384ac4cdd79628557929e93d471e73577c90bdbfb"
+          },
+          "H1L1-Live-1187007148.069336-8.hdf": {
+            "candidate": "01b36c0ce7f1d2502953db3897bc82b255d154b35c0d2d4affe2a441e9b5d4d8",
+            "reference": "5abae0b5c168108c9088f703dea6e3b2a2c9946a6246e288b491541e0a069c53"
+          },
+          "H1L1-Live-1187007156.069336-8.hdf": {
+            "candidate": "a3b9a2fc9185d52f7cbb9ed443d6753b345695193cb84dff97253a3770ff2f79",
+            "reference": "c71e8a0cde899b7a5163b907c4dd150fb2c1d1d2db96c46a1b1e4a39a7093d93"
+          },
+          "H1L1-Live-1187007164.069336-8.hdf": {
+            "candidate": "5dea004937e79b911699df547ec4503653583f8d98e19b08fd3c1651861c6c5e",
+            "reference": "ace2b2c6905dc0856d4c0b56fc55ef2ddc965e5026e5334c456568f088b30192"
+          },
+          "H1L1-Live-1187007172.069336-8.hdf": {
+            "candidate": "44d8440ece01f8517706080302722c9546b438cfd773042be45b2a9b69b95d70",
+            "reference": "5a110ab7484305c8badea67739888b864b0df80542c5942a21dec1803c952632"
+          },
+          "H1L1-Live-1187007180.069336-8.hdf": {
+            "candidate": "5e4c5345a9cb8915f9d053cff63cbc81b38d08aebf1f909eb3a941355e6aa57e",
+            "reference": "503f4b2895a6dd81575812fe0074806aa759ef15944f8697753986efe59c2453"
+          },
+          "H1L1-Live-1187007188.069336-8.hdf": {
+            "candidate": "ebbfba97a40bd5cb105565cf4daadd3a9674fb8f2c7fd0489320f0af5df109bf",
+            "reference": "361879aa832a35462a77f90e8f000aea64a1bdae71c6ed31cbd4ce0596275fbe"
+          },
+          "H1L1-Live-1187007196.069336-8.hdf": {
+            "candidate": "a6fdbfc75707b22123c740e5f355530a262834e65cf5cf61a48e6216ead7a7d1",
+            "reference": "5dbc93d173dca48651c207dcaa53ec606fedb586b65d15f03422af1e53211a4a"
+          },
+          "H1L1-Live-1187007204.069336-8.hdf": {
+            "candidate": "e6f423d1fa5896ed75e3d3ccef1ec2137d4ff184a793e02c956debf0f57fd409",
+            "reference": "9515d9495830d9be027911e6a53f358a02b599e748857646cab0e695c8601608"
+          },
+          "H1L1-Live-1187007212.069336-8.hdf": {
+            "candidate": "ea5a9eb26a5315156e576ee8e5847753727e28b11f90b585ff0a26831573badd",
+            "reference": "06a497af63c3fbfbb0b1369b1a8397b1cb56d12bacb7d5b38e618bffc376b52e"
+          },
+          "H1L1-Live-1187007220.069336-8.hdf": {
+            "candidate": "9e4055f87377adde9d8593efc9d364365139b4d36e5a2789b37008cd337d6130",
+            "reference": "f3272bf27cb5049f92732c18d4675b8b5fa5f638d50019113f42c823586798f6"
+          },
+          "H1L1-Live-1187007228.069336-8.hdf": {
+            "candidate": "f756de746c3b86a55c608cd394f0526e24710c8f2540ede42bc439545432d29c",
+            "reference": "78648cd205b73a489483be37219d2b335f9e1a4c0bc02fe1fc178c2a1e005ae2"
+          },
+          "H1L1-Live-1187007236.069336-8.hdf": {
+            "candidate": "74ad1731f58579b4b411c5a5648f19baecf40b4ad6ae2922a149ba893c3af55d",
+            "reference": "845aa56555c9e9e0b4b56694fcba0e91ed18fc1e33f269d1a352ed5ec63b40d5"
+          },
+          "H1L1-Live-1187007244.069336-8.hdf": {
+            "candidate": "49aabaeb779cc5fa986be83e48106d8b6a5d8b2a14a3914c3de73a6abe72fb55",
+            "reference": "1583df5f55c1e1f1f9520bad2d0bd77ca995e548c877db13fd2423d8594bb7c3"
+          },
+          "H1L1-Live-1187007252.069336-8.hdf": {
+            "candidate": "96a5258568eba9af49981a98df1f60f70c57de79a4775f9d4a8f959e57a2b76e",
+            "reference": "2a9c76cecdf2b65fa1fcec887667c13ea587f952bf09ba482b11e8299398499d"
+          },
+          "H1L1-Live-1187007260.069336-8.hdf": {
+            "candidate": "0bd7a5f4c7be70914b83c7a05ed0fe46c1ce5fa70fb59a3e4fe40ade67c1d019",
+            "reference": "25f43d4fe13cc73b6f7da4e1b8241580a4dff6a47fe1fcf5545a4881bcfe8e40"
+          },
+          "H1L1-Live-1187007268.069336-8.hdf": {
+            "candidate": "d57bd9d2f05199de676aa59bbb395f18cd61972291a8db3680a1f40be37ee52e",
+            "reference": "e6b448626c46ffec1b8ae6e2948f0371a0a677a8474e4055da61d566937fab62"
+          },
+          "H1L1-Live-1187007276.069336-8.hdf": {
+            "candidate": "fe8c766b99e28fda5c3fb72ce3b98d56f2a2eeb4a7edf59611a1f3fb85136e58",
+            "reference": "461f31a53f7a2a4c3ee7bba0158b7a540c73b56d8908577e1fdb8efd744f3a9d"
+          },
+          "H1L1-Live-1187007284.069336-8.hdf": {
+            "candidate": "a7acc9f6239fcd1d1f81ff33d71f61ad41156a50ecdb004334052bf0982930c6",
+            "reference": "b07646a1340253bbaa03e0351926d43d01598df25806cb63e6eeb4c09b29f26d"
+          },
+          "H1L1-Live-1187007292.069336-8.hdf": {
+            "candidate": "dfdc3ed13704434ba7168710c526d832e8748e478033fffad123dfd158f5b449",
+            "reference": "873bb8c759400e2a39f3722d29b28206ae29025cea30348040726a2a0e32aea2"
+          },
+          "H1L1-Live-1187007300.069336-8.hdf": {
+            "candidate": "8b2ebcbac604b87c7c069b2dd4fe2a240ea649793c68f545a71f8511c93e7277",
+            "reference": "948df26c995392f2fe22c46f5238b7ad641bef935054c9ac3908f43c2ab27a74"
+          },
+          "H1L1-Live-1187007308.069336-8.hdf": {
+            "candidate": "ac0dd752cf0825753bec5e026aff096d51cb1050a5dfe8bc9a5270aecc10ecfc",
+            "reference": "23dc5bd3ccaba3773fa0e324ff5235849f0fd90ccd99e2a0983afe0daa691796"
+          },
+          "H1L1-Live-1187007316.069336-8.hdf": {
+            "candidate": "bfab7f3cd89b1dc06770ae7871bf638108112893958723bd78c58184d66a938f",
+            "reference": "d0d760dab2bceb244e19b5414e0c4ed935f32c378843c980e306f0918d1f415e"
+          },
+          "H1L1-Live-1187007324.069336-8.hdf": {
+            "candidate": "8d0837a20653ca4b0847b972eab2a3903ebb34239526e8490c02405c0baea4f4",
+            "reference": "8f3566e496ba4f8c7e390127bd0ee570160635de0487a925d5242e6b1534bd29"
+          },
+          "H1L1-Live-1187007332.069336-8.hdf": {
+            "candidate": "1d1dee4915b3e5d84ad765be0ca2eeba569fd250c6a37c75eb778d36a9cbfa97",
+            "reference": "66023902ecf8ffd924ddc5b418c302a16236f00451313a799b6c87dd75bfa2bb"
+          }
+        },
+        "files": 33,
+        "passed": true,
+        "storage_layout_compared": false
+      },
+      "sample-02": {
+        "attribute_exclusions": [],
+        "attributes": 203,
+        "dataset_exclusions": [],
+        "datasets": 1067,
+        "failures": [],
+        "file_hashes": {
+          "H1L1-Live-1187007076.069336-8.hdf": {
+            "candidate": "aad92f172135f3f67808353edacf68a981000a020e757a3877bf047b25302ce6",
+            "reference": "57d03077737684dfe4cf875f367835a56a733542a7bd0d1a81973a4d6b1835d4"
+          },
+          "H1L1-Live-1187007084.069336-8.hdf": {
+            "candidate": "aad92f172135f3f67808353edacf68a981000a020e757a3877bf047b25302ce6",
+            "reference": "57d03077737684dfe4cf875f367835a56a733542a7bd0d1a81973a4d6b1835d4"
+          },
+          "H1L1-Live-1187007092.069336-8.hdf": {
+            "candidate": "aad92f172135f3f67808353edacf68a981000a020e757a3877bf047b25302ce6",
+            "reference": "57d03077737684dfe4cf875f367835a56a733542a7bd0d1a81973a4d6b1835d4"
+          },
+          "H1L1-Live-1187007100.069336-8.hdf": {
+            "candidate": "aad92f172135f3f67808353edacf68a981000a020e757a3877bf047b25302ce6",
+            "reference": "57d03077737684dfe4cf875f367835a56a733542a7bd0d1a81973a4d6b1835d4"
+          },
+          "H1L1-Live-1187007108.069336-8.hdf": {
+            "candidate": "aad92f172135f3f67808353edacf68a981000a020e757a3877bf047b25302ce6",
+            "reference": "57d03077737684dfe4cf875f367835a56a733542a7bd0d1a81973a4d6b1835d4"
+          },
+          "H1L1-Live-1187007116.069336-8.hdf": {
+            "candidate": "aad92f172135f3f67808353edacf68a981000a020e757a3877bf047b25302ce6",
+            "reference": "57d03077737684dfe4cf875f367835a56a733542a7bd0d1a81973a4d6b1835d4"
+          },
+          "H1L1-Live-1187007124.069336-8.hdf": {
+            "candidate": "aad92f172135f3f67808353edacf68a981000a020e757a3877bf047b25302ce6",
+            "reference": "57d03077737684dfe4cf875f367835a56a733542a7bd0d1a81973a4d6b1835d4"
+          },
+          "H1L1-Live-1187007132.069336-8.hdf": {
+            "candidate": "e6dcbd44f88bc362b85f546eaf97772b38114d1e973c8ffed77f08ffdf477c49",
+            "reference": "eb6663caeb9f0c3529f6e5080be488e794183d0973cd00a58a0493e06c153858"
+          },
+          "H1L1-Live-1187007140.069336-8.hdf": {
+            "candidate": "479099faed46787f9f5c300cf721e6cb0c9cf7e21e3cee98f9c09b40b87c4899",
+            "reference": "679eebb0855869865560c85384ac4cdd79628557929e93d471e73577c90bdbfb"
+          },
+          "H1L1-Live-1187007148.069336-8.hdf": {
+            "candidate": "90eb3338e253b41cf94da99fbc10cd509b92c3b42a48c89b17285c6b145eba1b",
+            "reference": "5abae0b5c168108c9088f703dea6e3b2a2c9946a6246e288b491541e0a069c53"
+          },
+          "H1L1-Live-1187007156.069336-8.hdf": {
+            "candidate": "64bf79cd7befd73df5a1815b5a9fab1af800587ac8e3e18c963ef59f854ba332",
+            "reference": "c71e8a0cde899b7a5163b907c4dd150fb2c1d1d2db96c46a1b1e4a39a7093d93"
+          },
+          "H1L1-Live-1187007164.069336-8.hdf": {
+            "candidate": "e7528ba94a88b15b850a714ce4e66c94dd33b6569e1b85c8b12c3ec627e06df6",
+            "reference": "ace2b2c6905dc0856d4c0b56fc55ef2ddc965e5026e5334c456568f088b30192"
+          },
+          "H1L1-Live-1187007172.069336-8.hdf": {
+            "candidate": "38879454a9d926f3bc074a95c6a48fbafcdee9418d03007cd932f73b6448def7",
+            "reference": "5a110ab7484305c8badea67739888b864b0df80542c5942a21dec1803c952632"
+          },
+          "H1L1-Live-1187007180.069336-8.hdf": {
+            "candidate": "6d7f818f65c4530c9c07f5d67f905b1b6145f749b262df363fc5f8fa309c3df2",
+            "reference": "503f4b2895a6dd81575812fe0074806aa759ef15944f8697753986efe59c2453"
+          },
+          "H1L1-Live-1187007188.069336-8.hdf": {
+            "candidate": "c8f16d7053a64ac882ae43637623a5a31a7f3594376ff1f3dcdac946cff6e81a",
+            "reference": "361879aa832a35462a77f90e8f000aea64a1bdae71c6ed31cbd4ce0596275fbe"
+          },
+          "H1L1-Live-1187007196.069336-8.hdf": {
+            "candidate": "5e8012f9deca62462d565471b4365d4644092eab762ea5515d5aeac0a96b7e8c",
+            "reference": "5dbc93d173dca48651c207dcaa53ec606fedb586b65d15f03422af1e53211a4a"
+          },
+          "H1L1-Live-1187007204.069336-8.hdf": {
+            "candidate": "5aa177d36a3c29e93b2fc2569642207211a95c0e188416c7715e266683c3b617",
+            "reference": "9515d9495830d9be027911e6a53f358a02b599e748857646cab0e695c8601608"
+          },
+          "H1L1-Live-1187007212.069336-8.hdf": {
+            "candidate": "1aa3648cf894d79eb477a50d9c43bd22897d0588ff11724289010015fe5674bf",
+            "reference": "06a497af63c3fbfbb0b1369b1a8397b1cb56d12bacb7d5b38e618bffc376b52e"
+          },
+          "H1L1-Live-1187007220.069336-8.hdf": {
+            "candidate": "374fea521e21c6ef2cc60cf4d834ba77cc4b99f9902f388bedbf70457cb46e0c",
+            "reference": "f3272bf27cb5049f92732c18d4675b8b5fa5f638d50019113f42c823586798f6"
+          },
+          "H1L1-Live-1187007228.069336-8.hdf": {
+            "candidate": "b3c397513ffd5d79a02b386585667101e2ad9117770bd7230e59976de2bf6d37",
+            "reference": "78648cd205b73a489483be37219d2b335f9e1a4c0bc02fe1fc178c2a1e005ae2"
+          },
+          "H1L1-Live-1187007236.069336-8.hdf": {
+            "candidate": "00f10ab0eee3187afbc02b00003c078ef266d03b3371273b6363713f2d884e2c",
+            "reference": "845aa56555c9e9e0b4b56694fcba0e91ed18fc1e33f269d1a352ed5ec63b40d5"
+          },
+          "H1L1-Live-1187007244.069336-8.hdf": {
+            "candidate": "2eeffbb02f5db856ac72e9abd8b7a0f07271909573dffb076df2362e97e10707",
+            "reference": "1583df5f55c1e1f1f9520bad2d0bd77ca995e548c877db13fd2423d8594bb7c3"
+          },
+          "H1L1-Live-1187007252.069336-8.hdf": {
+            "candidate": "15c45630ef5f72d75178769357b7b74a3ac8d515939c2d53d9d72d176a97b5d6",
+            "reference": "2a9c76cecdf2b65fa1fcec887667c13ea587f952bf09ba482b11e8299398499d"
+          },
+          "H1L1-Live-1187007260.069336-8.hdf": {
+            "candidate": "b0a58105ac7d10c94e2c984acadc5225e55061344b05d0df3f0d9d02d6096a25",
+            "reference": "25f43d4fe13cc73b6f7da4e1b8241580a4dff6a47fe1fcf5545a4881bcfe8e40"
+          },
+          "H1L1-Live-1187007268.069336-8.hdf": {
+            "candidate": "adc7911fc837544b49eff368344190e7b1494c3890027c7c32b3ce77df868fc7",
+            "reference": "e6b448626c46ffec1b8ae6e2948f0371a0a677a8474e4055da61d566937fab62"
+          },
+          "H1L1-Live-1187007276.069336-8.hdf": {
+            "candidate": "2ab22ad6bfaa6f0036ba8825afcc382b346594c1b306a155efe1c424a7980f17",
+            "reference": "461f31a53f7a2a4c3ee7bba0158b7a540c73b56d8908577e1fdb8efd744f3a9d"
+          },
+          "H1L1-Live-1187007284.069336-8.hdf": {
+            "candidate": "6b394e43c9be06061f8888f9ee5ff8e047dcfa026d0a101c5779f9af16cc8a5f",
+            "reference": "b07646a1340253bbaa03e0351926d43d01598df25806cb63e6eeb4c09b29f26d"
+          },
+          "H1L1-Live-1187007292.069336-8.hdf": {
+            "candidate": "f4d98d79d35082c3068f2f32e41e79da10ea913b1ab2c57e73de2cc4fa07d876",
+            "reference": "873bb8c759400e2a39f3722d29b28206ae29025cea30348040726a2a0e32aea2"
+          },
+          "H1L1-Live-1187007300.069336-8.hdf": {
+            "candidate": "7e6b9f688840701e16a691d9b9009fdb667f935994b43c0acd6589520b9fcf6c",
+            "reference": "948df26c995392f2fe22c46f5238b7ad641bef935054c9ac3908f43c2ab27a74"
+          },
+          "H1L1-Live-1187007308.069336-8.hdf": {
+            "candidate": "49105b99a7fb29069753c89f18aed62b8d23d9208978c2f5a4d51184b899cf2e",
+            "reference": "23dc5bd3ccaba3773fa0e324ff5235849f0fd90ccd99e2a0983afe0daa691796"
+          },
+          "H1L1-Live-1187007316.069336-8.hdf": {
+            "candidate": "6d2544f802d8c87bb42444d3e7e1a8790a890be93cdd13077c89066224dc2e79",
+            "reference": "d0d760dab2bceb244e19b5414e0c4ed935f32c378843c980e306f0918d1f415e"
+          },
+          "H1L1-Live-1187007324.069336-8.hdf": {
+            "candidate": "202ae52c3da114f3ef7aa85712646d589f773342f9cd7a5d0e6261e1aa6baf60",
+            "reference": "8f3566e496ba4f8c7e390127bd0ee570160635de0487a925d5242e6b1534bd29"
+          },
+          "H1L1-Live-1187007332.069336-8.hdf": {
+            "candidate": "68600a34eff39d1af6b857a34c89ca537cf24b4ce148266cb3f3fe338cdff356",
+            "reference": "66023902ecf8ffd924ddc5b418c302a16236f00451313a799b6c87dd75bfa2bb"
+          }
+        },
+        "files": 33,
+        "passed": true,
+        "storage_layout_compared": false
+      },
+      "sample-03": {
+        "attribute_exclusions": [],
+        "attributes": 203,
+        "dataset_exclusions": [],
+        "datasets": 1067,
+        "failures": [
+          {
+            "candidate_dtype": "object",
+            "candidate_shape": [],
+            "file": "H1L1-Live-1187007132.069336-8.hdf",
+            "path": "foreground/type",
+            "reason": "ordered dtype, shape or value bits differ",
+            "reference_dtype": "object",
+            "reference_shape": []
+          }
+        ],
+        "file_hashes": {
+          "H1L1-Live-1187007076.069336-8.hdf": {
+            "candidate": "d32d73fd262c495b8d9ad9cb919461d2c4d856274f5e939992f0a09bb55b98d9",
+            "reference": "57d03077737684dfe4cf875f367835a56a733542a7bd0d1a81973a4d6b1835d4"
+          },
+          "H1L1-Live-1187007084.069336-8.hdf": {
+            "candidate": "d32d73fd262c495b8d9ad9cb919461d2c4d856274f5e939992f0a09bb55b98d9",
+            "reference": "57d03077737684dfe4cf875f367835a56a733542a7bd0d1a81973a4d6b1835d4"
+          },
+          "H1L1-Live-1187007092.069336-8.hdf": {
+            "candidate": "d32d73fd262c495b8d9ad9cb919461d2c4d856274f5e939992f0a09bb55b98d9",
+            "reference": "57d03077737684dfe4cf875f367835a56a733542a7bd0d1a81973a4d6b1835d4"
+          },
+          "H1L1-Live-1187007100.069336-8.hdf": {
+            "candidate": "d32d73fd262c495b8d9ad9cb919461d2c4d856274f5e939992f0a09bb55b98d9",
+            "reference": "57d03077737684dfe4cf875f367835a56a733542a7bd0d1a81973a4d6b1835d4"
+          },
+          "H1L1-Live-1187007108.069336-8.hdf": {
+            "candidate": "d32d73fd262c495b8d9ad9cb919461d2c4d856274f5e939992f0a09bb55b98d9",
+            "reference": "57d03077737684dfe4cf875f367835a56a733542a7bd0d1a81973a4d6b1835d4"
+          },
+          "H1L1-Live-1187007116.069336-8.hdf": {
+            "candidate": "d32d73fd262c495b8d9ad9cb919461d2c4d856274f5e939992f0a09bb55b98d9",
+            "reference": "57d03077737684dfe4cf875f367835a56a733542a7bd0d1a81973a4d6b1835d4"
+          },
+          "H1L1-Live-1187007124.069336-8.hdf": {
+            "candidate": "d32d73fd262c495b8d9ad9cb919461d2c4d856274f5e939992f0a09bb55b98d9",
+            "reference": "57d03077737684dfe4cf875f367835a56a733542a7bd0d1a81973a4d6b1835d4"
+          },
+          "H1L1-Live-1187007132.069336-8.hdf": {
+            "candidate": "3648e23fc8ce1b27aa17ef7a017f80077b8bd1776d57489f144a07ba7c238150",
+            "reference": "eb6663caeb9f0c3529f6e5080be488e794183d0973cd00a58a0493e06c153858"
+          },
+          "H1L1-Live-1187007140.069336-8.hdf": {
+            "candidate": "f812f6845983c37a1b4b43fba48dba72a4a4ae634514c1e016cad019ae235812",
+            "reference": "679eebb0855869865560c85384ac4cdd79628557929e93d471e73577c90bdbfb"
+          },
+          "H1L1-Live-1187007148.069336-8.hdf": {
+            "candidate": "d795df6c49c79863abfbabe2f54b86752b2beba794146a5e3ffcffbb81249187",
+            "reference": "5abae0b5c168108c9088f703dea6e3b2a2c9946a6246e288b491541e0a069c53"
+          },
+          "H1L1-Live-1187007156.069336-8.hdf": {
+            "candidate": "c12be698144acd55ac2b70d03ba48885a41aa982b817b29629e907950e401025",
+            "reference": "c71e8a0cde899b7a5163b907c4dd150fb2c1d1d2db96c46a1b1e4a39a7093d93"
+          },
+          "H1L1-Live-1187007164.069336-8.hdf": {
+            "candidate": "6f3a45ddba4842046851d0291c2b881a1ddb926b63f1be9a34acafdefb5b04ad",
+            "reference": "ace2b2c6905dc0856d4c0b56fc55ef2ddc965e5026e5334c456568f088b30192"
+          },
+          "H1L1-Live-1187007172.069336-8.hdf": {
+            "candidate": "8a6c136bc1918b40db91ab35bcea1e257e6f0ee3687dd421d4302ac4613dcef7",
+            "reference": "5a110ab7484305c8badea67739888b864b0df80542c5942a21dec1803c952632"
+          },
+          "H1L1-Live-1187007180.069336-8.hdf": {
+            "candidate": "f433a391b6e946d1b5bb03d2f4e99be27593f7b1301a642f22d0dd747dd9365b",
+            "reference": "503f4b2895a6dd81575812fe0074806aa759ef15944f8697753986efe59c2453"
+          },
+          "H1L1-Live-1187007188.069336-8.hdf": {
+            "candidate": "2b0a94b32a48c2290046a62b8b8a77a2153faf938365f11544f02c3245655084",
+            "reference": "361879aa832a35462a77f90e8f000aea64a1bdae71c6ed31cbd4ce0596275fbe"
+          },
+          "H1L1-Live-1187007196.069336-8.hdf": {
+            "candidate": "016de023305e955f7f0d175dc0f1bbc2f1b784884d718ea35fe3f8153070f65f",
+            "reference": "5dbc93d173dca48651c207dcaa53ec606fedb586b65d15f03422af1e53211a4a"
+          },
+          "H1L1-Live-1187007204.069336-8.hdf": {
+            "candidate": "16715865856451100790c6946fe3e7cf7e14c00bfd96a77d7796c2f511aa4b49",
+            "reference": "9515d9495830d9be027911e6a53f358a02b599e748857646cab0e695c8601608"
+          },
+          "H1L1-Live-1187007212.069336-8.hdf": {
+            "candidate": "6d6aee07907ee0969699d37e65b43dbe10cf10cf7862dd0cc3a9b094c715d062",
+            "reference": "06a497af63c3fbfbb0b1369b1a8397b1cb56d12bacb7d5b38e618bffc376b52e"
+          },
+          "H1L1-Live-1187007220.069336-8.hdf": {
+            "candidate": "1147b5756426d6ef8889258c4fe7cc5b6dd081c72483abd6ff8d01180d3b8858",
+            "reference": "f3272bf27cb5049f92732c18d4675b8b5fa5f638d50019113f42c823586798f6"
+          },
+          "H1L1-Live-1187007228.069336-8.hdf": {
+            "candidate": "7c7ee4d8605fea7c64e38d3f094d9c4eddbf831fa2f31adaf0c0384831169731",
+            "reference": "78648cd205b73a489483be37219d2b335f9e1a4c0bc02fe1fc178c2a1e005ae2"
+          },
+          "H1L1-Live-1187007236.069336-8.hdf": {
+            "candidate": "0dbfccadb6d5cb7720346a20aa84c0a7022fea794f3443309067fe69da79630c",
+            "reference": "845aa56555c9e9e0b4b56694fcba0e91ed18fc1e33f269d1a352ed5ec63b40d5"
+          },
+          "H1L1-Live-1187007244.069336-8.hdf": {
+            "candidate": "301e20d68c89c9512010206b0ea8799ddc2791f53e6c3dd4dfe93e171245f3ec",
+            "reference": "1583df5f55c1e1f1f9520bad2d0bd77ca995e548c877db13fd2423d8594bb7c3"
+          },
+          "H1L1-Live-1187007252.069336-8.hdf": {
+            "candidate": "d2ad86d480bef2f04ebf825cd906ee4234a59048f9feaa3308732e9ef1d5c1e4",
+            "reference": "2a9c76cecdf2b65fa1fcec887667c13ea587f952bf09ba482b11e8299398499d"
+          },
+          "H1L1-Live-1187007260.069336-8.hdf": {
+            "candidate": "21ecb6d8a2084a03dffcce4a854cf06441a76aba39c95d1a2c41a79d4e6515c0",
+            "reference": "25f43d4fe13cc73b6f7da4e1b8241580a4dff6a47fe1fcf5545a4881bcfe8e40"
+          },
+          "H1L1-Live-1187007268.069336-8.hdf": {
+            "candidate": "abc0dd756bf13189a05bc103d374b8fc12154f93bbe827edf9409a9f1a914ba4",
+            "reference": "e6b448626c46ffec1b8ae6e2948f0371a0a677a8474e4055da61d566937fab62"
+          },
+          "H1L1-Live-1187007276.069336-8.hdf": {
+            "candidate": "dbad77f99fa4d8c897cf3aca5f18012191856151e1a49e0a41da88ed333b2bf8",
+            "reference": "461f31a53f7a2a4c3ee7bba0158b7a540c73b56d8908577e1fdb8efd744f3a9d"
+          },
+          "H1L1-Live-1187007284.069336-8.hdf": {
+            "candidate": "881a543698a442c13b88b0515d64815e9f23606f9be2b73cdb5ca6e91666e73f",
+            "reference": "b07646a1340253bbaa03e0351926d43d01598df25806cb63e6eeb4c09b29f26d"
+          },
+          "H1L1-Live-1187007292.069336-8.hdf": {
+            "candidate": "e95be41d9ff91bc6186f2d160e9a1886054bc9ebb2df15651a7c9e23f2912a17",
+            "reference": "873bb8c759400e2a39f3722d29b28206ae29025cea30348040726a2a0e32aea2"
+          },
+          "H1L1-Live-1187007300.069336-8.hdf": {
+            "candidate": "f63e4eba08f2b5349c6bf756b5171c42fbdf457fe34f811f28a83ae0fa73428e",
+            "reference": "948df26c995392f2fe22c46f5238b7ad641bef935054c9ac3908f43c2ab27a74"
+          },
+          "H1L1-Live-1187007308.069336-8.hdf": {
+            "candidate": "cd13925797b7b825c6ffbabf9bba9cb22438c26a5fdd96fbfca9167e59d908ed",
+            "reference": "23dc5bd3ccaba3773fa0e324ff5235849f0fd90ccd99e2a0983afe0daa691796"
+          },
+          "H1L1-Live-1187007316.069336-8.hdf": {
+            "candidate": "8926a457857443d3ea422663eee1f9aa9697a61a6df9adc8d4f7bb298d3fe17a",
+            "reference": "d0d760dab2bceb244e19b5414e0c4ed935f32c378843c980e306f0918d1f415e"
+          },
+          "H1L1-Live-1187007324.069336-8.hdf": {
+            "candidate": "31581aabf74fdfb5aac95c102f17609a25b0bd9af3dd519ced29a18d03a659bc",
+            "reference": "8f3566e496ba4f8c7e390127bd0ee570160635de0487a925d5242e6b1534bd29"
+          },
+          "H1L1-Live-1187007332.069336-8.hdf": {
+            "candidate": "2ef548b1ff7ab366a4540d4ecd59dffaf1d94181a43da5520f3db8d2d3aec2fa",
+            "reference": "66023902ecf8ffd924ddc5b418c302a16236f00451313a799b6c87dd75bfa2bb"
+          }
+        },
+        "files": 33,
+        "passed": false,
+        "storage_layout_compared": false
+      }
+    },
+    "sample_03_difference": {
+      "all_compared_attributes_exact": true,
+      "attribution": "Inherited native event-manager set ordering is forwarded through detector combinations into the original/JAX coincidence label join; isolated hash-seed controls reproduce both strings",
+      "dataset": "foreground/type",
+      "detector_membership_equal": true,
+      "exact_numeric_or_structured_datasets": 1014,
+      "file": "H1L1-Live-1187007132.069336-8.hdf",
+      "numeric_or_structured_datasets": 1014,
+      "original_and_current_source_share_construction": true,
+      "other_exact_datasets": 52,
+      "production_fix_applied": false,
+      "sample_01": "H1-L1",
+      "sample_03": "L1-H1",
+      "scientific_dataset_excluded": false
+    },
+    "source_input_argument_contract_passed": true,
+    "strict_three_sample_saved_output_repeatability": false,
+    "workload": {
+      "approximant": "TaylorF2",
+      "bank_sha256": "542e341ea3994ba0f52bfd238406af1c05b79f20aac8c0832f468e5f86e70693",
+      "blocks": 33,
+      "distinct_templates": 1024,
+      "frame_sha256": {
+        "H-H1_LOSC_CLN_4_V1-1187007040-2048.gwf": "580e238054474fd09be900c47217bbcd0497ab84d1756f886647e934352e4865",
+        "L-L1_LOSC_CLN_4_V1-1187007040-2048.gwf": "ff9743efc1555a47bc3f2effcaabba252a2244f10fd3a8f85a7c5f677b3c772e"
+      },
+      "mpi_ranks": 2,
+      "observed_worker_signal_dtype": "complex64",
+      "sample_rate_hz": 2048,
+      "templates": 1024,
+      "valid_block_seconds": 8,
+      "valid_blocks_per_detector": 26,
+      "valid_seconds_by_detector": {
+        "H1": 208,
+        "L1": 208
+      }
+    },
+    "zero_warm_compilation_flags": {
+      "profile": [
+        false,
+        false
+      ],
+      "sample-01": [
+        false,
+        false
+      ],
+      "sample-02": [
+        false,
+        false
+      ],
+      "sample-03": [
+        false,
+        false
+      ]
+    }
+  },
+  "report_date": "2026-10-09",
+  "schema_version": 1,
+  "source": {
+    "candidate_revision": "366c7a955570deabaa1219d353f7847b21384698",
+    "candidate_tree": "d43edf428d9bba23fc0243f41a4c66faf7d4de5f",
+    "default_conditioning": "JAX on the selected device",
+    "original_controls": "optional validation routes; default timings do not use all-original routes",
+    "pristine_original_revision": "454ee900e6faca88a066e71ade489fca9fb221a5",
+    "waveform_route": "original PyCBC/LAL; diffGW generation disabled"
+  },
+  "status": "diagnostic_with_bounded_reference_agreement"
+}
