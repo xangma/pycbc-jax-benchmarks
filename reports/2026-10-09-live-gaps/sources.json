@@ -1,0 +1,59 @@
+{
+  "arms": {
+    "baseline": {
+      "revision": "366c7a955570deabaa1219d353f7847b21384698",
+      "source_manifest": "observer/baseline/source-manifest.json",
+      "status": "measured",
+      "tree": "d43edf428d9bba23fc0243f41a4c66faf7d4de5f"
+    },
+    "combined": {
+      "revision": "00ea5024c4efaebfc2e54393dc974241281aad0c",
+      "source_manifest": "observer/combined/source-manifest.json",
+      "status": "measured_saved_output_regression_passed",
+      "tree": "1e32f3df3043305a1f651b9e2c8e3b147403cb57"
+    },
+    "filter-only": {
+      "revision": "a962193cd881bb511b61157088b68db70e316b8d",
+      "source_manifest": "observer/filter-only/source-manifest.json",
+      "status": "measured_saved_output_regression_passed",
+      "tree": "93939ea9dd6c887e50211a28f4d3511a83342563"
+    }
+  },
+  "campaign": "2026-10-09-live-gaps",
+  "difference_scope": "All 623 recorded bin/ and pycbc/ production files compared. Documentation/tests can differ between full source trees.",
+  "observer": {
+    "config_policy": "Templates replace local resource locations and CPU IDs only; recorded config hash binds the private executed configuration.",
+    "controller_sha256": "2bb4dea3aade0cb01044d45139f3a69f12d36830d3cd3d117c585557bccc3559",
+    "entry_sha256": "749ced3097066595e0bb97c500d7bcc32cad90ff5c4c65a4a17754e1449f1f98",
+    "recorded_baseline_config_sha256": "06a243bc452dfa2ce85fe8ce64ba7aaaac1394202955a4d3fd8acba3c7ab45f8",
+    "recorded_combined_config_sha256": "375b77a89206177c45f8478ca262092e83ca6a5bf451dc9a8653659c8a6ffe2c",
+    "recorded_filter_only_config_sha256": "3d8e0f660351847e8c0600e88aaafc69e2485626db56da64d66d4f03ff735399",
+    "version": "diagnostic-v3-duration-details-jit-cache-counts"
+  },
+  "production_file_difference_baseline_to_combined": [
+    {
+      "baseline_git_blob_sha1": "1f6ce3d4f12d968a1fd06c7b2fefc5091a03e3de",
+      "combined_git_blob_sha1": "8f006dfe16fb042299da27ef4aeaec2c9cee871a",
+      "path": "pycbc/events/coinc_jax.py"
+    },
+    {
+      "baseline_git_blob_sha1": "5a834f9d6956289bcf4adf7d064fdac59f949f8d",
+      "combined_git_blob_sha1": "0cc8366603f023cd2468782e07a6ebfcc6eda20b",
+      "path": "pycbc/filter/matchedfilter_jax.py"
+    },
+    {
+      "baseline_git_blob_sha1": "2ecc84c5aa1a6c4e2117f9fc0a3912336457ffda",
+      "combined_git_blob_sha1": "db266b1fbb721c13af395a4ff2a7b75ec874d00a",
+      "path": "pycbc/strain/strain_jax.py"
+    }
+  ],
+  "production_file_difference_baseline_to_filter_only": [
+    {
+      "baseline_git_blob_sha1": "5a834f9d6956289bcf4adf7d064fdac59f949f8d",
+      "filter_only_git_blob_sha1": "0cc8366603f023cd2468782e07a6ebfcc6eda20b",
+      "path": "pycbc/filter/matchedfilter_jax.py"
+    }
+  ],
+  "runtime_overlay": "runtime-overlay.json",
+  "schema_version": 1
+}

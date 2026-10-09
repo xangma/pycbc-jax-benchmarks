@@ -30,7 +30,7 @@ NATIVE = set("block output postprocess coinc_best_publication_readback coinc_que
              "gwf_replay_buffer mpi_ack_send mpi_drain mpi_gather mpi_receive "
              "mpi_unpickle output_drain output_readback output_snapshot output_write "
              "psd_refresh_batch device_to_host filter filter_bank_length_check "
-             "filter_bank_setup filter_bank_sort filter_fused filter_norms "
+             "filter_bank_setup filter_bank_sort filter_candidate_prepare filter_fused filter_norms "
              "filter_overwhiten filter_veto filter_veto_bins filter_veto_bins_collect "
              "filter_veto_bins_dispatch filter_veto_bins_prepare "
              "filter_veto_executable_load filter_veto_executable_lower "

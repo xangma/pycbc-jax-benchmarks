@@ -1,0 +1,56 @@
+{
+  "by_module": {
+    "test_jax_coinc_dispatch": {
+      "cuda_parameter_cases": 13,
+      "passed": 26
+    },
+    "test_jax_coinc_match_batch": {
+      "cuda_parameter_cases": 101,
+      "passed": 202
+    },
+    "test_jax_coinc_ring": {
+      "cuda_parameter_cases": 21,
+      "passed": 42
+    },
+    "test_jax_coinc_select_batch": {
+      "cuda_parameter_cases": 21,
+      "passed": 42
+    },
+    "test_jax_live_executable_cache": {
+      "cuda_parameter_cases": 2,
+      "passed": 12
+    },
+    "test_jax_live_psd_batch": {
+      "cuda_parameter_cases": 16,
+      "passed": 35
+    },
+    "test_jax_live_psd_distance": {
+      "cuda_parameter_cases": 26,
+      "passed": 58
+    },
+    "test_jax_live_resident": {
+      "cuda_parameter_cases": 42,
+      "passed": 104
+    }
+  },
+  "cuda_parameter_cases": 242,
+  "errors": 0,
+  "failed": 0,
+  "files": [
+    "test/test_jax_live_resident.py",
+    "test/test_jax_live_executable_cache.py",
+    "test/test_jax_live_psd_distance.py",
+    "test/test_jax_live_psd_batch.py",
+    "test/test_jax_coinc_ring.py",
+    "test/test_jax_coinc_match_batch.py",
+    "test/test_jax_coinc_select_batch.py",
+    "test/test_jax_coinc_dispatch.py"
+  ],
+  "passed": 521,
+  "private_pytest_receipt_sha256": "dea30df38f3159ed2702602a70cf6f0915fbfaa3613487000b8e327389803292",
+  "schema_version": 1,
+  "scope": "Eight focused regression files; CUDA parameter cases executed with no skip. This gate is separate from full native replay qualification and performance measurement.",
+  "skipped": 0,
+  "source_revision": "00ea5024c4efaebfc2e54393dc974241281aad0c",
+  "status": "passed"
+}

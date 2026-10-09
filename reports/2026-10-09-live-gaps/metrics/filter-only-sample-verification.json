@@ -1,0 +1,83 @@
+{
+  "all_three_zero_warm_compilation": [
+    false,
+    false,
+    false
+  ],
+  "arm": "filter-only",
+  "checks": [
+    {
+      "cache_snapshot_pairs_complete": true,
+      "rank": 0,
+      "raw_duration_counts_and_sums_match": true,
+      "sample": "sample-01"
+    },
+    {
+      "cache_snapshot_pairs_complete": true,
+      "rank": 1,
+      "raw_duration_counts_and_sums_match": true,
+      "sample": "sample-01"
+    },
+    {
+      "cache_snapshot_pairs_complete": true,
+      "rank": 0,
+      "raw_duration_counts_and_sums_match": true,
+      "sample": "sample-02"
+    },
+    {
+      "cache_snapshot_pairs_complete": true,
+      "rank": 1,
+      "raw_duration_counts_and_sums_match": true,
+      "sample": "sample-02"
+    },
+    {
+      "cache_snapshot_pairs_complete": true,
+      "rank": 0,
+      "raw_duration_counts_and_sums_match": true,
+      "sample": "sample-03"
+    },
+    {
+      "cache_snapshot_pairs_complete": true,
+      "rank": 1,
+      "raw_duration_counts_and_sums_match": true,
+      "sample": "sample-03"
+    }
+  ],
+  "controller_status": "passed",
+  "excluded_from_summary": [
+    "prime",
+    "profile"
+  ],
+  "passed": true,
+  "raw_rank_report_sha256": [
+    {
+      "file": "sample-01/rank-0.json",
+      "sha256": "a1fcb51456598eefd9260f4fab57e1866ba1d9917549500a845321bf6248f6b5"
+    },
+    {
+      "file": "sample-01/rank-1.json",
+      "sha256": "9d942c5c0fefc8f85ad3f89e8d18c042f6cc18f38ed461175eec90d4e03468ea"
+    },
+    {
+      "file": "sample-02/rank-0.json",
+      "sha256": "e178f90fa236febc0869ffb585ddf71b61cf5147b460d2ab9018735f0310acde"
+    },
+    {
+      "file": "sample-02/rank-1.json",
+      "sha256": "7bad7d4e49282b3590c22c86b574fe26bdba750ba7a064d183d4d9d298143ea6"
+    },
+    {
+      "file": "sample-03/rank-0.json",
+      "sha256": "a650b2672bb1022b9ca2cf590b4e89db57bc0fd840cae81c5d27c42c42be9769"
+    },
+    {
+      "file": "sample-03/rank-1.json",
+      "sha256": "cc5153f0bb86f72d29c8528d14004a485235c410a60e7f9370470a1290c42f95"
+    }
+  ],
+  "samples": [
+    "sample-01",
+    "sample-02",
+    "sample-03"
+  ]
+}

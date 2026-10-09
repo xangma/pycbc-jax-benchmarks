@@ -1,0 +1,90 @@
+{
+  "generated_assets": [
+    {
+      "filename": "o2-subset-1536.hdf",
+      "role": "Uncompressed intermediate; the first 1024 sorted rows form the Live bank",
+      "sha256": "0756d6f83c2cb3d205441297600ae3534acf5ad7efc24b3934b6289701d9cc2e",
+      "size_bytes": 51200,
+      "templates": 1536
+    },
+    {
+      "filename": "o2-subset-1024.hdf",
+      "role": "Live uncompressed bank; TaylorF2 is selected by the Live command",
+      "sha256": "542e341ea3994ba0f52bfd238406af1c05b79f20aac8c0832f468e5f86e70693",
+      "size_bytes": 36864,
+      "templates": 1024
+    }
+  ],
+  "generation": {
+    "dependencies": {
+      "h5py": "3.11.0",
+      "igwn-ligolw": "2.1.1",
+      "lalsuite": "7.21",
+      "numpy": "1.26.4",
+      "scipy": "1.13.0"
+    },
+    "hash_policy": "Every generated file must match its recorded SHA-256 and size; changed HDF5 serialization or numerical output is a different input, never silently accepted",
+    "historical_verification": "The 2026-10-08 regeneration receipt records exact original XML, subset, source rows and compressed bank hashes. The preparation CLI is a recovered recipe, not a new full-generation measurement.",
+    "python_version": "3.11.9",
+    "scope": "Uncompressed 1024-template Live subset; this historical PyCBC revision is an input-generation binding, not the measured baseline.",
+    "selection": {
+      "algorithm": "NumPy default_rng(seed).permutation(eligible rows), first 1536 distinct physical tuples, then sort selected source row IDs",
+      "count": 1536,
+      "cuts": "mass1 <= 10, mass2 <= 3, chirp mass >= 1.2, abs(spin1z) <= 0.2, abs(spin2z) <= 0.2",
+      "eligible_rows": 32655,
+      "live_subset": "First 1024 rows of that sorted 1536-row subset",
+      "physical_fields": [
+        "mass1",
+        "mass2",
+        "spin1z",
+        "spin2z"
+      ],
+      "seed": 20260919
+    },
+    "source_revision": "40e94792b3edf59f39b18b65102b28a4f74433a7",
+    "source_url": "https://github.com/gwastro/pycbc.git"
+  },
+  "public_assets": [
+    {
+      "filename": "H1L1-HYPERBANK_SEOBNRv4v2_VARFLOW_THORNE-1163174417-604800.xml.gz",
+      "provenance": "O2 bank distributed by gwastro/pycbc-config at commit 710dbfd3590bd93d7679d7822da59fcb6b6fac0f",
+      "redistribution": "Not rehosted here; no explicit license established for this input",
+      "sha256": "854c855960110dbb42dd48660065c5551dca205470503cbcb6b97f2650890e43",
+      "size_bytes": 26449594,
+      "url": "https://raw.githubusercontent.com/gwastro/pycbc-config/710dbfd3590bd93d7679d7822da59fcb6b6fac0f/O2/bank/H1L1-HYPERBANK_SEOBNRv4v2_VARFLOW_THORNE-1163174417-604800.xml.gz"
+    },
+    {
+      "attribution_url": "https://gwosc.org/acknowledgement/",
+      "channel": "H1:LOSC-STRAIN",
+      "detector": "H1",
+      "duration_seconds": 2048,
+      "filename": "H-H1_LOSC_CLN_4_V1-1187007040-2048.gwf",
+      "gps_start": 1187007040,
+      "license": "CC-BY-4.0",
+      "release": "GW170817-v2 cleaned strain",
+      "sample_rate_hz": 4096,
+      "sha256": "580e238054474fd09be900c47217bbcd0497ab84d1756f886647e934352e4865",
+      "size_bytes": 57824232,
+      "url": "https://gwosc.org/eventapi/json/O1_O2-Preliminary/GW170817/v2/H-H1_LOSC_CLN_4_V1-1187007040-2048.gwf"
+    },
+    {
+      "attribution_url": "https://gwosc.org/acknowledgement/",
+      "channel": "L1:LOSC-STRAIN",
+      "detector": "L1",
+      "duration_seconds": 2048,
+      "filename": "L-L1_LOSC_CLN_4_V1-1187007040-2048.gwf",
+      "gps_start": 1187007040,
+      "license": "CC-BY-4.0",
+      "release": "GW170817-v2 cleaned strain",
+      "sample_rate_hz": 4096,
+      "sha256": "ff9743efc1555a47bc3f2effcaabba252a2244f10fd3a8f85a7c5f677b3c772e",
+      "size_bytes": 62070438,
+      "url": "https://gwosc.org/eventapi/json/O1_O2-Preliminary/GW170817/v2/L-L1_LOSC_CLN_4_V1-1187007040-2048.gwf"
+    }
+  ],
+  "public_url_verification": {
+    "date": "2026-10-09",
+    "method": "Streamed every public URL through SHA-256; all three sizes and hashes matched the recorded campaign inputs"
+  },
+  "schema_version": 1
+}

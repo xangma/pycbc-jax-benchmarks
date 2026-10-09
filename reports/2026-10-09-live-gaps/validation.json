@@ -1,0 +1,561 @@
+{
+  "baseline_comparator_reference": "sample-01",
+  "baseline_repeats": {
+    "prime": {
+      "available_saved_evidence": {
+        "candidate": {
+          "background_count_files": 26,
+          "background_time_files": 26,
+          "coinc_possible_files": 26,
+          "foreground_ifar_files": 1,
+          "foreground_stat_files": 1,
+          "psd_datasets": 52,
+          "saved_single_trigger_rows": 693
+        },
+        "reference": {
+          "background_count_files": 26,
+          "background_time_files": 26,
+          "coinc_possible_files": 26,
+          "foreground_ifar_files": 1,
+          "foreground_stat_files": 1,
+          "psd_datasets": 52,
+          "saved_single_trigger_rows": 693
+        }
+      },
+      "failure_files": {},
+      "limitations": [
+        "Saved outputs do not capture full conditioned strain or internal selection/clustering decisions and retained coincidence state",
+        "No fresh complete pristine-CPU Live qualification is supplied by this comparator",
+        "Compression/chunk layout and whole-file serialization identity are outside the scientific-value comparison"
+      ],
+      "passed": true,
+      "totals": {
+        "attributes": 203,
+        "datasets": 1067,
+        "files": 33
+      },
+      "verdict": "passed_saved_scope"
+    },
+    "profile": {
+      "available_saved_evidence": {
+        "candidate": {
+          "background_count_files": 26,
+          "background_time_files": 26,
+          "coinc_possible_files": 26,
+          "foreground_ifar_files": 1,
+          "foreground_stat_files": 1,
+          "psd_datasets": 52,
+          "saved_single_trigger_rows": 693
+        },
+        "reference": {
+          "background_count_files": 26,
+          "background_time_files": 26,
+          "coinc_possible_files": 26,
+          "foreground_ifar_files": 1,
+          "foreground_stat_files": 1,
+          "psd_datasets": 52,
+          "saved_single_trigger_rows": 693
+        }
+      },
+      "failure_files": {},
+      "limitations": [
+        "Saved outputs do not capture full conditioned strain or internal selection/clustering decisions and retained coincidence state",
+        "No fresh complete pristine-CPU Live qualification is supplied by this comparator",
+        "Compression/chunk layout and whole-file serialization identity are outside the scientific-value comparison"
+      ],
+      "passed": true,
+      "totals": {
+        "attributes": 203,
+        "datasets": 1067,
+        "files": 33
+      },
+      "verdict": "passed_saved_scope"
+    },
+    "sample-02": {
+      "available_saved_evidence": {
+        "candidate": {
+          "background_count_files": 26,
+          "background_time_files": 26,
+          "coinc_possible_files": 26,
+          "foreground_ifar_files": 1,
+          "foreground_stat_files": 1,
+          "psd_datasets": 52,
+          "saved_single_trigger_rows": 693
+        },
+        "reference": {
+          "background_count_files": 26,
+          "background_time_files": 26,
+          "coinc_possible_files": 26,
+          "foreground_ifar_files": 1,
+          "foreground_stat_files": 1,
+          "psd_datasets": 52,
+          "saved_single_trigger_rows": 693
+        }
+      },
+      "failure_files": {},
+      "limitations": [
+        "Saved outputs do not capture full conditioned strain or internal selection/clustering decisions and retained coincidence state",
+        "No fresh complete pristine-CPU Live qualification is supplied by this comparator",
+        "Compression/chunk layout and whole-file serialization identity are outside the scientific-value comparison"
+      ],
+      "passed": true,
+      "totals": {
+        "attributes": 203,
+        "datasets": 1067,
+        "files": 33
+      },
+      "verdict": "passed_saved_scope"
+    },
+    "sample-03": {
+      "available_saved_evidence": {
+        "candidate": {
+          "background_count_files": 26,
+          "background_time_files": 26,
+          "coinc_possible_files": 26,
+          "foreground_ifar_files": 1,
+          "foreground_stat_files": 1,
+          "psd_datasets": 52,
+          "saved_single_trigger_rows": 693
+        },
+        "reference": {
+          "background_count_files": 26,
+          "background_time_files": 26,
+          "coinc_possible_files": 26,
+          "foreground_ifar_files": 1,
+          "foreground_stat_files": 1,
+          "psd_datasets": 52,
+          "saved_single_trigger_rows": 693
+        }
+      },
+      "failure_files": {},
+      "limitations": [
+        "Saved outputs do not capture full conditioned strain or internal selection/clustering decisions and retained coincidence state",
+        "No fresh complete pristine-CPU Live qualification is supplied by this comparator",
+        "Compression/chunk layout and whole-file serialization identity are outside the scientific-value comparison"
+      ],
+      "passed": true,
+      "totals": {
+        "attributes": 203,
+        "datasets": 1067,
+        "files": 33
+      },
+      "verdict": "passed_saved_scope"
+    }
+  },
+  "combined": {
+    "prime": {
+      "available_saved_evidence": {
+        "candidate": {
+          "background_count_files": 26,
+          "background_time_files": 26,
+          "coinc_possible_files": 26,
+          "foreground_ifar_files": 1,
+          "foreground_stat_files": 1,
+          "psd_datasets": 52,
+          "saved_single_trigger_rows": 693
+        },
+        "reference": {
+          "background_count_files": 26,
+          "background_time_files": 26,
+          "coinc_possible_files": 26,
+          "foreground_ifar_files": 1,
+          "foreground_stat_files": 1,
+          "psd_datasets": 52,
+          "saved_single_trigger_rows": 693
+        }
+      },
+      "failure_files": {},
+      "limitations": [
+        "Saved outputs do not capture full conditioned strain or internal selection/clustering decisions and retained coincidence state",
+        "No fresh complete pristine-CPU Live qualification is supplied by this comparator",
+        "Compression/chunk layout and whole-file serialization identity are outside the scientific-value comparison"
+      ],
+      "passed": true,
+      "totals": {
+        "attributes": 203,
+        "datasets": 1067,
+        "files": 33
+      },
+      "verdict": "passed_saved_scope"
+    },
+    "profile": {
+      "available_saved_evidence": {
+        "candidate": {
+          "background_count_files": 26,
+          "background_time_files": 26,
+          "coinc_possible_files": 26,
+          "foreground_ifar_files": 1,
+          "foreground_stat_files": 1,
+          "psd_datasets": 52,
+          "saved_single_trigger_rows": 693
+        },
+        "reference": {
+          "background_count_files": 26,
+          "background_time_files": 26,
+          "coinc_possible_files": 26,
+          "foreground_ifar_files": 1,
+          "foreground_stat_files": 1,
+          "psd_datasets": 52,
+          "saved_single_trigger_rows": 693
+        }
+      },
+      "candidate": "candidate-full/profile",
+      "failure_files": {},
+      "limitations": [
+        "Saved outputs do not capture full conditioned strain or internal selection/clustering decisions and retained coincidence state",
+        "No fresh complete pristine-CPU Live qualification is supplied by this comparator",
+        "Compression/chunk layout and whole-file serialization identity are outside the scientific-value comparison"
+      ],
+      "passed": true,
+      "reference": "baseline/profile",
+      "totals": {
+        "attributes": 203,
+        "datasets": 1067,
+        "files": 33
+      },
+      "verdict": "passed_saved_scope"
+    },
+    "profile-vs-sample-01": {
+      "available_saved_evidence": {
+        "candidate": {
+          "background_count_files": 26,
+          "background_time_files": 26,
+          "coinc_possible_files": 26,
+          "foreground_ifar_files": 1,
+          "foreground_stat_files": 1,
+          "psd_datasets": 52,
+          "saved_single_trigger_rows": 693
+        },
+        "reference": {
+          "background_count_files": 26,
+          "background_time_files": 26,
+          "coinc_possible_files": 26,
+          "foreground_ifar_files": 1,
+          "foreground_stat_files": 1,
+          "psd_datasets": 52,
+          "saved_single_trigger_rows": 693
+        }
+      },
+      "candidate": "candidate-full/profile",
+      "failure_files": {},
+      "limitations": [
+        "Saved outputs do not capture full conditioned strain or internal selection/clustering decisions and retained coincidence state",
+        "No fresh complete pristine-CPU Live qualification is supplied by this comparator",
+        "Compression/chunk layout and whole-file serialization identity are outside the scientific-value comparison"
+      ],
+      "passed": true,
+      "reference": "candidate-full/sample-01",
+      "totals": {
+        "attributes": 203,
+        "datasets": 1067,
+        "files": 33
+      },
+      "verdict": "passed_saved_scope"
+    },
+    "sample-01": {
+      "available_saved_evidence": {
+        "candidate": {
+          "background_count_files": 26,
+          "background_time_files": 26,
+          "coinc_possible_files": 26,
+          "foreground_ifar_files": 1,
+          "foreground_stat_files": 1,
+          "psd_datasets": 52,
+          "saved_single_trigger_rows": 693
+        },
+        "reference": {
+          "background_count_files": 26,
+          "background_time_files": 26,
+          "coinc_possible_files": 26,
+          "foreground_ifar_files": 1,
+          "foreground_stat_files": 1,
+          "psd_datasets": 52,
+          "saved_single_trigger_rows": 693
+        }
+      },
+      "failure_files": {},
+      "limitations": [
+        "Saved outputs do not capture full conditioned strain or internal selection/clustering decisions and retained coincidence state",
+        "No fresh complete pristine-CPU Live qualification is supplied by this comparator",
+        "Compression/chunk layout and whole-file serialization identity are outside the scientific-value comparison"
+      ],
+      "passed": true,
+      "totals": {
+        "attributes": 203,
+        "datasets": 1067,
+        "files": 33
+      },
+      "verdict": "passed_saved_scope"
+    },
+    "sample-02": {
+      "available_saved_evidence": {
+        "candidate": {
+          "background_count_files": 26,
+          "background_time_files": 26,
+          "coinc_possible_files": 26,
+          "foreground_ifar_files": 1,
+          "foreground_stat_files": 1,
+          "psd_datasets": 52,
+          "saved_single_trigger_rows": 693
+        },
+        "reference": {
+          "background_count_files": 26,
+          "background_time_files": 26,
+          "coinc_possible_files": 26,
+          "foreground_ifar_files": 1,
+          "foreground_stat_files": 1,
+          "psd_datasets": 52,
+          "saved_single_trigger_rows": 693
+        }
+      },
+      "failure_files": {},
+      "limitations": [
+        "Saved outputs do not capture full conditioned strain or internal selection/clustering decisions and retained coincidence state",
+        "No fresh complete pristine-CPU Live qualification is supplied by this comparator",
+        "Compression/chunk layout and whole-file serialization identity are outside the scientific-value comparison"
+      ],
+      "passed": true,
+      "totals": {
+        "attributes": 203,
+        "datasets": 1067,
+        "files": 33
+      },
+      "verdict": "passed_saved_scope"
+    },
+    "sample-03": {
+      "available_saved_evidence": {
+        "candidate": {
+          "background_count_files": 26,
+          "background_time_files": 26,
+          "coinc_possible_files": 26,
+          "foreground_ifar_files": 1,
+          "foreground_stat_files": 1,
+          "psd_datasets": 52,
+          "saved_single_trigger_rows": 693
+        },
+        "reference": {
+          "background_count_files": 26,
+          "background_time_files": 26,
+          "coinc_possible_files": 26,
+          "foreground_ifar_files": 1,
+          "foreground_stat_files": 1,
+          "psd_datasets": 52,
+          "saved_single_trigger_rows": 693
+        }
+      },
+      "failure_files": {},
+      "limitations": [
+        "Saved outputs do not capture full conditioned strain or internal selection/clustering decisions and retained coincidence state",
+        "No fresh complete pristine-CPU Live qualification is supplied by this comparator",
+        "Compression/chunk layout and whole-file serialization identity are outside the scientific-value comparison"
+      ],
+      "passed": true,
+      "totals": {
+        "attributes": 203,
+        "datasets": 1067,
+        "files": 33
+      },
+      "verdict": "passed_saved_scope"
+    }
+  },
+  "filter-only": {
+    "comparison_reference": "Corresponding baseline prime/sample/profile; baseline profile also exactly matches baseline sample-01.",
+    "only_loaded_code_change_expected": true,
+    "pipeline_science_qualified": false,
+    "runs": {
+      "prime": {
+        "available_saved_evidence": {
+          "candidate": {
+            "background_count_files": 26,
+            "background_time_files": 26,
+            "coinc_possible_files": 26,
+            "foreground_ifar_files": 1,
+            "foreground_stat_files": 1,
+            "psd_datasets": 52,
+            "saved_single_trigger_rows": 693
+          },
+          "reference": {
+            "background_count_files": 26,
+            "background_time_files": 26,
+            "coinc_possible_files": 26,
+            "foreground_ifar_files": 1,
+            "foreground_stat_files": 1,
+            "psd_datasets": 52,
+            "saved_single_trigger_rows": 693
+          }
+        },
+        "failure_files": {},
+        "limitations": [
+          "Saved outputs do not capture full conditioned strain or internal selection/clustering decisions and retained coincidence state",
+          "No fresh complete pristine-CPU Live qualification is supplied by this comparator",
+          "Compression/chunk layout and whole-file serialization identity are outside the scientific-value comparison"
+        ],
+        "passed": true,
+        "totals": {
+          "attributes": 203,
+          "datasets": 1067,
+          "files": 33
+        },
+        "verdict": "passed_saved_scope"
+      },
+      "profile": {
+        "available_saved_evidence": {
+          "candidate": {
+            "background_count_files": 26,
+            "background_time_files": 26,
+            "coinc_possible_files": 26,
+            "foreground_ifar_files": 1,
+            "foreground_stat_files": 1,
+            "psd_datasets": 52,
+            "saved_single_trigger_rows": 693
+          },
+          "reference": {
+            "background_count_files": 26,
+            "background_time_files": 26,
+            "coinc_possible_files": 26,
+            "foreground_ifar_files": 1,
+            "foreground_stat_files": 1,
+            "psd_datasets": 52,
+            "saved_single_trigger_rows": 693
+          }
+        },
+        "failure_files": {},
+        "limitations": [
+          "Saved outputs do not capture full conditioned strain or internal selection/clustering decisions and retained coincidence state",
+          "No fresh complete pristine-CPU Live qualification is supplied by this comparator",
+          "Compression/chunk layout and whole-file serialization identity are outside the scientific-value comparison"
+        ],
+        "passed": true,
+        "totals": {
+          "attributes": 203,
+          "datasets": 1067,
+          "files": 33
+        },
+        "verdict": "passed_saved_scope"
+      },
+      "sample-01": {
+        "available_saved_evidence": {
+          "candidate": {
+            "background_count_files": 26,
+            "background_time_files": 26,
+            "coinc_possible_files": 26,
+            "foreground_ifar_files": 1,
+            "foreground_stat_files": 1,
+            "psd_datasets": 52,
+            "saved_single_trigger_rows": 693
+          },
+          "reference": {
+            "background_count_files": 26,
+            "background_time_files": 26,
+            "coinc_possible_files": 26,
+            "foreground_ifar_files": 1,
+            "foreground_stat_files": 1,
+            "psd_datasets": 52,
+            "saved_single_trigger_rows": 693
+          }
+        },
+        "failure_files": {},
+        "limitations": [
+          "Saved outputs do not capture full conditioned strain or internal selection/clustering decisions and retained coincidence state",
+          "No fresh complete pristine-CPU Live qualification is supplied by this comparator",
+          "Compression/chunk layout and whole-file serialization identity are outside the scientific-value comparison"
+        ],
+        "passed": true,
+        "totals": {
+          "attributes": 203,
+          "datasets": 1067,
+          "files": 33
+        },
+        "verdict": "passed_saved_scope"
+      },
+      "sample-02": {
+        "available_saved_evidence": {
+          "candidate": {
+            "background_count_files": 26,
+            "background_time_files": 26,
+            "coinc_possible_files": 26,
+            "foreground_ifar_files": 1,
+            "foreground_stat_files": 1,
+            "psd_datasets": 52,
+            "saved_single_trigger_rows": 693
+          },
+          "reference": {
+            "background_count_files": 26,
+            "background_time_files": 26,
+            "coinc_possible_files": 26,
+            "foreground_ifar_files": 1,
+            "foreground_stat_files": 1,
+            "psd_datasets": 52,
+            "saved_single_trigger_rows": 693
+          }
+        },
+        "failure_files": {},
+        "limitations": [
+          "Saved outputs do not capture full conditioned strain or internal selection/clustering decisions and retained coincidence state",
+          "No fresh complete pristine-CPU Live qualification is supplied by this comparator",
+          "Compression/chunk layout and whole-file serialization identity are outside the scientific-value comparison"
+        ],
+        "passed": true,
+        "totals": {
+          "attributes": 203,
+          "datasets": 1067,
+          "files": 33
+        },
+        "verdict": "passed_saved_scope"
+      },
+      "sample-03": {
+        "available_saved_evidence": {
+          "candidate": {
+            "background_count_files": 26,
+            "background_time_files": 26,
+            "coinc_possible_files": 26,
+            "foreground_ifar_files": 1,
+            "foreground_stat_files": 1,
+            "psd_datasets": 52,
+            "saved_single_trigger_rows": 693
+          },
+          "reference": {
+            "background_count_files": 26,
+            "background_time_files": 26,
+            "coinc_possible_files": 26,
+            "foreground_ifar_files": 1,
+            "foreground_stat_files": 1,
+            "psd_datasets": 52,
+            "saved_single_trigger_rows": 693
+          }
+        },
+        "failure_files": {},
+        "limitations": [
+          "Saved outputs do not capture full conditioned strain or internal selection/clustering decisions and retained coincidence state",
+          "No fresh complete pristine-CPU Live qualification is supplied by this comparator",
+          "Compression/chunk layout and whole-file serialization identity are outside the scientific-value comparison"
+        ],
+        "passed": true,
+        "totals": {
+          "attributes": 203,
+          "datasets": 1067,
+          "files": 33
+        },
+        "verdict": "passed_saved_scope"
+      }
+    },
+    "same_scientific_work_contract": true,
+    "source_unchanged": true,
+    "status": "passed_saved_scope"
+  },
+  "historical_label_order": {
+    "cause": "Inherited detector-label construction can differ with Python hash seed. All new arms fix seed 4 identically; production label ordering is unchanged.",
+    "failure_retained": true,
+    "not_applied": [
+      "sorting detector labels",
+      "dropping string datasets",
+      "normalizing scientific values"
+    ]
+  },
+  "limitations": [
+    "Saved output equality covers saved PSDs/triggers/background/foreground evidence, not complete conditioned strain, internal decisions or full retained coincidence state.",
+    "A pristine original-CPU complete Live qualification is absent; no CPU speedup or complete science-equivalence claim."
+  ],
+  "policy": "Ordered dtype, shape and bit-exact values plus all attributes; no scientific exclusions, no tolerance, no trigger/label sorting. Only verified executable/output-destination command differences normalize.",
+  "schema_version": 1
+}

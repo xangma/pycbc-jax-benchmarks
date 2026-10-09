@@ -1,0 +1,129 @@
+{
+  "arms": {
+    "baseline": {
+      "duration_cache_details": "metrics/baseline-duration-cache.json",
+      "launch_to_exit_seconds": {
+        "max": 66.95367028005421,
+        "median": 66.9047332960181,
+        "min": 66.8551597460173,
+        "samples": [
+          66.9047332960181,
+          66.8551597460173,
+          66.95367028005421
+        ]
+      },
+      "post_two_valid_block_suffix_seconds": {
+        "max": 30.824735839,
+        "median": 30.754699512,
+        "min": 30.709969763,
+        "samples": [
+          30.754699512,
+          30.709969763,
+          30.824735839
+        ]
+      },
+      "profile": "profiles/baseline/summary.json",
+      "samples": [
+        "sample-01",
+        "sample-02",
+        "sample-03"
+      ],
+      "status": "measured",
+      "zero_suffix_compilation": [
+        false,
+        false,
+        false
+      ]
+    },
+    "combined": {
+      "duration_cache_details": "metrics/combined-duration-cache.json",
+      "launch_to_exit_seconds": {
+        "max": 52.311620995868,
+        "median": 52.30758114717901,
+        "min": 51.25408129533753,
+        "samples": [
+          52.311620995868,
+          51.25408129533753,
+          52.30758114717901
+        ]
+      },
+      "post_two_valid_block_suffix_seconds": {
+        "max": 16.728533059,
+        "median": 16.717795199,
+        "min": 16.025624338,
+        "samples": [
+          16.728533059,
+          16.025624338,
+          16.717795199
+        ]
+      },
+      "profile": "profiles/combined/summary.json",
+      "sample_verification": "metrics/combined-sample-verification.json",
+      "samples": [
+        "sample-01",
+        "sample-02",
+        "sample-03"
+      ],
+      "source_revision": "00ea5024c4efaebfc2e54393dc974241281aad0c",
+      "status": "measured_saved_output_regression_passed",
+      "zero_suffix_compilation": [
+        false,
+        false,
+        false
+      ]
+    },
+    "filter-only": {
+      "duration_cache_details": "metrics/filter-only-duration-cache.json",
+      "launch_to_exit_seconds": {
+        "max": 66.79022459406406,
+        "median": 66.47927090479061,
+        "min": 66.2337722745724,
+        "samples": [
+          66.47927090479061,
+          66.2337722745724,
+          66.79022459406406
+        ]
+      },
+      "post_two_valid_block_suffix_seconds": {
+        "max": 30.742400407,
+        "median": 30.74105749,
+        "min": 30.720850341,
+        "samples": [
+          30.720850341,
+          30.74105749,
+          30.742400407
+        ]
+      },
+      "profile": "profiles/filter-only/summary.json",
+      "sample_verification": "metrics/filter-only-sample-verification.json",
+      "samples": [
+        "sample-01",
+        "sample-02",
+        "sample-03"
+      ],
+      "status": "measured_saved_output_regression_passed",
+      "zero_suffix_compilation": [
+        false,
+        false,
+        false
+      ]
+    }
+  },
+  "classification": "diagnostic",
+  "comparison_speedup": null,
+  "primary_comparison": {
+    "baseline": 66.9047332960181,
+    "combined": 52.30758114717901,
+    "metric": "median whole-process launch-to-exit seconds",
+    "qualification": "Grouped diagnostic arms; no original-CPU speedup or compile-free capacity claim.",
+    "wall_time_reduction_fraction": 0.21817816811636337
+  },
+  "sample_exclusions": [
+    "prime",
+    "profile"
+  ],
+  "schema_version": 1,
+  "suffix_boundary_receipt": "metrics/query-scope-boundary.json",
+  "suffix_interpretation": "Every timing sample has the same 63 native root query pairs and identical per-data-block query group sizes. The first valid root block has 30 size-eight queries. They occur before the common wall suffix in baseline but inside it in combined. The earliest rank reaching the declared data epoch sets the shared wall boundary; other-rank earlier-block backlog can lie inside it. Suffix stage work is therefore not identical across arms, and the suffix is descriptive only.",
+  "timing_sample_verification": "metrics/baseline-sample-verification.json"
+}

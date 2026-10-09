@@ -1,0 +1,19 @@
+{
+  "baseline_provenance": "https://github.com/xangma/pycbc-jax-benchmarks/blob/2026-10-09-full-stack/reports/2026-10-09/provenance.json",
+  "baseline_provenance_sha256": "552c17c693d63cd585aed989eb58a2b1478b918d7f3f4aefbe34b7627f61d172",
+  "carried_runtime_hash_inventory_matches_earlier_provenance": true,
+  "origin": "Inherited observed baseline runtime inventory from the earlier frozen campaign; new rank receipts re-record Python, JAX and NumPy only. This is not a complete package lock or proof of a future byte-identical rebuild.",
+  "reproduction": "Use the recorded versions, record the full recreated environment and new native binary hashes, then rerun validation. The 11 extension hashes plus generated version metadata are observed carried-over runtime files.",
+  "software": {
+    "h5py": "3.16.0",
+    "jax": "0.11.2",
+    "jaxlib": "0.11.2",
+    "lalsuite": "7.26.15",
+    "mpi4py": "4.0.0",
+    "nsight_systems": "2026.1.3.425",
+    "numpy": "2.2.6",
+    "plot_matplotlib": "3.11.1",
+    "python": "3.12.8",
+    "scipy": "1.16.3"
+  }
+}

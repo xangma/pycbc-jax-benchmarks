@@ -10,9 +10,16 @@ import markdown
 
 ROOT = Path(__file__).resolve().parents[1]
 DEST = ROOT / 'docs'
-TAG = '2026-10-09-full-stack'
-RAW = f'https://raw.githubusercontent.com/xangma/pycbc-jax-benchmarks/{TAG}/'
-BLOB = f'https://github.com/xangma/pycbc-jax-benchmarks/blob/{TAG}/'
+OLD_TAG = '2026-10-09-full-stack'
+NEW_TAG = '2026-10-09-live-gaps'
+
+
+def release_tag(path):
+    relative = path.relative_to(ROOT)
+    if relative == Path('README.md') or relative.parts[:2] == (
+            'reports', '2026-10-09-live-gaps'):
+        return NEW_TAG
+    return OLD_TAG
 
 
 def page_path(source):
@@ -28,6 +35,8 @@ def main():
         part in {'.git', 'docs', '__pycache__', '.venv', 'inputs', 'sources', 'results', 'resolved'}
         for part in p.relative_to(ROOT).parts))
     for source in pages:
+        tag = release_tag(source)
+        blob = f'https://github.com/xangma/pycbc-jax-benchmarks/blob/{tag}/'
         target = DEST / page_path(source)
         target.parent.mkdir(parents=True, exist_ok=True)
         body = markdown.markdown(source.read_text(), extensions=['tables', 'fenced_code'])
@@ -49,7 +58,11 @@ def main():
                 shutil.copyfile(local, copied)
                 link = __import__('os').path.relpath(copied, target.parent)
             else:
-                link = (RAW if local.suffix in {'.json', '.csv', '.gz', '.rst'} else BLOB) + quote(relative.as_posix())
+                host = ('https://raw.githubusercontent.com/' if local.suffix in
+                        {'.json', '.csv', '.gz', '.rst'} else 'https://github.com/')
+                revision = release_tag(local)
+                route = '' if host.startswith('https://raw.') else 'blob/'
+                link = host + f'xangma/pycbc-jax-benchmarks/{route}{revision}/' + quote(relative.as_posix())
             if split.fragment:
                 link += '#' + split.fragment
             return f'{attribute}="{escape(link, quote=True)}"'
@@ -61,7 +74,7 @@ def main():
 <title>{title}</title><style>
 body{{max-width:1100px;margin:2rem auto;padding:0 1.2rem;font:17px/1.6 system-ui,sans-serif;color:#172a3a;background:#fff}}
 a{{color:#165b94}}img{{max-width:100%;height:auto}}table{{border-collapse:collapse;display:block;overflow:auto}}td,th{{padding:.45rem .8rem;border:1px solid #c6d2dc;text-align:left}}pre{{padding:1rem;overflow:auto;background:#eef3f7;border-radius:5px}}code{{font-size:.88em}}h1,h2,h3{{line-height:1.2}}nav{{font-size:.9rem;border-bottom:1px solid #c6d2dc;padding-bottom:1rem}}
-</style></head><body><nav><a href="https://xangma.github.io/pycbc-jax-benchmarks/">Campaign index</a> · <a href="https://github.com/xangma/pycbc-jax-benchmarks/releases/tag/{TAG}">Frozen release</a> · <a href="{BLOB}{quote(source.relative_to(ROOT).as_posix())}">Source</a></nav>{body}</body></html>\n''')
+</style></head><body><nav><a href="https://xangma.github.io/pycbc-jax-benchmarks/">Campaign index</a> · <a href="https://github.com/xangma/pycbc-jax-benchmarks/releases/tag/{tag}">Frozen release</a> · <a href="{blob}{quote(source.relative_to(ROOT).as_posix())}">Source</a></nav>{body}</body></html>\n''')
     (DEST / '.nojekyll').write_text('')
     print(f'Built {len(pages)} pages; all local source links resolved.')
 

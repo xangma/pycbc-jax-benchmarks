@@ -1,0 +1,78 @@
+{
+  "arms": {
+    "baseline": {
+      "exporter_sha256": "b45c8263fd860bc9d10d8a818d4f1fe91cda56efa79abd130818c75d9918ade4",
+      "gpu_events": 1393588,
+      "host_events": 13845,
+      "independent_verification": "baseline/independent-verification.json",
+      "input_sha256": {
+        "H-H1_LOSC_CLN_4_V1-1187007040-2048.gwf": "580e238054474fd09be900c47217bbcd0497ab84d1756f886647e934352e4865",
+        "L-L1_LOSC_CLN_4_V1-1187007040-2048.gwf": "ff9743efc1555a47bc3f2effcaabba252a2244f10fd3a8f85a7c5f677b3c772e",
+        "o2-subset-1024.hdf": "542e341ea3994ba0f52bfd238406af1c05b79f20aac8c0832f468e5f86e70693"
+      },
+      "portable_bytes": 12470331,
+      "portable_file": "baseline/live-intervals.json.gz",
+      "portable_sha256": "3c1608a9f49f7124cd51a844a3e1db81ec4671458362ec02aa868b4d76b09da7",
+      "saved_output_comparison": "passed_saved_scope_against_baseline_sample_01",
+      "source_revision": "366c7a955570deabaa1219d353f7847b21384698",
+      "status": "verified_portable_profile",
+      "summary": "baseline/summary.json",
+      "unpaired_native_stage_starts_excluded": 132
+    },
+    "combined": {
+      "exporter_sha256": "998792d5d05e3bb564dbdc5b65d7b96f3e42a2ce9e6502ae7f26fea188e8c21c",
+      "gpu_events": 106228,
+      "host_events": 12063,
+      "independent_verification": "combined/independent-verification.json",
+      "input_sha256": {
+        "H-H1_LOSC_CLN_4_V1-1187007040-2048.gwf": "580e238054474fd09be900c47217bbcd0497ab84d1756f886647e934352e4865",
+        "L-L1_LOSC_CLN_4_V1-1187007040-2048.gwf": "ff9743efc1555a47bc3f2effcaabba252a2244f10fd3a8f85a7c5f677b3c772e",
+        "o2-subset-1024.hdf": "542e341ea3994ba0f52bfd238406af1c05b79f20aac8c0832f468e5f86e70693"
+      },
+      "portable_bytes": 1136960,
+      "portable_file": "combined/live-intervals.json.gz",
+      "portable_sha256": "97890b446e542868bb096c603f7f661e542e9cea417a4e7b3c7e9a819bbecea5",
+      "saved_output_comparison": "passed_saved_scope_against_corresponding_baseline_profile_and_baseline_sample_01",
+      "source_revision": "00ea5024c4efaebfc2e54393dc974241281aad0c",
+      "status": "verified_portable_profile_saved_output_regression_passed",
+      "summary": "combined/summary.json",
+      "unpaired_native_stage_starts_excluded": 132
+    },
+    "filter-only": {
+      "exporter_sha256": "998792d5d05e3bb564dbdc5b65d7b96f3e42a2ce9e6502ae7f26fea188e8c21c",
+      "gpu_events": 1395010,
+      "host_events": 12267,
+      "independent_verification": "filter-only/independent-verification.json",
+      "input_sha256": {
+        "H-H1_LOSC_CLN_4_V1-1187007040-2048.gwf": "580e238054474fd09be900c47217bbcd0497ab84d1756f886647e934352e4865",
+        "L-L1_LOSC_CLN_4_V1-1187007040-2048.gwf": "ff9743efc1555a47bc3f2effcaabba252a2244f10fd3a8f85a7c5f677b3c772e",
+        "o2-subset-1024.hdf": "542e341ea3994ba0f52bfd238406af1c05b79f20aac8c0832f468e5f86e70693"
+      },
+      "portable_bytes": 12415040,
+      "portable_file": "filter-only/live-intervals.json.gz",
+      "portable_sha256": "186e8cc48c991d6b0ed96f5e583317e4c082eff3f159964daba3eb3296a4d2dd",
+      "saved_output_comparison": "passed_saved_scope_against_corresponding_baseline_profile",
+      "source_revision": "a962193cd881bb511b61157088b68db70e316b8d",
+      "status": "verified_portable_profile_saved_output_regression_passed",
+      "summary": "filter-only/summary.json",
+      "unpaired_native_stage_starts_excluded": 132
+    }
+  },
+  "campaign": "2026-10-09-live-gaps",
+  "clock_interpretation": "Session-origin metadata equality and NVTX call-envelope validation are independent of fixed-window arithmetic checks. GPU times are unchanged; host/monitor times subtract the exact session origin. Host/GPU stage attribution retains boundary uncertainty.",
+  "clock_verification": "clock-verification.json",
+  "definitions": {
+    "export": "PID identities replaced by application/rank labels. Times and durations are unchanged; no arbitrary StringIds, kernel labels, commands, paths or input strain are exported.",
+    "gpu": "Selected application kernel/memcpy intervals only; memsets excluded. Union measures recorded activity, not occupancy or whole-device utilization.",
+    "host": "Allowlisted native/observer host submission phases; no implied device fence, except explicitly named final completion scopes.",
+    "monitor": "Callback point timestamps, not durations. Backend notifications include cache retrieval and do not establish cold compilation."
+  },
+  "privacy": "No raw Nsight/SQLite, PIDs, runtime/host paths, arbitrary labels or strain included.",
+  "schema_version": 1,
+  "tools": {
+    "campaign_export_difference": "One additional allowlisted native phase: filter_candidate_prepare. All other exporter bytes are unchanged.",
+    "campaign_export_profile.py": "998792d5d05e3bb564dbdc5b65d7b96f3e42a2ce9e6502ae7f26fea188e8c21c",
+    "export_profile.py": "b45c8263fd860bc9d10d8a818d4f1fe91cda56efa79abd130818c75d9918ade4",
+    "render_profile.py": "8fb4977476190580fb3331908b754e6268232e961cd2e1cb436770bbb866dc7a"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "files_privacy_checked": 58,
+  "limitations": [
+    "Grouped diagnostic sampling, not compile-free steady state or pristine original-CPU speedup.",
+    "Saved-output gate does not include full conditioned strain, every internal decision or retained state.",
+    "Common wall suffix can include earlier-block backlog on the other rank; retained stage work differs across arms."
+  ],
+  "markdown_relative_links_checked": 43,
+  "privacy": "All JSON/gzip/text/code and PNG textual metadata checked; no private hostnames/paths or raw identity fields in public data. Python observer/analyzer source contains field names as code, not captured identities. Raw receipts, captures and inputs stay private.",
+  "profiles": {
+    "arms": 3,
+    "ordered_gpu_rows_and_scopes_checked_independently": true,
+    "renderer_and_plot_hashes_verified": true,
+    "views_per_arm": 4
+  },
+  "publication_scope": "Separate 2026-10-09-live-gaps campaign; prior release evidence unchanged.",
+  "saved_output_gate": "All baseline repeats and both candidates pass exact saved-scope comparisons.",
+  "source_binding": "Prime, all timing samples and separate profile pass frozen source/input/work contracts.",
+  "status": "verified_completed_diagnostic_campaign",
+  "tests": {
+    "cuda_parameter_cases": 242,
+    "failed": 0,
+    "passed": 521,
+    "skipped": 0
+  }
+}

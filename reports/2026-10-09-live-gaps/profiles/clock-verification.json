@@ -1,0 +1,59 @@
+{
+  "arms": {
+    "baseline": {
+      "matched_markers": [
+        {
+          "inside_wrapper_envelope": true,
+          "marker_emission_after_payload_ns": 47629,
+          "rank": 1,
+          "wrapper_envelope_ns": 50927
+        },
+        {
+          "inside_wrapper_envelope": true,
+          "marker_emission_after_payload_ns": 38398,
+          "rank": 0,
+          "wrapper_envelope_ns": 42471
+        }
+      ],
+      "metadata_origin_difference_ns": 0,
+      "private_capture_sha256": "d5bcb7d74afc57374603e674f2ca3724ff12e969f693e1a93ab9f491dc0a0b7a"
+    },
+    "combined": {
+      "matched_markers": [
+        {
+          "inside_wrapper_envelope": true,
+          "marker_emission_after_payload_ns": 38015,
+          "rank": 1,
+          "wrapper_envelope_ns": 41008
+        },
+        {
+          "inside_wrapper_envelope": true,
+          "marker_emission_after_payload_ns": 37350,
+          "rank": 0,
+          "wrapper_envelope_ns": 40837
+        }
+      ],
+      "metadata_origin_difference_ns": 0,
+      "private_capture_sha256": "0fe76bc3083844a46e66a92a3e71b7c8ea770478b46922f41b47d06b11e6ac41"
+    },
+    "filter-only": {
+      "matched_markers": [
+        {
+          "inside_wrapper_envelope": true,
+          "marker_emission_after_payload_ns": 39647,
+          "rank": 1,
+          "wrapper_envelope_ns": 41849
+        },
+        {
+          "inside_wrapper_envelope": true,
+          "marker_emission_after_payload_ns": 38825,
+          "rank": 0,
+          "wrapper_envelope_ns": 42269
+        }
+      ],
+      "metadata_origin_difference_ns": 0,
+      "private_capture_sha256": "a364c7c25bbf6369b20e2b46984e13906c74bc6ca934b3323a51eced6768dfad"
+    }
+  },
+  "definition": "GPU timestamps remain as recorded session-relative integers. Native host/monitor timestamps subtract the exact session origin. The session-origin metadata fields agree, and each origin-mapped NVTX clock event lies inside its matching wrapper before/return envelope. Marker emission latency is not treated as a clock correction. Exact integer arithmetic remains conditional on this clock mapping; host/GPU boundary association retains emission-envelope uncertainty."
+}

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Reproduce the diagnostic campaign</title><style>
+body{max-width:1100px;margin:2rem auto;padding:0 1.2rem;font:17px/1.6 system-ui,sans-serif;color:#172a3a;background:#fff}
+a{color:#165b94}img{max-width:100%;height:auto}table{border-collapse:collapse;display:block;overflow:auto}td,th{padding:.45rem .8rem;border:1px solid #c6d2dc;text-align:left}pre{padding:1rem;overflow:auto;background:#eef3f7;border-radius:5px}code{font-size:.88em}h1,h2,h3{line-height:1.2}nav{font-size:.9rem;border-bottom:1px solid #c6d2dc;padding-bottom:1rem}
+</style></head><body><nav><a href="https://xangma.github.io/pycbc-jax-benchmarks/">Campaign index</a> · <a href="https://github.com/xangma/pycbc-jax-benchmarks/releases/tag/2026-10-09-live-gaps">Frozen release</a> · <a href="https://github.com/xangma/pycbc-jax-benchmarks/blob/2026-10-09-live-gaps/reports/2026-10-09-live-gaps/PROTOCOL.md">Source</a></nav><h1>Reproduce the diagnostic campaign</h1>
+<p>Use the source commits and production manifests in <a href="https://raw.githubusercontent.com/xangma/pycbc-jax-benchmarks/2026-10-09-live-gaps/reports/2026-10-09-live-gaps/sources.json">sources.json</a>
+with the same runtime across arms. All candidates reuse the frozen baseline
+build's 11 native extensions plus generated <code>pycbc/version.py</code> metadata, as
+<a href="https://raw.githubusercontent.com/xangma/pycbc-jax-benchmarks/2026-10-09-live-gaps/reports/2026-10-09-live-gaps/runtime-overlay.json">hashed separately</a>; they are not clean native rebuilds.
+Generated version text does not identify a candidate source commit. The explicit
+revision/tree and production hashes establish source identity.</p>
+<p>The measured system has a Threadripper PRO
+3995WX, 128 logical CPUs, 251 GiB RAM and one RTX 4090 (24,564 MiB). Allocate the
+same two fixed CPU cores and one numerical thread per MPI rank. Other system
+services remain running. The observed runtime versions are Python 3.12.8,
+JAX 0.11.2 and NumPy 2.2.6. The <a href="https://raw.githubusercontent.com/xangma/pycbc-jax-benchmarks/2026-10-09-live-gaps/reports/2026-10-09-live-gaps/software.json">inherited observed baseline inventory</a>
+also records jaxlib 0.11.2, SciPy 1.16.3, LALSuite 7.26.15, h5py 3.16.0, mpi4py
+4.0.0 and Nsight Systems 2026.1.3.425. Only Python/JAX/NumPy are re-recorded by
+the new rank receipts. These observations are not a complete environment lock;
+record recreated environment and native binary hashes before rerunning validation.</p>
+<p>Prepare the exact uncompressed Live bank and GW170817 frames using the benchmark
+repository's <code>tools/prepare_inputs.py</code> and the pinned provenance/selection in
+<a href="https://raw.githubusercontent.com/xangma/pycbc-jax-benchmarks/2026-10-09-live-gaps/reports/2026-10-09-live-gaps/inputs.json">inputs.json</a>. Check all SHA-256 values before running. Frame input
+is 4096 Hz; Live analyzes at 2048 Hz. The historical input-generation source
+revision is separate from the measured JAX baseline.</p>
+<p>For each arm, copy <code>observer/&lt;arm&gt;/config-template.json</code> to <code>config-v2.json</code> in
+the same directory. Replace every angle-bracket token with your own resource
+location or two distinct CPU IDs. <code>&lt;SOURCE&gt;</code> is that arm's frozen source checkout;
+<code>&lt;PYTHON&gt;</code> is the common Python executable; <code>&lt;INPUTS&gt;</code> holds the verified files;
+<code>&lt;RESULTS&gt;</code> is a new output directory; <code>&lt;CACHE&gt;</code> is a private cache directory unique
+to the arm; <code>&lt;CUDA&gt;</code> and <code>&lt;NVTX_LIBRARY&gt;</code> identify the installed CUDA toolchain and
+NVTX library. Keep the adjacent source manifest unchanged. The driver verifies
+all recorded production blobs and input hashes before and after execution.
+The scientific command and environment are fully listed in
+<a href="https://raw.githubusercontent.com/xangma/pycbc-jax-benchmarks/2026-10-09-live-gaps/reports/2026-10-09-live-gaps/protocol.json">protocol.json</a>.</p>
+<p>From the benchmark repository root, with <code>&lt;CAMPAIGN&gt;</code> replaced by this campaign's
+relative directory, run:</p>
+<pre><code class="language-sh">python &lt;CAMPAIGN&gt;/observer/run-v2.py --config &lt;CAMPAIGN&gt;/observer/baseline/config-v2.json --mode samples
+python &lt;CAMPAIGN&gt;/observer/run-v2.py --config &lt;CAMPAIGN&gt;/observer/baseline/config-v2.json --mode profile
+</code></pre>
+<p>Repeat with the filter-only and combined configs, then apply the exact-output
+validation gate before interpreting the comparison. All three arms have completed
+prime, three timing samples and a separate profile. Existing result directories are never reused. The observer and
+controller are the exact recorded scripts; their hashes are in <code>sources.json</code>.
+Generated rank receipts and raw Nsight reports can contain local paths/PIDs and
+must remain private. Publish only the explicitly sanitized derived evidence.</p>
+<p>The samples command runs one excluded prime and three fresh MPI process pairs.
+It retains that arm's persistent JAX/codec caches. The profile command requires
+successful samples, runs a separate fresh pair under Nsight Systems, and exports
+SQLite privately. The recorded command traces CUDA, NVTX and OS runtime, includes
+CUDA graph nodes, and disables CPU sampling/context-switch capture. There are no
+per-stage device fences. The wrapper performs one final JAX completion/effects
+barrier and MPI barrier.</p>
+<p>The full replay has 33 native blocks, of which 26 valid 8 s blocks per detector
+cover 208 unique seconds each: 425,984 template-detector-seconds. The suffix drops
+the first two valid blocks and covers 192 s per detector: 393,216
+template-detector-seconds. Its wall boundary is the earliest rank reaching the
+same data epoch through latest completion. Do not use suffix work with the full
+launch-to-exit wall. The original replay's observed valid endpoint exceeds the
+requested CLI endpoint and is retained identically in every arm.</p>
+<p>The prime populates the persistent cache; it does not warm a new process's tracing,
+lowering or executable-loading state. Check the observed callbacks and cache
+counts inside each measured suffix before claiming a compile-free interval.
+Callbacks' own measured overhead does not remove all logging, formatting,
+scheduling or instrumentation cost. Profile timing is excluded from sample
+summaries. Actual arm sampling is grouped, not interleaved.</p>
+<p>Compare every nonempty saved HDF inventory, ordered dataset dtype/shape/value bits
+and all attributes against the fresh fixed-seed baseline. Normalize only the
+verified executable and output-location command fields. Do not sort triggers or
+detector labels, drop scientific datasets or relax tolerances. Report the strict
+saved-output gate separately from tests of internal retained state and any
+complete pristine-CPU qualification. Keep failures with their exact differences.</p>
+<p>To reproduce duration/cache aggregates from private rank receipts, run the supplied
+<code>tools/analyze_duration_observers.py --input &lt;RESULTS&gt; --output &lt;PRIVATE_ANALYSIS&gt;</code>,
+then <code>tools/aggregate_duration_samples.py --analysis &lt;PRIVATE_ANALYSIS&gt;/duration-cache-analysis.json --controller &lt;RESULTS&gt;/samples-status.json --output &lt;AGGREGATES&gt;</code>.
+The detailed intermediate contains process/thread identities and stays private;
+only the aggregate three-sample summary is portable. Callback durations can nest
+and must not be summed as independent wall-time costs.</p></body></html>

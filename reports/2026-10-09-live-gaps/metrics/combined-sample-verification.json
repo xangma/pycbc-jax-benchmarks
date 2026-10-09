@@ -1,0 +1,50 @@
+{
+  "callback_duration_caveat": "Summed reported callback durations; categories/functions may nest and are not additive wall-time attribution. Percentages use totals within the same recorded category.",
+  "checks": [
+    {
+      "cache_snapshot_pairs_verified": true,
+      "duration_counts_and_sums_verified": true,
+      "private_receipt_sha256": "97f3837aca1483805782928bdbdcb6ff83539686bdbd5e4a95f220069d205e03",
+      "rank": 0,
+      "run": "sample-01"
+    },
+    {
+      "cache_snapshot_pairs_verified": true,
+      "duration_counts_and_sums_verified": true,
+      "private_receipt_sha256": "b54d3839412776def9da0fd13fb41769903396378a18353876b660d8cd0e44f3",
+      "rank": 1,
+      "run": "sample-01"
+    },
+    {
+      "cache_snapshot_pairs_verified": true,
+      "duration_counts_and_sums_verified": true,
+      "private_receipt_sha256": "ecd57e15b51feb4919824b30b727e88a0d6c2747119a7ea088ab9ed61f6a92be",
+      "rank": 0,
+      "run": "sample-02"
+    },
+    {
+      "cache_snapshot_pairs_verified": true,
+      "duration_counts_and_sums_verified": true,
+      "private_receipt_sha256": "c7b13feb71f581bbcf72e703c15c7eb9a44a20e28db46af1386851133cfe0461",
+      "rank": 1,
+      "run": "sample-02"
+    },
+    {
+      "cache_snapshot_pairs_verified": true,
+      "duration_counts_and_sums_verified": true,
+      "private_receipt_sha256": "8d4ebb36678eb2565bd599ce0f997b2162e294be0e6d0200a08c66b071d8c83c",
+      "rank": 0,
+      "run": "sample-03"
+    },
+    {
+      "cache_snapshot_pairs_verified": true,
+      "duration_counts_and_sums_verified": true,
+      "private_receipt_sha256": "e755fa3cae9652a653f6ab588bc2df7376c3195884b2804315327d41ce12c0f3",
+      "rank": 1,
+      "run": "sample-03"
+    }
+  ],
+  "passed": true,
+  "scope": "Three timing samples; prime/profile excluded",
+  "timing_statistics_match_controller": true
+}

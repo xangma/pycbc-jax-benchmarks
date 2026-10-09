@@ -1,0 +1,22 @@
+{
+  "baseline_source_revision": "366c7a955570deabaa1219d353f7847b21384698",
+  "build_architecture": "CPython 3.12, x86-64 Linux",
+  "description": "Eleven prebuilt PyCBC native extensions and generated pycbc/version.py are reused from the frozen baseline build; candidates are not clean native rebuilds. These runtime files are separate from tracked source revision/tree guards.",
+  "generated_version_metadata_caveat": "Generated version text can describe the baseline build. Source identity is established by the explicit source revision/tree and production-file hashes, not generated version text.",
+  "reused_extension_count": 11,
+  "schema_version": 1,
+  "sha256": {
+    "pycbc/events/eventmgr_cython.cpython-312-x86_64-linux-gnu.so": "6cfba18e44e51b1596bb5c06bc8cd41a82ae813e0f8b52a24197a00360fcfd68",
+    "pycbc/events/simd_threshold_cython.cpython-312-x86_64-linux-gnu.so": "62bd3cd8e3be846a650a461704b50deb61a8995917c8a480f0286f1bf40f68df",
+    "pycbc/fft/fftw_pruned_cython.cpython-312-x86_64-linux-gnu.so": "a84f7d4157e2943447be113951778545cf1952aa358c7cfef048756b5fb3288b",
+    "pycbc/filter/matchedfilter_cpu.cpython-312-x86_64-linux-gnu.so": "9dd86b75c143a916b2f032c452349a29474191ef87daa8520e83f3d000e84c8d",
+    "pycbc/filter/simd_correlate_cython.cpython-312-x86_64-linux-gnu.so": "1eab5511f9136441801db57ec7dd2ce91c6a720bb48dbe508130f45f2e4b31dd",
+    "pycbc/inference/models/relbin_cpu.cpython-312-x86_64-linux-gnu.so": "22e85ac0ede2f266298094a0924d57bcfd13e1537358ccffd608a38ee5acf194",
+    "pycbc/types/array_cpu.cpython-312-x86_64-linux-gnu.so": "e36da16d4e529b6d7cef914934199c1ec813164101297ec48b122768442219e8",
+    "pycbc/version.py": "89eac9f8268f5c6979cb3bb90015f5aea48f0a8a3922130a7a2f3256dece0489",
+    "pycbc/vetoes/chisq_cpu.cpython-312-x86_64-linux-gnu.so": "2d3b803d63ea21c685085322b8c83ea3b23f46458fbfe8dbb49e1897b48b7e0c",
+    "pycbc/waveform/decompress_cpu_cython.cpython-312-x86_64-linux-gnu.so": "3e962f76e92f82e7ab4ac3c0bd2b77e185c5166a9886fd9c328cf0cbb7569af5",
+    "pycbc/waveform/spa_tmplt_cpu.cpython-312-x86_64-linux-gnu.so": "f276ecf190bb5e5ef84964df2d3cf3e48081fe821093de2bce03cfd573e6bb57",
+    "pycbc/waveform/utils_cpu.cpython-312-x86_64-linux-gnu.so": "811c2e307348be164808c5a2a9a573e4681da2fdec187495b6368b21f78aa7e3"
+  }
+}

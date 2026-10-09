@@ -1,0 +1,144 @@
+{
+  "combined_observations": {
+    "duration_details": "metrics/combined-duration-cache.json",
+    "foreground_cache_observation": "Neither named function appears in cache-size snapshots. This is not a measured zero delta.",
+    "foreground_functions": [
+      "_resident_live_foreground_core",
+      "_join_resident_live_foreground"
+    ],
+    "foreground_named_cache_growth_each_timing_suffix": null,
+    "foreground_named_trace_lower_backend_events_each_timing_suffix": 0,
+    "full_pipeline_suffix_compile_free": false,
+    "limitation": "Absence of the two named foreground callbacks/cache growth does not establish absence of all compilation or internal specialization. Other named functions and generic stage still trace/lower/load.",
+    "profile_gap_details": "metrics/combined-profile-gaps.json",
+    "psd_old_loop_and_ordered_pallas_counts_invariant_over_clock_envelope": true,
+    "psd_ordered_pallas_events": 104,
+    "psd_selected_old_loop_events": 104,
+    "query_count_caveat": "metrics/query-scope-boundary.json",
+    "rank_0_category_seconds": {
+      "backend_or_cache_load": {
+        "max": 5.068094253540039,
+        "median": 5.038053274154663,
+        "min": 4.934551954269409,
+        "samples": [
+          5.068094253540039,
+          4.934551954269409,
+          5.038053274154663
+        ]
+      },
+      "lower": {
+        "max": 3.730302333831787,
+        "median": 3.7268083095550537,
+        "min": 3.4821248054504395,
+        "samples": [
+          3.7268083095550537,
+          3.4821248054504395,
+          3.730302333831787
+        ]
+      },
+      "trace": {
+        "max": 3.6377718448638916,
+        "median": 3.456289529800415,
+        "min": 3.4546306133270264,
+        "samples": [
+          3.456289529800415,
+          3.6377718448638916,
+          3.4546306133270264
+        ]
+      }
+    },
+    "rank_0_suffix_cache_hit_notifications": {
+      "max": 386,
+      "median": 384,
+      "min": 383,
+      "samples": [
+        386,
+        383,
+        384
+      ]
+    },
+    "rank_0_suffix_cache_miss_notifications": {
+      "max": 0,
+      "median": 0,
+      "min": 0,
+      "samples": [
+        0,
+        0,
+        0
+      ]
+    },
+    "rank_1_suffix_duration_notifications": 0
+  },
+  "filter_only_change": {
+    "all_three_rank_1_suffix_duration_notifications": {
+      "backend_or_cache_load": 0,
+      "lower": 0,
+      "trace": 0
+    },
+    "description": "Allow existing resident filtering/veto admission when the only original reference operation is waveform. Other reference selectors keep conservative admission, and default routes stay unchanged.",
+    "full_suffix_compile_free": false,
+    "native_route_observations": "metrics/filter-route-observations.json",
+    "production_path": "pycbc/filter/matchedfilter_jax.py",
+    "rank_0_persistent_cache_hits_each_suffix": 425,
+    "result": "Three timing samples and separate profile measured; prime, all three samples and profile pass exact saved-output comparison with matching frozen baseline runs."
+  },
+  "psd_intervention_verification": "metrics/psd-kernel-verification.json",
+  "psd_launch_signature": {
+    "all_captured_kernels": 916130,
+    "capture": "New baseline diagnostic profile, separate from timing samples",
+    "counts_verified": true,
+    "fraction_of_all_kernels": 0.9030596094440745,
+    "fraction_of_psd_kernels": 0.9952171067826623,
+    "limitation": "Unfenced host stages select temporal overlap; generic XLA names can collide. The repeated count signature associates the ordered scan with these launches but does not independently establish its wall-time cost.",
+    "per_refresh": "Two times 3977 loop_add_fusion_1 launches, and two times 3978 loop_add_fusion launches, on each rank.",
+    "portable_profile_sha256": "3c1608a9f49f7124cd51a844a3e1db81ec4671458362ec02aa868b4d76b09da7",
+    "private_capture_sha256": "d5bcb7d74afc57374603e674f2ca3724ff12e969f693e1a93ab9f491dc0a0b7a",
+    "psd_span_kernels": 831296,
+    "ranks": {
+      "0": {
+        "family_count_distribution_per_call": {
+          "loop_add_fusion": {
+            "7956": 26
+          },
+          "loop_add_fusion_1": {
+            "7954": 26
+          }
+        },
+        "psd_host_union_seconds": 11.292412337,
+        "psd_kernel_union_seconds": 0.4112201,
+        "psd_refresh_calls": 26,
+        "psd_span_kernel_events": 415647,
+        "selected_family_events": 413660,
+        "selected_family_summed_seconds": 0.408326878
+      },
+      "1": {
+        "family_count_distribution_per_call": {
+          "loop_add_fusion": {
+            "7956": 26
+          },
+          "loop_add_fusion_1": {
+            "7954": 26
+          }
+        },
+        "psd_host_union_seconds": 15.201280548,
+        "psd_kernel_union_seconds": 0.414415623,
+        "psd_refresh_calls": 26,
+        "psd_span_kernel_events": 415649,
+        "selected_family_events": 413660,
+        "selected_family_summed_seconds": 0.411516719
+      }
+    },
+    "scan_step_count": 3977,
+    "selected_families_events": 827320,
+    "selected_families_summed_seconds": 0.819843597,
+    "source_revision": "366c7a955570deabaa1219d353f7847b21384698"
+  },
+  "schema_version": 1,
+  "specialization": {
+    "cache_hit_caveat": "Persistent cache hits can avoid backend code generation while fresh processes still trace, lower and load executables. Backend callback duration does not distinguish uncached code generation from cache retrieval/loading.",
+    "cache_size_caveat": "A positive delta establishes new retained dispatcher entries for that call interval; an unchanged positive size shows retention, not a per-call cache-hit counter. Aliases must not be summed.",
+    "details": "metrics/baseline-duration-cache.json",
+    "duration_caveat": "Summed reported callback durations; categories/functions may nest and are not additive wall-time attribution. Percentages use totals within the same recorded category.",
+    "evidence": "Three timing samples show function-specific trace, lowering, and backend/cache-load durations plus positive in-process JIT cache-size deltas during query/cluster stages."
+  }
+}

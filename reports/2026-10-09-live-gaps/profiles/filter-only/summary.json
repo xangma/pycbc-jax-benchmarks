@@ -1,0 +1,279 @@
+{
+  "app": "live",
+  "definitions": {
+    "export": "PID identities replaced by application/rank labels. Times and durations are unchanged; no arbitrary StringIds, kernel labels, commands, paths or input strain are exported.",
+    "gpu": "Selected application kernel/memcpy intervals only; memsets excluded. Union measures recorded activity, not occupancy or whole-device utilization.",
+    "host": "Allowlisted native/observer host submission phases; no implied device fence, except explicitly named final completion scopes.",
+    "monitor": "Callback point timestamps, not durations. Backend notifications include cache retrieval and do not establish cold compilation."
+  },
+  "gpu_event_count": 1395010,
+  "host_event_count": 12267,
+  "plots": {
+    "detail": {
+      "dense_lanes_display_binned": true,
+      "file": "detail.png",
+      "sha256": "29cdd4bad460c3d05ef5067de2426ccab2b5d421fba1978c123bca83483d42f1"
+    },
+    "search": {
+      "dense_lanes_display_binned": true,
+      "file": "search.png",
+      "sha256": "571602d8601e508fffec4617b1b9d080dcdd1f559a61b5d4cc40fb3998e3283d"
+    },
+    "warm": {
+      "dense_lanes_display_binned": true,
+      "file": "warm.png",
+      "sha256": "9ab2318412db0fa67d219ce6474ceeea1852dbf9a92bc9a8347dd1fb42fef9cb"
+    },
+    "whole": {
+      "dense_lanes_display_binned": true,
+      "file": "whole.png",
+      "sha256": "09605e5352a75183578e55bfa87c5743e1ee8497d1fd664c95ea4550cb462fe9"
+    }
+  },
+  "portable_data_sha256": "186e8cc48c991d6b0ed96f5e583317e4c082eff3f159964daba3eb3296a4d2dd",
+  "processes": [
+    "rank 0",
+    "rank 1"
+  ],
+  "renderer": {
+    "display": "PNG appearance can vary with plotting/font versions; integer event counts and unions must agree exactly.",
+    "matplotlib_version": "3.11.1"
+  },
+  "source_revision": "a962193cd881bb511b61157088b68db70e316b8d",
+  "unpaired_native_stage_starts_excluded": 132,
+  "verified_against_original_summary": true,
+  "windows": {
+    "detail": {
+      "boundary_basis": "Deterministic central detail window of the suffix; same unverified warm status.",
+      "completed_transfer_bytes": [
+        [
+          "rank 0",
+          0,
+          "D2D",
+          13613340
+        ],
+        [
+          "rank 0",
+          0,
+          "D2H",
+          26
+        ],
+        [
+          "rank 0",
+          0,
+          "H2D",
+          1452
+        ],
+        [
+          "rank 1",
+          0,
+          "D2D",
+          877440
+        ],
+        [
+          "rank 1",
+          0,
+          "D2H",
+          77882
+        ],
+        [
+          "rank 1",
+          0,
+          "H2D",
+          84
+        ]
+      ],
+      "duration_ns": 400000000,
+      "end_ns": 62595140782,
+      "overlapping_event_counts": {
+        "completed_D2D": 8726,
+        "completed_D2H": 10,
+        "completed_H2D": 80,
+        "copy": 8816,
+        "kernel": 17289
+      },
+      "recorded_gpu_activity_fraction": 0.0660401675,
+      "recorded_gpu_activity_union_ns": {
+        "all": 26416067,
+        "copy": 8085130,
+        "kernel": 18330937
+      },
+      "start_ns": 62195140782,
+      "warm_status_verified": false
+    },
+    "search": {
+      "boundary_basis": "Combined public_live host scope from CLI entry through final completion fence.",
+      "completed_transfer_bytes": [
+        [
+          "rank 0",
+          0,
+          "D2D",
+          395925732
+        ],
+        [
+          "rank 0",
+          0,
+          "D2H",
+          915472
+        ],
+        [
+          "rank 0",
+          0,
+          "H2D",
+          131318838
+        ],
+        [
+          "rank 1",
+          0,
+          "D2D",
+          3536478448
+        ],
+        [
+          "rank 1",
+          0,
+          "D2H",
+          2082778
+        ],
+        [
+          "rank 1",
+          0,
+          "H2D",
+          2085043706
+        ]
+      ],
+      "duration_ns": 81951175994,
+      "end_ns": 83067351137,
+      "overlapping_event_counts": {
+        "completed_D2D": 459777,
+        "completed_D2H": 467,
+        "completed_H2D": 11365,
+        "copy": 471609,
+        "kernel": 923401
+      },
+      "recorded_gpu_activity_fraction": 0.03954980143588542,
+      "recorded_gpu_activity_union_ns": {
+        "all": 3241152738,
+        "copy": 549926132,
+        "kernel": 2694837045
+      },
+      "start_ns": 1116175143,
+      "warm_status_verified": false
+    },
+    "warm": {
+      "boundary_basis": "Common valid-data suffix after two valid blocks through final completion fence; zero-compilation unverified.",
+      "completed_transfer_bytes": [
+        [
+          "rank 0",
+          0,
+          "D2D",
+          353244424
+        ],
+        [
+          "rank 0",
+          0,
+          "D2H",
+          915420
+        ],
+        [
+          "rank 0",
+          0,
+          "H2D",
+          119844
+        ],
+        [
+          "rank 1",
+          0,
+          "D2D",
+          1221375720
+        ],
+        [
+          "rank 1",
+          0,
+          "D2H",
+          1947482
+        ],
+        [
+          "rank 1",
+          0,
+          "H2D",
+          163056
+        ]
+      ],
+      "duration_ns": 41344420709,
+      "end_ns": 83067351137,
+      "overlapping_event_counts": {
+        "completed_D2D": 409103,
+        "completed_D2H": 431,
+        "completed_H2D": 4680,
+        "copy": 414214,
+        "kernel": 832520
+      },
+      "recorded_gpu_activity_fraction": 0.06501443732684517,
+      "recorded_gpu_activity_union_ns": {
+        "all": 2687984249,
+        "copy": 378525894,
+        "kernel": 2312054414
+      },
+      "start_ns": 41722930428,
+      "warm_status_verified": false
+    },
+    "whole": {
+      "boundary_basis": "Extent of selected application recorded GPU activity and host ranges; full launch-to-exit timing is separate.",
+      "completed_transfer_bytes": [
+        [
+          "rank 0",
+          0,
+          "D2D",
+          395925732
+        ],
+        [
+          "rank 0",
+          0,
+          "D2H",
+          915472
+        ],
+        [
+          "rank 0",
+          0,
+          "H2D",
+          131318838
+        ],
+        [
+          "rank 1",
+          0,
+          "D2D",
+          3536478448
+        ],
+        [
+          "rank 1",
+          0,
+          "D2H",
+          2082778
+        ],
+        [
+          "rank 1",
+          0,
+          "H2D",
+          2085043706
+        ]
+      ],
+      "duration_ns": 81951175995,
+      "end_ns": 83067351138,
+      "overlapping_event_counts": {
+        "completed_D2D": 459777,
+        "completed_D2H": 467,
+        "completed_H2D": 11365,
+        "copy": 471609,
+        "kernel": 923401
+      },
+      "recorded_gpu_activity_fraction": 0.03954980143540282,
+      "recorded_gpu_activity_union_ns": {
+        "all": 3241152738,
+        "copy": 549926132,
+        "kernel": 2694837045
+      },
+      "start_ns": 1116175143,
+      "warm_status_verified": false
+    }
+  }
+}

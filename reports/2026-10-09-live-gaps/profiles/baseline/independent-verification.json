@@ -1,0 +1,238 @@
+{
+  "gpu_event_count": 1393588,
+  "gpu_row_sha256": "d924a71e2c4e99e0a8512143ca75161b6af0c9be4501a46622a13a6aa8c5fd7c",
+  "hash_seed": "4",
+  "input_sha256": {
+    "H-H1_LOSC_CLN_4_V1-1187007040-2048.gwf": "580e238054474fd09be900c47217bbcd0497ab84d1756f886647e934352e4865",
+    "L-L1_LOSC_CLN_4_V1-1187007040-2048.gwf": "ff9743efc1555a47bc3f2effcaabba252a2244f10fd3a8f85a7c5f677b3c772e",
+    "o2-subset-1024.hdf": "542e341ea3994ba0f52bfd238406af1c05b79f20aac8c0832f468e5f86e70693"
+  },
+  "method": "Independent read-only SQLite queries: complete ordered GPU event-row SHA256, running-maximum interval unions, event counts, transfer bytes, and rank/controller window boundaries.",
+  "passed": true,
+  "processes": [
+    "rank 0",
+    "rank 1"
+  ],
+  "source_revision": "366c7a955570deabaa1219d353f7847b21384698",
+  "source_tree": "d43edf428d9bba23fc0243f41a4c66faf7d4de5f",
+  "source_unchanged": true,
+  "stage_synchronization": false,
+  "windows": {
+    "detail": {
+      "boundaries_ns": [
+        61458050379,
+        61858050379
+      ],
+      "completed_transfer_bytes": [
+        [
+          "rank 0",
+          0,
+          "H2D",
+          256
+        ],
+        [
+          "rank 1",
+          0,
+          "D2D",
+          18220536
+        ],
+        [
+          "rank 1",
+          0,
+          "D2H",
+          22402
+        ],
+        [
+          "rank 1",
+          0,
+          "H2D",
+          3292
+        ]
+      ],
+      "event_counts": {
+        "completed_D2D": 2093,
+        "completed_D2H": 52,
+        "completed_H2D": 88,
+        "copy": 2233,
+        "kernel": 4578
+      },
+      "passed": true,
+      "union_ns": {
+        "all": 49274971,
+        "copy": 2080889,
+        "kernel": 47279938
+      }
+    },
+    "search": {
+      "boundaries_ns": [
+        1096848774,
+        82531814612
+      ],
+      "completed_transfer_bytes": [
+        [
+          "rank 0",
+          0,
+          "D2D",
+          395925732
+        ],
+        [
+          "rank 0",
+          0,
+          "D2H",
+          915472
+        ],
+        [
+          "rank 0",
+          0,
+          "H2D",
+          131318838
+        ],
+        [
+          "rank 1",
+          0,
+          "D2D",
+          3515518888
+        ],
+        [
+          "rank 1",
+          0,
+          "D2H",
+          676174
+        ],
+        [
+          "rank 1",
+          0,
+          "H2D",
+          2085073930
+        ]
+      ],
+      "event_counts": {
+        "completed_D2D": 463430,
+        "completed_D2H": 1699,
+        "completed_H2D": 12329,
+        "copy": 477458,
+        "kernel": 916130
+      },
+      "passed": true,
+      "union_ns": {
+        "all": 2773753972,
+        "copy": 557538621,
+        "kernel": 2220094426
+      }
+    },
+    "warm": {
+      "boundaries_ns": [
+        40784286146,
+        82531814612
+      ],
+      "completed_transfer_bytes": [
+        [
+          "rank 0",
+          0,
+          "D2D",
+          353210400
+        ],
+        [
+          "rank 0",
+          0,
+          "D2H",
+          915420
+        ],
+        [
+          "rank 0",
+          0,
+          "H2D",
+          107904
+        ],
+        [
+          "rank 1",
+          0,
+          "D2D",
+          1203878504
+        ],
+        [
+          "rank 1",
+          0,
+          "D2H",
+          587272
+        ],
+        [
+          "rank 1",
+          0,
+          "H2D",
+          171492
+        ]
+      ],
+      "event_counts": {
+        "completed_D2D": 409951,
+        "completed_D2H": 1577,
+        "completed_H2D": 5479,
+        "copy": 417007,
+        "kernel": 824524
+      },
+      "passed": true,
+      "union_ns": {
+        "all": 2272070988,
+        "copy": 382747864,
+        "kernel": 1891675177
+      }
+    },
+    "whole": {
+      "boundaries_ns": [
+        1096848774,
+        82531814613
+      ],
+      "completed_transfer_bytes": [
+        [
+          "rank 0",
+          0,
+          "D2D",
+          395925732
+        ],
+        [
+          "rank 0",
+          0,
+          "D2H",
+          915472
+        ],
+        [
+          "rank 0",
+          0,
+          "H2D",
+          131318838
+        ],
+        [
+          "rank 1",
+          0,
+          "D2D",
+          3515518888
+        ],
+        [
+          "rank 1",
+          0,
+          "D2H",
+          676174
+        ],
+        [
+          "rank 1",
+          0,
+          "H2D",
+          2085073930
+        ]
+      ],
+      "event_counts": {
+        "completed_D2D": 463430,
+        "completed_D2H": 1699,
+        "completed_H2D": 12329,
+        "copy": 477458,
+        "kernel": 916130
+      },
+      "passed": true,
+      "union_ns": {
+        "all": 2773753972,
+        "copy": 557538621,
+        "kernel": 2220094426
+      }
+    }
+  }
+}

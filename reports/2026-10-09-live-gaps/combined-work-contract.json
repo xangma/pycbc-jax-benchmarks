@@ -1,0 +1,179 @@
+{
+  "checks": [
+    {
+      "distinct_templates": 1024,
+      "hash_seed": "4",
+      "input_hashes": true,
+      "loaded_module_hashes_match_bound_source_or_overlay": true,
+      "native_blocks": 33,
+      "private_receipt_sha256": "d41fb980eb242f3d867fbd04dbed7d6251732daa00e7dbf6b5368503d473d9c5",
+      "rank": 0,
+      "reference_operations": [
+        "waveform"
+      ],
+      "run": "prime",
+      "runtime_versions_equal": true,
+      "same_block_geometry": true,
+      "source_binding": true,
+      "source_unchanged": true,
+      "valid_blocks": 26
+    },
+    {
+      "distinct_templates": 1024,
+      "hash_seed": "4",
+      "input_hashes": true,
+      "loaded_module_hashes_match_bound_source_or_overlay": true,
+      "native_blocks": 33,
+      "private_receipt_sha256": "86cbbba5ac5d68d64a690b0f9607072a3710de02c8b58e1a40182c3a927c2e5d",
+      "rank": 1,
+      "reference_operations": [
+        "waveform"
+      ],
+      "run": "prime",
+      "runtime_versions_equal": true,
+      "same_block_geometry": true,
+      "source_binding": true,
+      "source_unchanged": true,
+      "valid_blocks": 26
+    },
+    {
+      "distinct_templates": 1024,
+      "hash_seed": "4",
+      "input_hashes": true,
+      "loaded_module_hashes_match_bound_source_or_overlay": true,
+      "native_blocks": 33,
+      "private_receipt_sha256": "97f3837aca1483805782928bdbdcb6ff83539686bdbd5e4a95f220069d205e03",
+      "rank": 0,
+      "reference_operations": [
+        "waveform"
+      ],
+      "run": "sample-01",
+      "runtime_versions_equal": true,
+      "same_block_geometry": true,
+      "source_binding": true,
+      "source_unchanged": true,
+      "valid_blocks": 26
+    },
+    {
+      "distinct_templates": 1024,
+      "hash_seed": "4",
+      "input_hashes": true,
+      "loaded_module_hashes_match_bound_source_or_overlay": true,
+      "native_blocks": 33,
+      "private_receipt_sha256": "b54d3839412776def9da0fd13fb41769903396378a18353876b660d8cd0e44f3",
+      "rank": 1,
+      "reference_operations": [
+        "waveform"
+      ],
+      "run": "sample-01",
+      "runtime_versions_equal": true,
+      "same_block_geometry": true,
+      "source_binding": true,
+      "source_unchanged": true,
+      "valid_blocks": 26
+    },
+    {
+      "distinct_templates": 1024,
+      "hash_seed": "4",
+      "input_hashes": true,
+      "loaded_module_hashes_match_bound_source_or_overlay": true,
+      "native_blocks": 33,
+      "private_receipt_sha256": "ecd57e15b51feb4919824b30b727e88a0d6c2747119a7ea088ab9ed61f6a92be",
+      "rank": 0,
+      "reference_operations": [
+        "waveform"
+      ],
+      "run": "sample-02",
+      "runtime_versions_equal": true,
+      "same_block_geometry": true,
+      "source_binding": true,
+      "source_unchanged": true,
+      "valid_blocks": 26
+    },
+    {
+      "distinct_templates": 1024,
+      "hash_seed": "4",
+      "input_hashes": true,
+      "loaded_module_hashes_match_bound_source_or_overlay": true,
+      "native_blocks": 33,
+      "private_receipt_sha256": "c7b13feb71f581bbcf72e703c15c7eb9a44a20e28db46af1386851133cfe0461",
+      "rank": 1,
+      "reference_operations": [
+        "waveform"
+      ],
+      "run": "sample-02",
+      "runtime_versions_equal": true,
+      "same_block_geometry": true,
+      "source_binding": true,
+      "source_unchanged": true,
+      "valid_blocks": 26
+    },
+    {
+      "distinct_templates": 1024,
+      "hash_seed": "4",
+      "input_hashes": true,
+      "loaded_module_hashes_match_bound_source_or_overlay": true,
+      "native_blocks": 33,
+      "private_receipt_sha256": "8d4ebb36678eb2565bd599ce0f997b2162e294be0e6d0200a08c66b071d8c83c",
+      "rank": 0,
+      "reference_operations": [
+        "waveform"
+      ],
+      "run": "sample-03",
+      "runtime_versions_equal": true,
+      "same_block_geometry": true,
+      "source_binding": true,
+      "source_unchanged": true,
+      "valid_blocks": 26
+    },
+    {
+      "distinct_templates": 1024,
+      "hash_seed": "4",
+      "input_hashes": true,
+      "loaded_module_hashes_match_bound_source_or_overlay": true,
+      "native_blocks": 33,
+      "private_receipt_sha256": "e755fa3cae9652a653f6ab588bc2df7376c3195884b2804315327d41ce12c0f3",
+      "rank": 1,
+      "reference_operations": [
+        "waveform"
+      ],
+      "run": "sample-03",
+      "runtime_versions_equal": true,
+      "same_block_geometry": true,
+      "source_binding": true,
+      "source_unchanged": true,
+      "valid_blocks": 26
+    }
+  ],
+  "compile_free_qualification": "not established by this work/source contract check",
+  "native_scientific_arguments_match_frozen_config": true,
+  "only_changed_loaded_modules": [
+    "pycbc.events.coinc_jax",
+    "pycbc.filter.matchedfilter_jax",
+    "pycbc.strain.strain_jax"
+  ],
+  "original_runtime_overlay": "runtime-overlay.json",
+  "passed": true,
+  "profile_contract_checks": [
+    {
+      "loaded_module_hash_failures": 0,
+      "private_receipt_sha256": "810dc88504d507f0f576ce8f5d37f648e62e3014a87bfce3e48c3d326f1503f0",
+      "rank": 0,
+      "same_scientific_work_contract": true,
+      "source_binding": true,
+      "source_unchanged": true
+    },
+    {
+      "loaded_module_hash_failures": 0,
+      "private_receipt_sha256": "9d46bee4bcc66262ce00e57618fa6cf34b4151e3439eb2c85635a0da1f7f41cd",
+      "rank": 1,
+      "same_scientific_work_contract": true,
+      "source_binding": true,
+      "source_unchanged": true
+    }
+  ],
+  "saved_output_gate": "passed prime, all three timing samples and separate profile; profile also passes versus baseline sample-01",
+  "scope": "Prime, three timing samples and separate profile. Prime/profile excluded from measured timing statistics.",
+  "source_revision": "00ea5024c4efaebfc2e54393dc974241281aad0c",
+  "source_tree": "1e32f3df3043305a1f651b9e2c8e3b147403cb57"
+}

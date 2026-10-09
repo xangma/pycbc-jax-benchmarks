@@ -6,6 +6,15 @@ reference switches and the benchmark protocol belong in the
 Measurements, plots and campaign receipts live here so they can be cited from PRs
 without adding machine-specific results to the PyCBC source stack.
 
+The [Live GPU-gap diagnostic](reports/2026-10-09-live-gaps/README.md) compares
+the frozen JAX baseline with three focused changes. Median process wall time for
+the same LAL-waveform replay falls from 66.90 s to 52.31 s across three samples;
+all saved scientific outputs match exactly. Fresh Nsight timelines explain the
+removed work and remaining gaps. This is a diagnostic comparison with explicit
+validation limits. Its [dated release](https://github.com/xangma/pycbc-jax-benchmarks/releases/tag/2026-10-09-live-gaps)
+preserves the protocol, inputs, observers and portable plotting data separately
+from the earlier full-stack campaign.
+
 The [9 October 2026 report](reports/2026-10-09/README.md) contains fresh Inspiral
 and Live measurements, seven Nsight timeline views, portable plotting data and
 explicit validation limits. The report measures the complete stack at

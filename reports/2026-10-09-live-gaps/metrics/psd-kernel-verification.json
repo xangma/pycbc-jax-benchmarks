@@ -1,0 +1,74 @@
+{
+  "boundary_sensitivity": {
+    "aggregate_psd_kernel_events_certain": 4149,
+    "aggregate_psd_kernel_events_possible": 4173,
+    "baseline_aggregate_psd_kernel_events_certain": 831291,
+    "baseline_aggregate_psd_kernel_events_possible": 831297,
+    "baseline_old_loop_counts_invariant": true,
+    "selected_old_families_and_ordered_pallas_counts_invariant": true
+  },
+  "clock_evidence": "../profiles/clock-verification.json",
+  "combined_ranks": {
+    "0": {
+      "all_kernel_events": 12681,
+      "psd_kernel_events": 2102,
+      "psd_old_families": {
+        "loop_add_fusion": 52,
+        "loop_add_fusion_1": 0
+      },
+      "psd_ordered_scan_events": 52,
+      "psd_refreshes": 26,
+      "source_revision": "00ea5024c4efaebfc2e54393dc974241281aad0c",
+      "source_tree": "1e32f3df3043305a1f651b9e2c8e3b147403cb57",
+      "stage_synchronization": false
+    },
+    "1": {
+      "all_kernel_events": 51477,
+      "psd_kernel_events": 2069,
+      "psd_old_families": {
+        "loop_add_fusion": 52,
+        "loop_add_fusion_1": 0
+      },
+      "psd_ordered_scan_events": 52,
+      "psd_refreshes": 26,
+      "source_revision": "00ea5024c4efaebfc2e54393dc974241281aad0c",
+      "source_tree": "1e32f3df3043305a1f651b9e2c8e3b147403cb57",
+      "stage_synchronization": false
+    }
+  },
+  "comparison": {
+    "baseline": {
+      "all_kernel_events": 916130,
+      "psd_kernel_events": 831296,
+      "psd_old_loop_family_events": 827320,
+      "psd_ordered_scan_events": 0,
+      "psd_refreshes": 52
+    },
+    "combined": {
+      "all_kernel_events": 64158,
+      "psd_kernel_events": 4171,
+      "psd_old_loop_family_events": 104,
+      "psd_ordered_scan_events": 104,
+      "psd_refreshes": 52
+    },
+    "psd_kernel_event_reduction": 827125,
+    "psd_kernel_percent_reduction": 99.49825332974055,
+    "psd_loop_family_event_reduction": 827216,
+    "psd_loop_family_percent_reduction": 99.98742928975487
+  },
+  "interpretation": "Selected old loop counts fall 827320 to 104. Each combined refresh contains two ordered Pallas cumulative-sum kernels, one per detector. These counts are invariant over the measured marker-call clock envelopes. The combined aggregate temporal-overlap count 4171 has conservative envelope bounds 4149\u20134173. Count reduction does not establish wall-time attribution, capacity or original-CPU speedup.",
+  "method": "Select positive kernel overlap with exact paired native PSD host spans for the matching application rank. Subtract the recorded session origin from native host timestamps; validate that origin using the NVTX before/return clock envelopes. Temporal association is not a stage completion fence or exclusive causal attribution.",
+  "private_audit_receipt_sha256": "d3afbf968a8be0136b67bc1c9f7fe9438e3f963b1375e39e0030cf6deb5b5234",
+  "schema_version": 1,
+  "scope": "Matching frozen baseline and combined diagnostic captures; 52 PSD refreshes per arm",
+  "source_evidence": {
+    "pycbc/strain/strain_jax.py": {
+      "blob_sha256": "91b8919a4b004d4763f66c8a2338a615c4fbf553335d0d8ded2ea835a067f667",
+      "git_revision": "00ea5024c4efaebfc2e54393dc974241281aad0c"
+    },
+    "pycbc/vetoes/chisq_jax.py": {
+      "blob_sha256": "1daaa2fa4b2ab36d5a5e0e0fb6391c5201cd87e0877a6cf3adaf27d1962ba63e",
+      "git_revision": "00ea5024c4efaebfc2e54393dc974241281aad0c"
+    }
+  }
+}

@@ -1,0 +1,1497 @@
+{
+  "arms": {
+    "baseline": {
+      "functions": {
+        "_live_candidate_bank_columns": {
+          "backend_or_cache_load": {
+            "event_counts": {
+              "max": 7,
+              "median": 7,
+              "min": 7,
+              "samples": [
+                7,
+                7,
+                7
+              ]
+            },
+            "innermost_filter_host_phase_points": {
+              "filter_veto_executable_load": {
+                "max": 7,
+                "median": 7,
+                "min": 7,
+                "samples": [
+                  7,
+                  7,
+                  7
+                ]
+              }
+            },
+            "reported_seconds": {
+              "max": 0.08864450454711914,
+              "median": 0.0794227123260498,
+              "min": 0.06373786926269531,
+              "samples": [
+                0.08864450454711914,
+                0.06373786926269531,
+                0.0794227123260498
+              ]
+            }
+          },
+          "lower": {
+            "event_counts": {
+              "max": 7,
+              "median": 7,
+              "min": 7,
+              "samples": [
+                7,
+                7,
+                7
+              ]
+            },
+            "innermost_filter_host_phase_points": {
+              "filter_veto_executable_lower": {
+                "max": 7,
+                "median": 7,
+                "min": 7,
+                "samples": [
+                  7,
+                  7,
+                  7
+                ]
+              }
+            },
+            "reported_seconds": {
+              "max": 0.13092041015625,
+              "median": 0.12213277816772461,
+              "min": 0.11048555374145508,
+              "samples": [
+                0.13092041015625,
+                0.11048555374145508,
+                0.12213277816772461
+              ]
+            }
+          },
+          "trace": {
+            "event_counts": {
+              "max": 7,
+              "median": 7,
+              "min": 7,
+              "samples": [
+                7,
+                7,
+                7
+              ]
+            },
+            "innermost_filter_host_phase_points": {
+              "filter_veto_executable_lower": {
+                "max": 7,
+                "median": 7,
+                "min": 7,
+                "samples": [
+                  7,
+                  7,
+                  7
+                ]
+              }
+            },
+            "reported_seconds": {
+              "max": 0.1104733943939209,
+              "median": 0.10047197341918945,
+              "min": 0.09095549583435059,
+              "samples": [
+                0.1104733943939209,
+                0.09095549583435059,
+                0.10047197341918945
+              ]
+            }
+          }
+        },
+        "_live_fused_batch_core_jax": {
+          "backend_or_cache_load": {
+            "event_counts": {
+              "max": 14,
+              "median": 14,
+              "min": 14,
+              "samples": [
+                14,
+                14,
+                14
+              ]
+            },
+            "innermost_filter_host_phase_points": {
+              "filter_fused": {
+                "max": 14,
+                "median": 14,
+                "min": 14,
+                "samples": [
+                  14,
+                  14,
+                  14
+                ]
+              }
+            },
+            "reported_seconds": {
+              "max": 0.12822866439819336,
+              "median": 0.1277942657470703,
+              "min": 0.12720370292663574,
+              "samples": [
+                0.12822866439819336,
+                0.1277942657470703,
+                0.12720370292663574
+              ]
+            }
+          },
+          "lower": {
+            "event_counts": {
+              "max": 14,
+              "median": 14,
+              "min": 14,
+              "samples": [
+                14,
+                14,
+                14
+              ]
+            },
+            "innermost_filter_host_phase_points": {
+              "filter_fused": {
+                "max": 14,
+                "median": 14,
+                "min": 14,
+                "samples": [
+                  14,
+                  14,
+                  14
+                ]
+              }
+            },
+            "reported_seconds": {
+              "max": 0.2093958854675293,
+              "median": 0.2068345546722412,
+              "min": 0.20633172988891602,
+              "samples": [
+                0.2093958854675293,
+                0.2068345546722412,
+                0.20633172988891602
+              ]
+            }
+          },
+          "trace": {
+            "event_counts": {
+              "max": 7,
+              "median": 7,
+              "min": 7,
+              "samples": [
+                7,
+                7,
+                7
+              ]
+            },
+            "innermost_filter_host_phase_points": {
+              "filter_fused": {
+                "max": 7,
+                "median": 7,
+                "min": 7,
+                "samples": [
+                  7,
+                  7,
+                  7
+                ]
+              }
+            },
+            "reported_seconds": {
+              "max": 0.10111570358276367,
+              "median": 0.10054516792297363,
+              "min": 0.10037398338317871,
+              "samples": [
+                0.10111570358276367,
+                0.10054516792297363,
+                0.10037398338317871
+              ]
+            }
+          }
+        },
+        "_live_resident_candidate_plan": {
+          "backend_or_cache_load": {
+            "event_counts": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": [
+                0,
+                0,
+                0
+              ]
+            },
+            "innermost_filter_host_phase_points": {},
+            "reported_seconds": {
+              "max": 0.0,
+              "median": 0.0,
+              "min": 0.0,
+              "samples": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "lower": {
+            "event_counts": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": [
+                0,
+                0,
+                0
+              ]
+            },
+            "innermost_filter_host_phase_points": {},
+            "reported_seconds": {
+              "max": 0.0,
+              "median": 0.0,
+              "min": 0.0,
+              "samples": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "trace": {
+            "event_counts": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": [
+                0,
+                0,
+                0
+              ]
+            },
+            "innermost_filter_host_phase_points": {},
+            "reported_seconds": {
+              "max": 0.0,
+              "median": 0.0,
+              "min": 0.0,
+              "samples": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          }
+        },
+        "_live_resident_group_veto": {
+          "backend_or_cache_load": {
+            "event_counts": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": [
+                0,
+                0,
+                0
+              ]
+            },
+            "innermost_filter_host_phase_points": {},
+            "reported_seconds": {
+              "max": 0.0,
+              "median": 0.0,
+              "min": 0.0,
+              "samples": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "lower": {
+            "event_counts": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": [
+                0,
+                0,
+                0
+              ]
+            },
+            "innermost_filter_host_phase_points": {},
+            "reported_seconds": {
+              "max": 0.0,
+              "median": 0.0,
+              "min": 0.0,
+              "samples": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "trace": {
+            "event_counts": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": [
+                0,
+                0,
+                0
+              ]
+            },
+            "innermost_filter_host_phase_points": {},
+            "reported_seconds": {
+              "max": 0.0,
+              "median": 0.0,
+              "min": 0.0,
+              "samples": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          }
+        },
+        "_live_resident_veto_columns": {
+          "backend_or_cache_load": {
+            "event_counts": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": [
+                0,
+                0,
+                0
+              ]
+            },
+            "innermost_filter_host_phase_points": {},
+            "reported_seconds": {
+              "max": 0.0,
+              "median": 0.0,
+              "min": 0.0,
+              "samples": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "lower": {
+            "event_counts": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": [
+                0,
+                0,
+                0
+              ]
+            },
+            "innermost_filter_host_phase_points": {},
+            "reported_seconds": {
+              "max": 0.0,
+              "median": 0.0,
+              "min": 0.0,
+              "samples": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "trace": {
+            "event_counts": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": [
+                0,
+                0,
+                0
+              ]
+            },
+            "innermost_filter_host_phase_points": {},
+            "reported_seconds": {
+              "max": 0.0,
+              "median": 0.0,
+              "min": 0.0,
+              "samples": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          }
+        },
+        "_live_restore_veto_order": {
+          "backend_or_cache_load": {
+            "event_counts": {
+              "max": 28,
+              "median": 28,
+              "min": 28,
+              "samples": [
+                28,
+                28,
+                28
+              ]
+            },
+            "innermost_filter_host_phase_points": {
+              "filter_veto_executable_load": {
+                "max": 28,
+                "median": 28,
+                "min": 28,
+                "samples": [
+                  28,
+                  28,
+                  28
+                ]
+              }
+            },
+            "reported_seconds": {
+              "max": 0.2173328399658203,
+              "median": 0.20466923713684082,
+              "min": 0.1939685344696045,
+              "samples": [
+                0.20466923713684082,
+                0.1939685344696045,
+                0.2173328399658203
+              ]
+            }
+          },
+          "lower": {
+            "event_counts": {
+              "max": 28,
+              "median": 28,
+              "min": 28,
+              "samples": [
+                28,
+                28,
+                28
+              ]
+            },
+            "innermost_filter_host_phase_points": {
+              "filter_veto_executable_lower": {
+                "max": 28,
+                "median": 28,
+                "min": 28,
+                "samples": [
+                  28,
+                  28,
+                  28
+                ]
+              }
+            },
+            "reported_seconds": {
+              "max": 0.17974114418029785,
+              "median": 0.1753218173980713,
+              "min": 0.1622028350830078,
+              "samples": [
+                0.1753218173980713,
+                0.1622028350830078,
+                0.17974114418029785
+              ]
+            }
+          },
+          "trace": {
+            "event_counts": {
+              "max": 28,
+              "median": 28,
+              "min": 28,
+              "samples": [
+                28,
+                28,
+                28
+              ]
+            },
+            "innermost_filter_host_phase_points": {
+              "filter_veto_executable_lower": {
+                "max": 28,
+                "median": 28,
+                "min": 28,
+                "samples": [
+                  28,
+                  28,
+                  28
+                ]
+              }
+            },
+            "reported_seconds": {
+              "max": 0.11224627494812012,
+              "median": 0.09271979331970215,
+              "min": 0.08806324005126953,
+              "samples": [
+                0.11224627494812012,
+                0.08806324005126953,
+                0.09271979331970215
+              ]
+            }
+          }
+        },
+        "_live_veto_group_core": {
+          "backend_or_cache_load": {
+            "event_counts": {
+              "max": 17,
+              "median": 17,
+              "min": 17,
+              "samples": [
+                17,
+                17,
+                17
+              ]
+            },
+            "innermost_filter_host_phase_points": {
+              "filter_veto_executable_load": {
+                "max": 17,
+                "median": 17,
+                "min": 17,
+                "samples": [
+                  17,
+                  17,
+                  17
+                ]
+              }
+            },
+            "reported_seconds": {
+              "max": 0.28183960914611816,
+              "median": 0.2800273895263672,
+              "min": 0.27597475051879883,
+              "samples": [
+                0.27597475051879883,
+                0.28183960914611816,
+                0.2800273895263672
+              ]
+            }
+          },
+          "lower": {
+            "event_counts": {
+              "max": 17,
+              "median": 17,
+              "min": 17,
+              "samples": [
+                17,
+                17,
+                17
+              ]
+            },
+            "innermost_filter_host_phase_points": {
+              "filter_veto_executable_lower": {
+                "max": 17,
+                "median": 17,
+                "min": 17,
+                "samples": [
+                  17,
+                  17,
+                  17
+                ]
+              }
+            },
+            "reported_seconds": {
+              "max": 1.587113857269287,
+              "median": 1.4788739681243896,
+              "min": 1.4427096843719482,
+              "samples": [
+                1.4427096843719482,
+                1.587113857269287,
+                1.4788739681243896
+              ]
+            }
+          },
+          "trace": {
+            "event_counts": {
+              "max": 17,
+              "median": 17,
+              "min": 17,
+              "samples": [
+                17,
+                17,
+                17
+              ]
+            },
+            "innermost_filter_host_phase_points": {
+              "filter_veto_executable_lower": {
+                "max": 17,
+                "median": 17,
+                "min": 17,
+                "samples": [
+                  17,
+                  17,
+                  17
+                ]
+              }
+            },
+            "reported_seconds": {
+              "max": 0.5977296829223633,
+              "median": 0.5854513645172119,
+              "min": 0.5493779182434082,
+              "samples": [
+                0.5493779182434082,
+                0.5977296829223633,
+                0.5854513645172119
+              ]
+            }
+          }
+        },
+        "_power_chisq_bins_from_source": {
+          "backend_or_cache_load": {
+            "event_counts": {
+              "max": 17,
+              "median": 17,
+              "min": 17,
+              "samples": [
+                17,
+                17,
+                17
+              ]
+            },
+            "innermost_filter_host_phase_points": {
+              "filter_veto_executable_load": {
+                "max": 17,
+                "median": 17,
+                "min": 17,
+                "samples": [
+                  17,
+                  17,
+                  17
+                ]
+              }
+            },
+            "reported_seconds": {
+              "max": 0.2670464515686035,
+              "median": 0.23936009407043457,
+              "min": 0.21783757209777832,
+              "samples": [
+                0.2670464515686035,
+                0.23936009407043457,
+                0.21783757209777832
+              ]
+            }
+          },
+          "lower": {
+            "event_counts": {
+              "max": 17,
+              "median": 17,
+              "min": 17,
+              "samples": [
+                17,
+                17,
+                17
+              ]
+            },
+            "innermost_filter_host_phase_points": {
+              "filter_veto_executable_lower": {
+                "max": 17,
+                "median": 17,
+                "min": 17,
+                "samples": [
+                  17,
+                  17,
+                  17
+                ]
+              }
+            },
+            "reported_seconds": {
+              "max": 2.387556791305542,
+              "median": 1.988469123840332,
+              "min": 1.9236948490142822,
+              "samples": [
+                2.387556791305542,
+                1.988469123840332,
+                1.9236948490142822
+              ]
+            }
+          },
+          "trace": {
+            "event_counts": {
+              "max": 17,
+              "median": 17,
+              "min": 17,
+              "samples": [
+                17,
+                17,
+                17
+              ]
+            },
+            "innermost_filter_host_phase_points": {
+              "filter_veto_executable_lower": {
+                "max": 17,
+                "median": 17,
+                "min": 17,
+                "samples": [
+                  17,
+                  17,
+                  17
+                ]
+              }
+            },
+            "reported_seconds": {
+              "max": 1.0661163330078125,
+              "median": 0.991347074508667,
+              "min": 0.9628965854644775,
+              "samples": [
+                1.0661163330078125,
+                0.9628965854644775,
+                0.991347074508667
+              ]
+            }
+          }
+        }
+      },
+      "source_revision": "366c7a955570deabaa1219d353f7847b21384698"
+    },
+    "filter-only": {
+      "functions": {
+        "_live_candidate_bank_columns": {
+          "backend_or_cache_load": {
+            "event_counts": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": [
+                0,
+                0,
+                0
+              ]
+            },
+            "innermost_filter_host_phase_points": {},
+            "reported_seconds": {
+              "max": 0.0,
+              "median": 0.0,
+              "min": 0.0,
+              "samples": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "lower": {
+            "event_counts": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": [
+                0,
+                0,
+                0
+              ]
+            },
+            "innermost_filter_host_phase_points": {},
+            "reported_seconds": {
+              "max": 0.0,
+              "median": 0.0,
+              "min": 0.0,
+              "samples": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "trace": {
+            "event_counts": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": [
+                0,
+                0,
+                0
+              ]
+            },
+            "innermost_filter_host_phase_points": {},
+            "reported_seconds": {
+              "max": 0.0,
+              "median": 0.0,
+              "min": 0.0,
+              "samples": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          }
+        },
+        "_live_fused_batch_core_jax": {
+          "backend_or_cache_load": {
+            "event_counts": {
+              "max": 14,
+              "median": 14,
+              "min": 14,
+              "samples": [
+                14,
+                14,
+                14
+              ]
+            },
+            "innermost_filter_host_phase_points": {
+              "filter_fused": {
+                "max": 14,
+                "median": 14,
+                "min": 14,
+                "samples": [
+                  14,
+                  14,
+                  14
+                ]
+              }
+            },
+            "reported_seconds": {
+              "max": 0.13002729415893555,
+              "median": 0.1292426586151123,
+              "min": 0.12912440299987793,
+              "samples": [
+                0.1292426586151123,
+                0.12912440299987793,
+                0.13002729415893555
+              ]
+            }
+          },
+          "lower": {
+            "event_counts": {
+              "max": 14,
+              "median": 14,
+              "min": 14,
+              "samples": [
+                14,
+                14,
+                14
+              ]
+            },
+            "innermost_filter_host_phase_points": {
+              "filter_fused": {
+                "max": 14,
+                "median": 14,
+                "min": 14,
+                "samples": [
+                  14,
+                  14,
+                  14
+                ]
+              }
+            },
+            "reported_seconds": {
+              "max": 0.20673227310180664,
+              "median": 0.2042229175567627,
+              "min": 0.20364713668823242,
+              "samples": [
+                0.2042229175567627,
+                0.20364713668823242,
+                0.20673227310180664
+              ]
+            }
+          },
+          "trace": {
+            "event_counts": {
+              "max": 7,
+              "median": 7,
+              "min": 7,
+              "samples": [
+                7,
+                7,
+                7
+              ]
+            },
+            "innermost_filter_host_phase_points": {
+              "filter_fused": {
+                "max": 7,
+                "median": 7,
+                "min": 7,
+                "samples": [
+                  7,
+                  7,
+                  7
+                ]
+              }
+            },
+            "reported_seconds": {
+              "max": 0.10093879699707031,
+              "median": 0.10052347183227539,
+              "min": 0.09999942779541016,
+              "samples": [
+                0.10093879699707031,
+                0.09999942779541016,
+                0.10052347183227539
+              ]
+            }
+          }
+        },
+        "_live_resident_candidate_plan": {
+          "backend_or_cache_load": {
+            "event_counts": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": [
+                1,
+                1,
+                1
+              ]
+            },
+            "innermost_filter_host_phase_points": {
+              "filter_veto_executable_load": {
+                "max": 1,
+                "median": 1,
+                "min": 1,
+                "samples": [
+                  1,
+                  1,
+                  1
+                ]
+              }
+            },
+            "reported_seconds": {
+              "max": 0.011625051498413086,
+              "median": 0.011602163314819336,
+              "min": 0.011519193649291992,
+              "samples": [
+                0.011519193649291992,
+                0.011625051498413086,
+                0.011602163314819336
+              ]
+            }
+          },
+          "lower": {
+            "event_counts": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": [
+                1,
+                1,
+                1
+              ]
+            },
+            "innermost_filter_host_phase_points": {
+              "filter_veto_executable_lower": {
+                "max": 1,
+                "median": 1,
+                "min": 1,
+                "samples": [
+                  1,
+                  1,
+                  1
+                ]
+              }
+            },
+            "reported_seconds": {
+              "max": 0.013895988464355469,
+              "median": 0.013777732849121094,
+              "min": 0.013123273849487305,
+              "samples": [
+                0.013895988464355469,
+                0.013123273849487305,
+                0.013777732849121094
+              ]
+            }
+          },
+          "trace": {
+            "event_counts": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": [
+                1,
+                1,
+                1
+              ]
+            },
+            "innermost_filter_host_phase_points": {
+              "filter_veto_executable_lower": {
+                "max": 1,
+                "median": 1,
+                "min": 1,
+                "samples": [
+                  1,
+                  1,
+                  1
+                ]
+              }
+            },
+            "reported_seconds": {
+              "max": 0.019408226013183594,
+              "median": 0.019279956817626953,
+              "min": 0.019234657287597656,
+              "samples": [
+                0.019408226013183594,
+                0.019279956817626953,
+                0.019234657287597656
+              ]
+            }
+          }
+        },
+        "_live_resident_group_veto": {
+          "backend_or_cache_load": {
+            "event_counts": {
+              "max": 7,
+              "median": 7,
+              "min": 7,
+              "samples": [
+                7,
+                7,
+                7
+              ]
+            },
+            "innermost_filter_host_phase_points": {
+              "filter_veto_executable_load": {
+                "max": 7,
+                "median": 7,
+                "min": 7,
+                "samples": [
+                  7,
+                  7,
+                  7
+                ]
+              }
+            },
+            "reported_seconds": {
+              "max": 0.07872176170349121,
+              "median": 0.07811403274536133,
+              "min": 0.07809019088745117,
+              "samples": [
+                0.07811403274536133,
+                0.07809019088745117,
+                0.07872176170349121
+              ]
+            }
+          },
+          "lower": {
+            "event_counts": {
+              "max": 7,
+              "median": 7,
+              "min": 7,
+              "samples": [
+                7,
+                7,
+                7
+              ]
+            },
+            "innermost_filter_host_phase_points": {
+              "filter_veto_executable_lower": {
+                "max": 7,
+                "median": 7,
+                "min": 7,
+                "samples": [
+                  7,
+                  7,
+                  7
+                ]
+              }
+            },
+            "reported_seconds": {
+              "max": 0.4809253215789795,
+              "median": 0.480654239654541,
+              "min": 0.47755956649780273,
+              "samples": [
+                0.47755956649780273,
+                0.4809253215789795,
+                0.480654239654541
+              ]
+            }
+          },
+          "trace": {
+            "event_counts": {
+              "max": 7,
+              "median": 7,
+              "min": 7,
+              "samples": [
+                7,
+                7,
+                7
+              ]
+            },
+            "innermost_filter_host_phase_points": {
+              "filter_veto_executable_lower": {
+                "max": 7,
+                "median": 7,
+                "min": 7,
+                "samples": [
+                  7,
+                  7,
+                  7
+                ]
+              }
+            },
+            "reported_seconds": {
+              "max": 0.21941876411437988,
+              "median": 0.21649384498596191,
+              "min": 0.2161710262298584,
+              "samples": [
+                0.21941876411437988,
+                0.2161710262298584,
+                0.21649384498596191
+              ]
+            }
+          }
+        },
+        "_live_resident_veto_columns": {
+          "backend_or_cache_load": {
+            "event_counts": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": [
+                1,
+                1,
+                1
+              ]
+            },
+            "innermost_filter_host_phase_points": {
+              "filter_veto_executable_load": {
+                "max": 1,
+                "median": 1,
+                "min": 1,
+                "samples": [
+                  1,
+                  1,
+                  1
+                ]
+              }
+            },
+            "reported_seconds": {
+              "max": 0.008681535720825195,
+              "median": 0.00857686996459961,
+              "min": 0.00844883918762207,
+              "samples": [
+                0.00844883918762207,
+                0.00857686996459961,
+                0.008681535720825195
+              ]
+            }
+          },
+          "lower": {
+            "event_counts": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": [
+                1,
+                1,
+                1
+              ]
+            },
+            "innermost_filter_host_phase_points": {
+              "filter_veto_executable_lower": {
+                "max": 1,
+                "median": 1,
+                "min": 1,
+                "samples": [
+                  1,
+                  1,
+                  1
+                ]
+              }
+            },
+            "reported_seconds": {
+              "max": 0.011485576629638672,
+              "median": 0.01139688491821289,
+              "min": 0.011334657669067383,
+              "samples": [
+                0.011334657669067383,
+                0.01139688491821289,
+                0.011485576629638672
+              ]
+            }
+          },
+          "trace": {
+            "event_counts": {
+              "max": 1,
+              "median": 1,
+              "min": 1,
+              "samples": [
+                1,
+                1,
+                1
+              ]
+            },
+            "innermost_filter_host_phase_points": {
+              "filter_veto_executable_lower": {
+                "max": 1,
+                "median": 1,
+                "min": 1,
+                "samples": [
+                  1,
+                  1,
+                  1
+                ]
+              }
+            },
+            "reported_seconds": {
+              "max": 0.017029762268066406,
+              "median": 0.01702427864074707,
+              "min": 0.01693582534790039,
+              "samples": [
+                0.017029762268066406,
+                0.01693582534790039,
+                0.01702427864074707
+              ]
+            }
+          }
+        },
+        "_live_restore_veto_order": {
+          "backend_or_cache_load": {
+            "event_counts": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": [
+                0,
+                0,
+                0
+              ]
+            },
+            "innermost_filter_host_phase_points": {},
+            "reported_seconds": {
+              "max": 0.0,
+              "median": 0.0,
+              "min": 0.0,
+              "samples": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "lower": {
+            "event_counts": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": [
+                0,
+                0,
+                0
+              ]
+            },
+            "innermost_filter_host_phase_points": {},
+            "reported_seconds": {
+              "max": 0.0,
+              "median": 0.0,
+              "min": 0.0,
+              "samples": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "trace": {
+            "event_counts": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": [
+                0,
+                0,
+                0
+              ]
+            },
+            "innermost_filter_host_phase_points": {},
+            "reported_seconds": {
+              "max": 0.0,
+              "median": 0.0,
+              "min": 0.0,
+              "samples": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          }
+        },
+        "_live_veto_group_core": {
+          "backend_or_cache_load": {
+            "event_counts": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": [
+                0,
+                0,
+                0
+              ]
+            },
+            "innermost_filter_host_phase_points": {},
+            "reported_seconds": {
+              "max": 0.0,
+              "median": 0.0,
+              "min": 0.0,
+              "samples": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "lower": {
+            "event_counts": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": [
+                0,
+                0,
+                0
+              ]
+            },
+            "innermost_filter_host_phase_points": {},
+            "reported_seconds": {
+              "max": 0.0,
+              "median": 0.0,
+              "min": 0.0,
+              "samples": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "trace": {
+            "event_counts": {
+              "max": 0,
+              "median": 0,
+              "min": 0,
+              "samples": [
+                0,
+                0,
+                0
+              ]
+            },
+            "innermost_filter_host_phase_points": {},
+            "reported_seconds": {
+              "max": 0.0,
+              "median": 0.0,
+              "min": 0.0,
+              "samples": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          }
+        },
+        "_power_chisq_bins_from_source": {
+          "backend_or_cache_load": {
+            "event_counts": {
+              "max": 7,
+              "median": 7,
+              "min": 7,
+              "samples": [
+                7,
+                7,
+                7
+              ]
+            },
+            "innermost_filter_host_phase_points": {
+              "filter_veto_executable_load": {
+                "max": 7,
+                "median": 7,
+                "min": 7,
+                "samples": [
+                  7,
+                  7,
+                  7
+                ]
+              }
+            },
+            "reported_seconds": {
+              "max": 0.07417607307434082,
+              "median": 0.0739443302154541,
+              "min": 0.07378292083740234,
+              "samples": [
+                0.0739443302154541,
+                0.07417607307434082,
+                0.07378292083740234
+              ]
+            }
+          },
+          "lower": {
+            "event_counts": {
+              "max": 7,
+              "median": 7,
+              "min": 7,
+              "samples": [
+                7,
+                7,
+                7
+              ]
+            },
+            "innermost_filter_host_phase_points": {
+              "filter_veto_executable_lower": {
+                "max": 7,
+                "median": 7,
+                "min": 7,
+                "samples": [
+                  7,
+                  7,
+                  7
+                ]
+              }
+            },
+            "reported_seconds": {
+              "max": 0.6280171871185303,
+              "median": 0.6274778842926025,
+              "min": 0.6267597675323486,
+              "samples": [
+                0.6280171871185303,
+                0.6267597675323486,
+                0.6274778842926025
+              ]
+            }
+          },
+          "trace": {
+            "event_counts": {
+              "max": 7,
+              "median": 7,
+              "min": 7,
+              "samples": [
+                7,
+                7,
+                7
+              ]
+            },
+            "innermost_filter_host_phase_points": {
+              "filter_veto_executable_lower": {
+                "max": 7,
+                "median": 7,
+                "min": 7,
+                "samples": [
+                  7,
+                  7,
+                  7
+                ]
+              }
+            },
+            "reported_seconds": {
+              "max": 0.30654263496398926,
+              "median": 0.30586910247802734,
+              "min": 0.30565857887268066,
+              "samples": [
+                0.30654263496398926,
+                0.30586910247802734,
+                0.30565857887268066
+              ]
+            }
+          }
+        }
+      },
+      "source_revision": "a962193cd881bb511b61157088b68db70e316b8d"
+    }
+  },
+  "definition": "Function names and durations supplied by JAX monitoring; event points associated with the shortest containing native filter host stage. Host phases are not device fences. Preparation observations do not count every invocation or prove its completion.",
+  "input_sha256": {
+    "H-H1_LOSC_CLN_4_V1-1187007040-2048.gwf": "580e238054474fd09be900c47217bbcd0497ab84d1756f886647e934352e4865",
+    "L-L1_LOSC_CLN_4_V1-1187007040-2048.gwf": "ff9743efc1555a47bc3f2effcaabba252a2244f10fd3a8f85a7c5f677b3c772e",
+    "o2-subset-1024.hdf": "542e341ea3994ba0f52bfd238406af1c05b79f20aac8c0832f468e5f86e70693"
+  },
+  "python_hash_seed": "4",
+  "reference_operations": [
+    "waveform"
+  ],
+  "samples": [
+    "sample-01",
+    "sample-02",
+    "sample-03"
+  ],
+  "schema_version": 1,
+  "scope": "Rank 1 full native CLI in each of the three timing samples; prime/profile excluded."
+}

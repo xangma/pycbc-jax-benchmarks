@@ -1,0 +1,3112 @@
+{
+  "common_completed_suffix_seconds": {
+    "max": 30.742400407,
+    "median": 30.74105749,
+    "min": 30.720850341,
+    "samples": [
+      30.720850341,
+      30.74105749,
+      30.742400407
+    ]
+  },
+  "duration_interpretation": "Summed reported callback durations; categories/functions may nest and are not additive wall-time attribution. Percentages use totals within the same recorded category.",
+  "input_analysis_sha256": "c1e8c2b3bfb9c3760a8198ec228b84d8850bd95ad7b4f5e300b7d85a2d03cbc0",
+  "launch_to_exit_seconds": {
+    "max": 66.79022459406406,
+    "median": 66.47927090479061,
+    "min": 66.2337722745724,
+    "samples": [
+      66.47927090479061,
+      66.2337722745724,
+      66.79022459406406
+    ]
+  },
+  "ranks": {
+    "0": {
+      "cache_growth": [
+        {
+          "calls_with_decreased_count": {
+            "max": 0,
+            "median": 0,
+            "min": 0,
+            "samples": [
+              0,
+              0,
+              0
+            ]
+          },
+          "calls_with_new_entries": {
+            "max": 1,
+            "median": 1,
+            "min": 1,
+            "samples": [
+              1,
+              1,
+              1
+            ]
+          },
+          "calls_with_unchanged_positive_count": {
+            "max": 22,
+            "median": 22,
+            "min": 22,
+            "samples": [
+              22,
+              22,
+              22
+            ]
+          },
+          "function": "_join_resident_live_foreground",
+          "positive_cache_entry_deltas": {
+            "max": 2,
+            "median": 2,
+            "min": 2,
+            "samples": [
+              2,
+              2,
+              2
+            ]
+          },
+          "stage": "coinc_resident_cluster_dispatch"
+        },
+        {
+          "calls_with_decreased_count": {
+            "max": 0,
+            "median": 0,
+            "min": 0,
+            "samples": [
+              0,
+              0,
+              0
+            ]
+          },
+          "calls_with_new_entries": {
+            "max": 10,
+            "median": 10,
+            "min": 10,
+            "samples": [
+              10,
+              10,
+              10
+            ]
+          },
+          "calls_with_unchanged_positive_count": {
+            "max": 13,
+            "median": 13,
+            "min": 13,
+            "samples": [
+              13,
+              13,
+              13
+            ]
+          },
+          "function": "_resident_live_background",
+          "positive_cache_entry_deltas": {
+            "max": 10,
+            "median": 10,
+            "min": 10,
+            "samples": [
+              10,
+              10,
+              10
+            ]
+          },
+          "stage": "coinc_resident_cluster_dispatch"
+        },
+        {
+          "calls_with_decreased_count": {
+            "max": 0,
+            "median": 0,
+            "min": 0,
+            "samples": [
+              0,
+              0,
+              0
+            ]
+          },
+          "calls_with_new_entries": {
+            "max": 8,
+            "median": 8,
+            "min": 8,
+            "samples": [
+              8,
+              8,
+              8
+            ]
+          },
+          "calls_with_unchanged_positive_count": {
+            "max": 15,
+            "median": 15,
+            "min": 15,
+            "samples": [
+              15,
+              15,
+              15
+            ]
+          },
+          "function": "_resident_live_cluster",
+          "positive_cache_entry_deltas": {
+            "max": 8,
+            "median": 8,
+            "min": 8,
+            "samples": [
+              8,
+              8,
+              8
+            ]
+          },
+          "stage": "coinc_resident_cluster_dispatch"
+        },
+        {
+          "calls_with_decreased_count": {
+            "max": 0,
+            "median": 0,
+            "min": 0,
+            "samples": [
+              0,
+              0,
+              0
+            ]
+          },
+          "calls_with_new_entries": {
+            "max": 23,
+            "median": 23,
+            "min": 23,
+            "samples": [
+              23,
+              23,
+              23
+            ]
+          },
+          "calls_with_unchanged_positive_count": {
+            "max": 0,
+            "median": 0,
+            "min": 0,
+            "samples": [
+              0,
+              0,
+              0
+            ]
+          },
+          "function": "_resident_live_foreground_core",
+          "positive_cache_entry_deltas": {
+            "max": 44,
+            "median": 44,
+            "min": 44,
+            "samples": [
+              44,
+              44,
+              44
+            ]
+          },
+          "stage": "coinc_resident_cluster_dispatch"
+        },
+        {
+          "calls_with_decreased_count": {
+            "max": 0,
+            "median": 0,
+            "min": 0,
+            "samples": [
+              0,
+              0,
+              0
+            ]
+          },
+          "calls_with_new_entries": {
+            "max": 31,
+            "median": 31,
+            "min": 31,
+            "samples": [
+              31,
+              31,
+              31
+            ]
+          },
+          "calls_with_unchanged_positive_count": {
+            "max": 32,
+            "median": 32,
+            "min": 32,
+            "samples": [
+              32,
+              32,
+              32
+            ]
+          },
+          "function": "_resident_live_match_group",
+          "positive_cache_entry_deltas": {
+            "max": 31,
+            "median": 31,
+            "min": 31,
+            "samples": [
+              31,
+              31,
+              31
+            ]
+          },
+          "stage": "coinc_resident_query_dispatch"
+        }
+      ],
+      "cache_snapshot_overhead_full_seconds": {
+        "max": 0.017815676,
+        "median": 0.013119539,
+        "min": 0.012892903,
+        "samples": [
+          0.017815676,
+          0.012892903,
+          0.013119539
+        ]
+      },
+      "category_reported_seconds": {
+        "backend_or_cache_load": {
+          "max": 6.920116662979126,
+          "median": 6.831227779388428,
+          "min": 6.665534019470215,
+          "samples": [
+            6.920116662979126,
+            6.665534019470215,
+            6.831227779388428
+          ]
+        },
+        "lower": {
+          "max": 6.437892198562622,
+          "median": 6.333889722824097,
+          "min": 6.290507793426514,
+          "samples": [
+            6.333889722824097,
+            6.437892198562622,
+            6.290507793426514
+          ]
+        },
+        "trace": {
+          "max": 9.192320823669434,
+          "median": 8.972126245498657,
+          "min": 8.908329486846924,
+          "samples": [
+            9.192320823669434,
+            8.908329486846924,
+            8.972126245498657
+          ]
+        }
+      },
+      "compile_observer_overhead_full_seconds": {
+        "max": 0.029679529,
+        "median": 0.027532431,
+        "min": 0.027041124,
+        "samples": [
+          0.027041124,
+          0.027532431,
+          0.029679529
+        ]
+      },
+      "functions": [
+        {
+          "categories": {
+            "backend_or_cache_load": {
+              "event_counts": {
+                "max": 44,
+                "median": 44,
+                "min": 44,
+                "samples": [
+                  44,
+                  44,
+                  44
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.24025498764614978,
+                "median": 0.23231864615430148,
+                "min": 0.22806691993505063,
+                "samples": [
+                  0.22806691993505063,
+                  0.24025498764614978,
+                  0.23231864615430148
+                ]
+              },
+              "reported_seconds": {
+                "max": 1.6014277935028076,
+                "median": 1.5870215892791748,
+                "min": 1.5782496929168701,
+                "samples": [
+                  1.5782496929168701,
+                  1.6014277935028076,
+                  1.5870215892791748
+                ]
+              }
+            },
+            "lower": {
+              "event_counts": {
+                "max": 44,
+                "median": 44,
+                "min": 44,
+                "samples": [
+                  44,
+                  44,
+                  44
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.42224209683470115,
+                "median": 0.41625774257489545,
+                "min": 0.4152556078466431,
+                "samples": [
+                  0.41625774257489545,
+                  0.4152556078466431,
+                  0.42224209683470115
+                ]
+              },
+              "reported_seconds": {
+                "max": 2.673370838165283,
+                "median": 2.6561172008514404,
+                "min": 2.636530637741089,
+                "samples": [
+                  2.636530637741089,
+                  2.673370838165283,
+                  2.6561172008514404
+                ]
+              }
+            },
+            "trace": {
+              "event_counts": {
+                "max": 44,
+                "median": 44,
+                "min": 44,
+                "samples": [
+                  44,
+                  44,
+                  44
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.4944952700255539,
+                "median": 0.4933763111409027,
+                "min": 0.4922328412282524,
+                "samples": [
+                  0.4944952700255539,
+                  0.4922328412282524,
+                  0.4933763111409027
+                ]
+              },
+              "reported_seconds": {
+                "max": 4.5455591678619385,
+                "median": 4.4266345500946045,
+                "min": 4.384972333908081,
+                "samples": [
+                  4.5455591678619385,
+                  4.384972333908081,
+                  4.4266345500946045
+                ]
+              }
+            }
+          },
+          "fun_name": "_resident_live_foreground_core",
+          "median_summed_category_seconds": 8.66977334022522
+        },
+        {
+          "categories": {
+            "backend_or_cache_load": {
+              "event_counts": {
+                "max": 31,
+                "median": 31,
+                "min": 31,
+                "samples": [
+                  31,
+                  31,
+                  31
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.1581036265010429,
+                "median": 0.14872899716738008,
+                "min": 0.14524405024294929,
+                "samples": [
+                  0.14872899716738008,
+                  0.14524405024294929,
+                  0.1581036265010429
+                ]
+              },
+              "reported_seconds": {
+                "max": 1.0800418853759766,
+                "median": 1.029222011566162,
+                "min": 0.9681291580200195,
+                "samples": [
+                  1.029222011566162,
+                  0.9681291580200195,
+                  1.0800418853759766
+                ]
+              }
+            },
+            "lower": {
+              "event_counts": {
+                "max": 31,
+                "median": 31,
+                "min": 31,
+                "samples": [
+                  31,
+                  31,
+                  31
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.23975104590600882,
+                "median": 0.22665133242885271,
+                "min": 0.2252218935322119,
+                "samples": [
+                  0.22665133242885271,
+                  0.2252218935322119,
+                  0.23975104590600882
+                ]
+              },
+              "reported_seconds": {
+                "max": 1.5081558227539062,
+                "median": 1.4499542713165283,
+                "min": 1.435584545135498,
+                "samples": [
+                  1.435584545135498,
+                  1.4499542713165283,
+                  1.5081558227539062
+                ]
+              }
+            },
+            "trace": {
+              "event_counts": {
+                "max": 31,
+                "median": 31,
+                "min": 31,
+                "samples": [
+                  31,
+                  31,
+                  31
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.18441805572809716,
+                "median": 0.18359135988895478,
+                "min": 0.1805474503330118,
+                "samples": [
+                  0.1805474503330118,
+                  0.18359135988895478,
+                  0.18441805572809716
+                ]
+              },
+              "reported_seconds": {
+                "max": 1.6596500873565674,
+                "median": 1.6546220779418945,
+                "min": 1.6354923248291016,
+                "samples": [
+                  1.6596500873565674,
+                  1.6354923248291016,
+                  1.6546220779418945
+                ]
+              }
+            }
+          },
+          "fun_name": "_resident_live_match_group",
+          "median_summed_category_seconds": 4.133798360824585
+        },
+        {
+          "categories": {
+            "backend_or_cache_load": {
+              "event_counts": {
+                "max": 8,
+                "median": 8,
+                "min": 8,
+                "samples": [
+                  8,
+                  8,
+                  8
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.17112586362133422,
+                "median": 0.16765300004753553,
+                "min": 0.1652042012090719,
+                "samples": [
+                  0.1652042012090719,
+                  0.17112586362133422,
+                  0.16765300004753553
+                ]
+              },
+              "reported_seconds": {
+                "max": 1.1452758312225342,
+                "median": 1.1432323455810547,
+                "min": 1.1406452655792236,
+                "samples": [
+                  1.1432323455810547,
+                  1.1406452655792236,
+                  1.1452758312225342
+                ]
+              }
+            },
+            "lower": {
+              "event_counts": {
+                "max": 8,
+                "median": 8,
+                "min": 8,
+                "samples": [
+                  8,
+                  8,
+                  8
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.10633277317702018,
+                "median": 0.10573253840520037,
+                "min": 0.10429787608003517,
+                "samples": [
+                  0.10573253840520037,
+                  0.10429787608003517,
+                  0.10633277317702018
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.6714584827423096,
+                "median": 0.6696982383728027,
+                "min": 0.6688871383666992,
+                "samples": [
+                  0.6696982383728027,
+                  0.6714584827423096,
+                  0.6688871383666992
+                ]
+              }
+            },
+            "trace": {
+              "event_counts": {
+                "max": 8,
+                "median": 8,
+                "min": 8,
+                "samples": [
+                  8,
+                  8,
+                  8
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.15110736088263213,
+                "median": 0.15062083754906916,
+                "min": 0.14829654936944223,
+                "samples": [
+                  0.14829654936944223,
+                  0.15110736088263213,
+                  0.15062083754906916
+                ]
+              },
+              "reported_seconds": {
+                "max": 1.363189458847046,
+                "median": 1.3513891696929932,
+                "min": 1.346114158630371,
+                "samples": [
+                  1.363189458847046,
+                  1.346114158630371,
+                  1.3513891696929932
+                ]
+              }
+            }
+          },
+          "fun_name": "_resident_live_cluster",
+          "median_summed_category_seconds": 3.1643197536468506
+        },
+        {
+          "categories": {
+            "backend_or_cache_load": {
+              "event_counts": {
+                "max": 30,
+                "median": 30,
+                "min": 30,
+                "samples": [
+                  30,
+                  30,
+                  30
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.10729065177544946,
+                "median": 0.10252006073101565,
+                "min": 0.10009179721228921,
+                "samples": [
+                  0.10729065177544946,
+                  0.10009179721228921,
+                  0.10252006073101565
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.7424638271331787,
+                "median": 0.7003378868103027,
+                "min": 0.6671652793884277,
+                "samples": [
+                  0.7424638271331787,
+                  0.6671652793884277,
+                  0.7003378868103027
+                ]
+              }
+            },
+            "lower": {
+              "event_counts": {
+                "max": 30,
+                "median": 30,
+                "min": 30,
+                "samples": [
+                  30,
+                  30,
+                  30
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.0759932363830376,
+                "median": 0.06955529844981308,
+                "min": 0.06428576904259561,
+                "samples": [
+                  0.0759932363830376,
+                  0.06428576904259561,
+                  0.06955529844981308
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.48133277893066406,
+                "median": 0.43753814697265625,
+                "min": 0.4138648509979248,
+                "samples": [
+                  0.48133277893066406,
+                  0.4138648509979248,
+                  0.43753814697265625
+                ]
+              }
+            },
+            "trace": {
+              "event_counts": {
+                "max": 30,
+                "median": 30,
+                "min": 30,
+                "samples": [
+                  30,
+                  30,
+                  30
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.08589149718840854,
+                "median": 0.08153423332511776,
+                "min": 0.07791893650619221,
+                "samples": [
+                  0.08589149718840854,
+                  0.07791893650619221,
+                  0.08153423332511776
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.7895421981811523,
+                "median": 0.7315354347229004,
+                "min": 0.6941275596618652,
+                "samples": [
+                  0.7895421981811523,
+                  0.6941275596618652,
+                  0.7315354347229004
+                ]
+              }
+            }
+          },
+          "fun_name": "_gather_singles_column_groups",
+          "median_summed_category_seconds": 1.8694114685058594
+        },
+        {
+          "categories": {
+            "backend_or_cache_load": {
+              "event_counts": {
+                "max": 37,
+                "median": 37,
+                "min": 37,
+                "samples": [
+                  37,
+                  37,
+                  37
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.12058532979400259,
+                "median": 0.11706930961371201,
+                "min": 0.1168762127757803,
+                "samples": [
+                  0.12058532979400259,
+                  0.11706930961371201,
+                  0.1168762127757803
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.8344645500183105,
+                "median": 0.798408031463623,
+                "min": 0.7803294658660889,
+                "samples": [
+                  0.8344645500183105,
+                  0.7803294658660889,
+                  0.798408031463623
+                ]
+              }
+            },
+            "lower": {
+              "event_counts": {
+                "max": 37,
+                "median": 37,
+                "min": 37,
+                "samples": [
+                  37,
+                  37,
+                  37
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.07644472764480088,
+                "median": 0.0494026652378869,
+                "min": 0.04670413490567232,
+                "samples": [
+                  0.0494026652378869,
+                  0.07644472764480088,
+                  0.04670413490567232
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.492142915725708,
+                "median": 0.3129110336303711,
+                "min": 0.293792724609375,
+                "samples": [
+                  0.3129110336303711,
+                  0.492142915725708,
+                  0.293792724609375
+                ]
+              }
+            },
+            "trace": {
+              "event_counts": {
+                "max": 37,
+                "median": 37,
+                "min": 37,
+                "samples": [
+                  37,
+                  37,
+                  37
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.014024964242366668,
+                "median": 0.013733411267965972,
+                "min": 0.013500474598146538,
+                "samples": [
+                  0.013733411267965972,
+                  0.013500474598146538,
+                  0.014024964242366668
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.12624192237854004,
+                "median": 0.12583374977111816,
+                "min": 0.12026667594909668,
+                "samples": [
+                  0.12624192237854004,
+                  0.12026667594909668,
+                  0.12583374977111816
+                ]
+              }
+            }
+          },
+          "fun_name": "_append_selected_singles_groups",
+          "median_summed_category_seconds": 1.2371528148651123
+        },
+        {
+          "categories": {
+            "backend_or_cache_load": {
+              "event_counts": {
+                "max": 73,
+                "median": 73,
+                "min": 73,
+                "samples": [
+                  73,
+                  73,
+                  73
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.07077033019003949,
+                "median": 0.06894447297430016,
+                "min": 0.06752059821564876,
+                "samples": [
+                  0.07077033019003949,
+                  0.06752059821564876,
+                  0.06894447297430016
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.48973894119262695,
+                "median": 0.470975399017334,
+                "min": 0.4500608444213867,
+                "samples": [
+                  0.48973894119262695,
+                  0.4500608444213867,
+                  0.470975399017334
+                ]
+              }
+            },
+            "lower": {
+              "event_counts": {
+                "max": 73,
+                "median": 73,
+                "min": 73,
+                "samples": [
+                  73,
+                  73,
+                  73
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.02659128633805761,
+                "median": 0.0200878608284714,
+                "min": 0.019674615610448972,
+                "samples": [
+                  0.02659128633805761,
+                  0.0200878608284714,
+                  0.019674615610448972
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.1684262752532959,
+                "median": 0.12932348251342773,
+                "min": 0.1237633228302002,
+                "samples": [
+                  0.1684262752532959,
+                  0.12932348251342773,
+                  0.1237633228302002
+                ]
+              }
+            },
+            "trace": {
+              "event_counts": {
+                "max": 73,
+                "median": 73,
+                "min": 73,
+                "samples": [
+                  73,
+                  73,
+                  73
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.037305453700894026,
+                "median": 0.033032174230189476,
+                "min": 0.010438644788116255,
+                "samples": [
+                  0.010438644788116255,
+                  0.037305453700894026,
+                  0.033032174230189476
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.33232927322387695,
+                "median": 0.2963688373565674,
+                "min": 0.09595537185668945,
+                "samples": [
+                  0.09595537185668945,
+                  0.33232927322387695,
+                  0.2963688373565674
+                ]
+              }
+            }
+          },
+          "fun_name": "_pack_live_arrays",
+          "median_summed_category_seconds": 0.8966677188873291
+        },
+        {
+          "categories": {
+            "backend_or_cache_load": {
+              "event_counts": {
+                "max": 10,
+                "median": 10,
+                "min": 10,
+                "samples": [
+                  10,
+                  10,
+                  10
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.025922518345492602,
+                "median": 0.02525240080655457,
+                "min": 0.02492837830244217,
+                "samples": [
+                  0.02492837830244217,
+                  0.025922518345492602,
+                  0.02525240080655457
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.17278742790222168,
+                "median": 0.17250728607177734,
+                "min": 0.17250490188598633,
+                "samples": [
+                  0.17250728607177734,
+                  0.17278742790222168,
+                  0.17250490188598633
+                ]
+              }
+            },
+            "lower": {
+              "event_counts": {
+                "max": 10,
+                "median": 10,
+                "min": 10,
+                "samples": [
+                  10,
+                  10,
+                  10
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.03133930148012183,
+                "median": 0.03123793079688066,
+                "min": 0.030904090761747525,
+                "samples": [
+                  0.03133930148012183,
+                  0.030904090761747525,
+                  0.03123793079688066
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.19895720481872559,
+                "median": 0.1984996795654297,
+                "min": 0.1965024471282959,
+                "samples": [
+                  0.1984996795654297,
+                  0.19895720481872559,
+                  0.1965024471282959
+                ]
+              }
+            },
+            "trace": {
+              "event_counts": {
+                "max": 10,
+                "median": 10,
+                "min": 10,
+                "samples": [
+                  10,
+                  10,
+                  10
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.019792104975660953,
+                "median": 0.01967701539853568,
+                "min": 0.019341265609880517,
+                "samples": [
+                  0.019341265609880517,
+                  0.019792104975660953,
+                  0.01967701539853568
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.17779111862182617,
+                "median": 0.1765446662902832,
+                "min": 0.1763145923614502,
+                "samples": [
+                  0.17779111862182617,
+                  0.1763145923614502,
+                  0.1765446662902832
+                ]
+              }
+            }
+          },
+          "fun_name": "_resident_live_background",
+          "median_summed_category_seconds": 0.5475516319274902
+        },
+        {
+          "categories": {
+            "backend_or_cache_load": {
+              "event_counts": {
+                "max": 93,
+                "median": 93,
+                "min": 93,
+                "samples": [
+                  93,
+                  93,
+                  93
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.05553942965104687,
+                "median": 0.053114151750692735,
+                "min": 0.05094539534527241,
+                "samples": [
+                  0.05553942965104687,
+                  0.053114151750692735,
+                  0.05094539534527241
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.3843393325805664,
+                "median": 0.3540341854095459,
+                "min": 0.3480195999145508,
+                "samples": [
+                  0.3843393325805664,
+                  0.3540341854095459,
+                  0.3480195999145508
+                ]
+              }
+            },
+            "lower": {
+              "event_counts": {
+                "max": 93,
+                "median": 93,
+                "min": 93,
+                "samples": [
+                  93,
+                  93,
+                  93
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.01595298005639409,
+                "median": 0.014409060357177537,
+                "min": 0.013351182560029585,
+                "samples": [
+                  0.01595298005639409,
+                  0.013351182560029585,
+                  0.014409060357177537
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.1010444164276123,
+                "median": 0.09064030647277832,
+                "min": 0.0859534740447998,
+                "samples": [
+                  0.1010444164276123,
+                  0.0859534740447998,
+                  0.09064030647277832
+                ]
+              }
+            },
+            "trace": {
+              "event_counts": {
+                "max": 93,
+                "median": 93,
+                "min": 93,
+                "samples": [
+                  93,
+                  93,
+                  93
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.001801200911270819,
+                "median": 0.0014734337226536315,
+                "min": 0.0014366141831540435,
+                "samples": [
+                  0.001801200911270819,
+                  0.0014366141831540435,
+                  0.0014734337226536315
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.01655721664428711,
+                "median": 0.013219833374023438,
+                "min": 0.012797832489013672,
+                "samples": [
+                  0.01655721664428711,
+                  0.012797832489013672,
+                  0.013219833374023438
+                ]
+              }
+            }
+          },
+          "fun_name": "stage",
+          "median_summed_category_seconds": 0.45789432525634766
+        },
+        {
+          "categories": {
+            "backend_or_cache_load": {
+              "event_counts": {
+                "max": 10,
+                "median": 10,
+                "min": 10,
+                "samples": [
+                  10,
+                  10,
+                  10
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.017613488310829106,
+                "median": 0.016327710872596254,
+                "min": 0.016154005848066172,
+                "samples": [
+                  0.016327710872596254,
+                  0.016154005848066172,
+                  0.017613488310829106
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.12032175064086914,
+                "median": 0.11298966407775879,
+                "min": 0.10767507553100586,
+                "samples": [
+                  0.11298966407775879,
+                  0.10767507553100586,
+                  0.12032175064086914
+                ]
+              }
+            },
+            "lower": {
+              "event_counts": {
+                "max": 10,
+                "median": 10,
+                "min": 10,
+                "samples": [
+                  10,
+                  10,
+                  10
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.017641323238340736,
+                "median": 0.017135005722860717,
+                "min": 0.016030196044607314,
+                "samples": [
+                  0.017135005722860717,
+                  0.016030196044607314,
+                  0.017641323238340736
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.11097288131713867,
+                "median": 0.10853123664855957,
+                "min": 0.10320067405700684,
+                "samples": [
+                  0.10853123664855957,
+                  0.10320067405700684,
+                  0.11097288131713867
+                ]
+              }
+            },
+            "trace": {
+              "event_counts": {
+                "max": 10,
+                "median": 10,
+                "min": 10,
+                "samples": [
+                  10,
+                  10,
+                  10
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.004615588002973547,
+                "median": 0.0043547739682972455,
+                "min": 0.004334679129848265,
+                "samples": [
+                  0.0043547739682972455,
+                  0.004334679129848265,
+                  0.004615588002973547
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.041411638259887695,
+                "median": 0.040030479431152344,
+                "min": 0.038614749908447266,
+                "samples": [
+                  0.040030479431152344,
+                  0.038614749908447266,
+                  0.041411638259887695
+                ]
+              }
+            }
+          },
+          "fun_name": "_finish_resident_live_matches",
+          "median_summed_category_seconds": 0.2615513801574707
+        },
+        {
+          "categories": {
+            "backend_or_cache_load": {
+              "event_counts": {
+                "max": 21,
+                "median": 21,
+                "min": 21,
+                "samples": [
+                  21,
+                  21,
+                  21
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.015421287657054299,
+                "median": 0.01528791146076297,
+                "min": 0.014914185487885158,
+                "samples": [
+                  0.015421287657054299,
+                  0.014914185487885158,
+                  0.01528791146076297
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.10671710968017578,
+                "median": 0.10443520545959473,
+                "min": 0.0994110107421875,
+                "samples": [
+                  0.10671710968017578,
+                  0.0994110107421875,
+                  0.10443520545959473
+                ]
+              }
+            },
+            "lower": {
+              "event_counts": {
+                "max": 21,
+                "median": 21,
+                "min": 21,
+                "samples": [
+                  21,
+                  21,
+                  21
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.009218436023056437,
+                "median": 0.008754864582175458,
+                "min": 0.00853166174347635,
+                "samples": [
+                  0.008754864582175458,
+                  0.00853166174347635,
+                  0.009218436023056437
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.057988643646240234,
+                "median": 0.05545234680175781,
+                "min": 0.05492591857910156,
+                "samples": [
+                  0.05545234680175781,
+                  0.05492591857910156,
+                  0.057988643646240234
+                ]
+              }
+            },
+            "trace": {
+              "event_counts": {
+                "max": 21,
+                "median": 21,
+                "min": 21,
+                "samples": [
+                  21,
+                  21,
+                  21
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.006237364282263221,
+                "median": 0.005675185381788289,
+                "min": 0.005326236503278807,
+                "samples": [
+                  0.006237364282263221,
+                  0.005675185381788289,
+                  0.005326236503278807
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.057335853576660156,
+                "median": 0.05055642127990723,
+                "min": 0.04778766632080078,
+                "samples": [
+                  0.057335853576660156,
+                  0.05055642127990723,
+                  0.04778766632080078
+                ]
+              }
+            }
+          },
+          "fun_name": "_prepare_live_chisq",
+          "median_summed_category_seconds": 0.21044397354125977
+        },
+        {
+          "categories": {
+            "backend_or_cache_load": {
+              "event_counts": {
+                "max": 6,
+                "median": 6,
+                "min": 6,
+                "samples": [
+                  6,
+                  6,
+                  6
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.00820197933446735,
+                "median": 0.007907861743194583,
+                "min": 0.0078493859429742,
+                "samples": [
+                  0.0078493859429742,
+                  0.00820197933446735,
+                  0.007907861743194583
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.05467057228088379,
+                "median": 0.05431866645812988,
+                "min": 0.05402040481567383,
+                "samples": [
+                  0.05431866645812988,
+                  0.05467057228088379,
+                  0.05402040481567383
+                ]
+              }
+            },
+            "lower": {
+              "event_counts": {
+                "max": 6,
+                "median": 6,
+                "min": 6,
+                "samples": [
+                  6,
+                  6,
+                  6
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.004995015596774173,
+                "median": 0.004971757596732005,
+                "min": 0.00493488060373128,
+                "samples": [
+                  0.004971757596732005,
+                  0.00493488060373128,
+                  0.004995015596774173
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.03177022933959961,
+                "median": 0.03149056434631348,
+                "min": 0.03142118453979492,
+                "samples": [
+                  0.03149056434631348,
+                  0.03177022933959961,
+                  0.03142118453979492
+                ]
+              }
+            },
+            "trace": {
+              "event_counts": {
+                "max": 6,
+                "median": 6,
+                "min": 6,
+                "samples": [
+                  6,
+                  6,
+                  6
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.027902818667004465,
+                "median": 0.0062770442392488515,
+                "min": 0.006138394829376465,
+                "samples": [
+                  0.027902818667004465,
+                  0.0062770442392488515,
+                  0.006138394829376465
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.25649166107177734,
+                "median": 0.055917978286743164,
+                "min": 0.055074453353881836,
+                "samples": [
+                  0.25649166107177734,
+                  0.055917978286743164,
+                  0.055074453353881836
+                ]
+              }
+            }
+          },
+          "fun_name": "_gather_singles_columns",
+          "median_summed_category_seconds": 0.14172720909118652
+        },
+        {
+          "categories": {
+            "backend_or_cache_load": {
+              "event_counts": {
+                "max": 31,
+                "median": 31,
+                "min": 31,
+                "samples": [
+                  31,
+                  31,
+                  31
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.01376579034380889,
+                "median": 0.013424183221098967,
+                "min": 0.013120414890946184,
+                "samples": [
+                  0.013120414890946184,
+                  0.01376579034380889,
+                  0.013424183221098967
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.09175634384155273,
+                "median": 0.09170365333557129,
+                "min": 0.09079480171203613,
+                "samples": [
+                  0.09079480171203613,
+                  0.09175634384155273,
+                  0.09170365333557129
+                ]
+              }
+            },
+            "lower": {
+              "event_counts": {
+                "max": 31,
+                "median": 31,
+                "min": 31,
+                "samples": [
+                  31,
+                  31,
+                  31
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.004672242335663444,
+                "median": 0.004650265146297977,
+                "min": 0.004636204300812847,
+                "samples": [
+                  0.004672242335663444,
+                  0.004636204300812847,
+                  0.004650265146297977
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.029847383499145508,
+                "median": 0.029593467712402344,
+                "min": 0.02925252914428711,
+                "samples": [
+                  0.029593467712402344,
+                  0.029847383499145508,
+                  0.02925252914428711
+                ]
+              }
+            },
+            "trace": {
+              "event_counts": {
+                "max": 31,
+                "median": 31,
+                "min": 31,
+                "samples": [
+                  31,
+                  31,
+                  31
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.0009254401028916349,
+                "median": 0.0009218974654965569,
+                "min": 0.0008860240234127588,
+                "samples": [
+                  0.0008860240234127588,
+                  0.0009218974654965569,
+                  0.0009254401028916349
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.008303165435791016,
+                "median": 0.008212566375732422,
+                "min": 0.008144617080688477,
+                "samples": [
+                  0.008144617080688477,
+                  0.008212566375732422,
+                  0.008303165435791016
+                ]
+              }
+            }
+          },
+          "fun_name": "dynamic_slice",
+          "median_summed_category_seconds": 0.12950968742370605
+        },
+        {
+          "categories": {
+            "backend_or_cache_load": {
+              "event_counts": {
+                "max": 2,
+                "median": 2,
+                "min": 2,
+                "samples": [
+                  2,
+                  2,
+                  2
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.005552688609472361,
+                "median": 0.0054395142073212,
+                "min": 0.0052370583185096554,
+                "samples": [
+                  0.0052370583185096554,
+                  0.0054395142073212,
+                  0.005552688609472361
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.03793168067932129,
+                "median": 0.036257266998291016,
+                "min": 0.03624105453491211,
+                "samples": [
+                  0.03624105453491211,
+                  0.036257266998291016,
+                  0.03793168067932129
+                ]
+              }
+            },
+            "lower": {
+              "event_counts": {
+                "max": 2,
+                "median": 2,
+                "min": 2,
+                "samples": [
+                  2,
+                  2,
+                  2
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.002830055974384651,
+                "median": 0.002814931393674921,
+                "min": 0.0027362304576724573,
+                "samples": [
+                  0.002830055974384651,
+                  0.0027362304576724573,
+                  0.002814931393674921
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.017925262451171875,
+                "median": 0.017707347869873047,
+                "min": 0.017615556716918945,
+                "samples": [
+                  0.017925262451171875,
+                  0.017615556716918945,
+                  0.017707347869873047
+                ]
+              }
+            },
+            "trace": {
+              "event_counts": {
+                "max": 2,
+                "median": 2,
+                "min": 2,
+                "samples": [
+                  2,
+                  2,
+                  2
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.000968515345721341,
+                "median": 0.0009633542144384998,
+                "min": 0.000946638119683817,
+                "samples": [
+                  0.000946638119683817,
+                  0.0009633542144384998,
+                  0.000968515345721341
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.008701801300048828,
+                "median": 0.008689641952514648,
+                "min": 0.008581876754760742,
+                "samples": [
+                  0.008701801300048828,
+                  0.008581876754760742,
+                  0.008689641952514648
+                ]
+              }
+            }
+          },
+          "fun_name": "_pack_resident_live_matches",
+          "median_summed_category_seconds": 0.06265425682067871
+        },
+        {
+          "categories": {
+            "backend_or_cache_load": {
+              "event_counts": {
+                "max": 1,
+                "median": 1,
+                "min": 1,
+                "samples": [
+                  1,
+                  1,
+                  1
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.0025311564246539536,
+                "median": 0.0023178581489841856,
+                "min": 0.0013662803258076173,
+                "samples": [
+                  0.0025311564246539536,
+                  0.0023178581489841856,
+                  0.0013662803258076173
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.017515897750854492,
+                "median": 0.015449762344360352,
+                "min": 0.009333372116088867,
+                "samples": [
+                  0.017515897750854492,
+                  0.015449762344360352,
+                  0.009333372116088867
+                ]
+              }
+            },
+            "lower": {
+              "event_counts": {
+                "max": 1,
+                "median": 1,
+                "min": 1,
+                "samples": [
+                  1,
+                  1,
+                  1
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.004299753685560032,
+                "median": 0.0034290488547898293,
+                "min": 0.0019420638832893893,
+                "samples": [
+                  0.0034290488547898293,
+                  0.004299753685560032,
+                  0.0019420638832893893
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.027681350708007812,
+                "median": 0.02171921730041504,
+                "min": 0.012216567993164062,
+                "samples": [
+                  0.02171921730041504,
+                  0.027681350708007812,
+                  0.012216567993164062
+                ]
+              }
+            },
+            "trace": {
+              "event_counts": {
+                "max": 1,
+                "median": 1,
+                "min": 1,
+                "samples": [
+                  1,
+                  1,
+                  1
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.0030461630939883164,
+                "median": 0.002818550420479559,
+                "min": 0.0017805939520605233,
+                "samples": [
+                  0.0030461630939883164,
+                  0.002818550420479559,
+                  0.0017805939520605233
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.02800130844116211,
+                "median": 0.02510857582092285,
+                "min": 0.0159757137298584,
+                "samples": [
+                  0.02800130844116211,
+                  0.02510857582092285,
+                  0.0159757137298584
+                ]
+              }
+            }
+          },
+          "fun_name": "_append_expire_coinc_buffer",
+          "median_summed_category_seconds": 0.06227755546569824
+        },
+        {
+          "categories": {
+            "backend_or_cache_load": {
+              "event_counts": {
+                "max": 2,
+                "median": 2,
+                "min": 2,
+                "samples": [
+                  2,
+                  2,
+                  2
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.0036557567339536227,
+                "median": 0.003593226164538724,
+                "min": 0.003533772335387408,
+                "samples": [
+                  0.003533772335387408,
+                  0.0036557567339536227,
+                  0.003593226164538724
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.024546146392822266,
+                "median": 0.024454116821289062,
+                "min": 0.024367570877075195,
+                "samples": [
+                  0.024454116821289062,
+                  0.024367570877075195,
+                  0.024546146392822266
+                ]
+              }
+            },
+            "lower": {
+              "event_counts": {
+                "max": 2,
+                "median": 2,
+                "min": 2,
+                "samples": [
+                  2,
+                  2,
+                  2
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.0028981248016339413,
+                "median": 0.0028155262658547445,
+                "min": 0.0027359341885561093,
+                "samples": [
+                  0.0028155262658547445,
+                  0.0027359341885561093,
+                  0.0028981248016339413
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.018230676651000977,
+                "median": 0.017833232879638672,
+                "min": 0.017613649368286133,
+                "samples": [
+                  0.017833232879638672,
+                  0.017613649368286133,
+                  0.018230676651000977
+                ]
+              }
+            },
+            "trace": {
+              "event_counts": {
+                "max": 2,
+                "median": 2,
+                "min": 2,
+                "samples": [
+                  2,
+                  2,
+                  2
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.0012738685939361165,
+                "median": 0.0012664782547977288,
+                "min": 0.0012662302866722544,
+                "samples": [
+                  0.0012662302866722544,
+                  0.0012664782547977288,
+                  0.0012738685939361165
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.011639595031738281,
+                "median": 0.011429309844970703,
+                "min": 0.011282205581665039,
+                "samples": [
+                  0.011639595031738281,
+                  0.011282205581665039,
+                  0.011429309844970703
+                ]
+              }
+            }
+          },
+          "fun_name": "_join_resident_live_foreground",
+          "median_summed_category_seconds": 0.05371665954589844
+        },
+        {
+          "categories": {
+            "backend_or_cache_load": {
+              "event_counts": {
+                "max": 4,
+                "median": 4,
+                "min": 4,
+                "samples": [
+                  4,
+                  4,
+                  4
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.004733907129191372,
+                "median": 0.0040628779427580855,
+                "min": 0.00308586628775978,
+                "samples": [
+                  0.004733907129191372,
+                  0.0040628779427580855,
+                  0.00308586628775978
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.03275918960571289,
+                "median": 0.02708125114440918,
+                "min": 0.02108025550842285,
+                "samples": [
+                  0.03275918960571289,
+                  0.02708125114440918,
+                  0.02108025550842285
+                ]
+              }
+            },
+            "lower": {
+              "event_counts": {
+                "max": 4,
+                "median": 4,
+                "min": 4,
+                "samples": [
+                  4,
+                  4,
+                  4
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.0026375937989613065,
+                "median": 0.0017782072363213197,
+                "min": 0.0013584592838574998,
+                "samples": [
+                  0.0026375937989613065,
+                  0.0017782072363213197,
+                  0.0013584592838574998
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.016706228256225586,
+                "median": 0.011447906494140625,
+                "min": 0.008545398712158203,
+                "samples": [
+                  0.016706228256225586,
+                  0.011447906494140625,
+                  0.008545398712158203
+                ]
+              }
+            },
+            "trace": {
+              "event_counts": {
+                "max": 4,
+                "median": 4,
+                "min": 4,
+                "samples": [
+                  4,
+                  4,
+                  4
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.00036914973412280116,
+                "median": 0.0003645053090037488,
+                "min": 0.00036080560257881466,
+                "samples": [
+                  0.00036080560257881466,
+                  0.00036914973412280116,
+                  0.0003645053090037488
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.003316640853881836,
+                "median": 0.0032885074615478516,
+                "min": 0.003270387649536133,
+                "samples": [
+                  0.003316640853881836,
+                  0.0032885074615478516,
+                  0.003270387649536133
+                ]
+              }
+            }
+          },
+          "fun_name": "_append_selected_singles_columns",
+          "median_summed_category_seconds": 0.041817665100097656
+        },
+        {
+          "categories": {
+            "backend_or_cache_load": {
+              "event_counts": {
+                "max": 6,
+                "median": 6,
+                "min": 6,
+                "samples": [
+                  6,
+                  6,
+                  6
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.00322656613612857,
+                "median": 0.0027249521730338348,
+                "min": 0.0022476084728537977,
+                "samples": [
+                  0.0022476084728537977,
+                  0.00322656613612857,
+                  0.0027249521730338348
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.021506786346435547,
+                "median": 0.018614768981933594,
+                "min": 0.015553712844848633,
+                "samples": [
+                  0.015553712844848633,
+                  0.021506786346435547,
+                  0.018614768981933594
+                ]
+              }
+            },
+            "lower": {
+              "event_counts": {
+                "max": 6,
+                "median": 6,
+                "min": 6,
+                "samples": [
+                  6,
+                  6,
+                  6
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.0006057389731212142,
+                "median": 0.0005964267648482767,
+                "min": 0.0004974731293555483,
+                "samples": [
+                  0.0004974731293555483,
+                  0.0005964267648482767,
+                  0.0006057389731212142
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.003839731216430664,
+                "median": 0.003810405731201172,
+                "min": 0.00315093994140625,
+                "samples": [
+                  0.00315093994140625,
+                  0.003839731216430664,
+                  0.003810405731201172
+                ]
+              }
+            },
+            "trace": {
+              "event_counts": {
+                "max": 6,
+                "median": 6,
+                "min": 6,
+                "samples": [
+                  6,
+                  6,
+                  6
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.00016414298270147674,
+                "median": 0.00016411412815493486,
+                "min": 0.00016132634951047568,
+                "samples": [
+                  0.00016132634951047568,
+                  0.00016411412815493486,
+                  0.00016414298270147674
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.0014829635620117188,
+                "median": 0.0014727115631103516,
+                "min": 0.0014619827270507812,
+                "samples": [
+                  0.0014829635620117188,
+                  0.0014619827270507812,
+                  0.0014727115631103516
+                ]
+              }
+            }
+          },
+          "fun_name": "convert_element_type",
+          "median_summed_category_seconds": 0.023897886276245117
+        },
+        {
+          "categories": {
+            "backend_or_cache_load": {
+              "event_counts": {
+                "max": 5,
+                "median": 5,
+                "min": 5,
+                "samples": [
+                  5,
+                  5,
+                  5
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.002268246734767722,
+                "median": 0.0022459321339067103,
+                "min": 0.002200959150042448,
+                "samples": [
+                  0.002200959150042448,
+                  0.002268246734767722,
+                  0.0022459321339067103
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.015342473983764648,
+                "median": 0.015230894088745117,
+                "min": 0.015119075775146484,
+                "samples": [
+                  0.015230894088745117,
+                  0.015119075775146484,
+                  0.015342473983764648
+                ]
+              }
+            },
+            "lower": {
+              "event_counts": {
+                "max": 5,
+                "median": 5,
+                "min": 5,
+                "samples": [
+                  5,
+                  5,
+                  5
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.0010759512658519213,
+                "median": 0.0010758291047456932,
+                "min": 0.0010457559134297199,
+                "samples": [
+                  0.0010759512658519213,
+                  0.0010457559134297199,
+                  0.0010758291047456932
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.0068149566650390625,
+                "median": 0.0067675113677978516,
+                "min": 0.006732463836669922,
+                "samples": [
+                  0.0068149566650390625,
+                  0.006732463836669922,
+                  0.0067675113677978516
+                ]
+              }
+            },
+            "trace": {
+              "event_counts": {
+                "max": 5,
+                "median": 5,
+                "min": 5,
+                "samples": [
+                  5,
+                  5,
+                  5
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 9.145107239161977e-05,
+                "median": 9.010990033037197e-05,
+                "min": 8.673236539598564e-05,
+                "samples": [
+                  8.673236539598564e-05,
+                  9.145107239161977e-05,
+                  9.010990033037197e-05
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.0008146762847900391,
+                "median": 0.0008084774017333984,
+                "min": 0.000797271728515625,
+                "samples": [
+                  0.000797271728515625,
+                  0.0008146762847900391,
+                  0.0008084774017333984
+                ]
+              }
+            }
+          },
+          "fun_name": "concatenate",
+          "median_summed_category_seconds": 0.022806882858276367
+        },
+        {
+          "categories": {
+            "backend_or_cache_load": {
+              "event_counts": {
+                "max": 1,
+                "median": 1,
+                "min": 1,
+                "samples": [
+                  1,
+                  1,
+                  1
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.0006526426307351578,
+                "median": 0.0006444833895834487,
+                "min": 0.0006229529091715881,
+                "samples": [
+                  0.0006526426307351578,
+                  0.0006444833895834487,
+                  0.0006229529091715881
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.0045163631439208984,
+                "median": 0.004295825958251953,
+                "min": 0.004255533218383789,
+                "samples": [
+                  0.0045163631439208984,
+                  0.004295825958251953,
+                  0.004255533218383789
+                ]
+              }
+            },
+            "lower": {
+              "event_counts": {
+                "max": 1,
+                "median": 1,
+                "min": 1,
+                "samples": [
+                  1,
+                  1,
+                  1
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.0013387281965443459,
+                "median": 0.0013298058823007712,
+                "min": 0.001288178117881556,
+                "samples": [
+                  0.0013387281965443459,
+                  0.001288178117881556,
+                  0.0013298058823007712
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.00847935676574707,
+                "median": 0.008365154266357422,
+                "min": 0.00829315185546875,
+                "samples": [
+                  0.00847935676574707,
+                  0.00829315185546875,
+                  0.008365154266357422
+                ]
+              }
+            },
+            "trace": {
+              "event_counts": {
+                "max": 1,
+                "median": 1,
+                "min": 1,
+                "samples": [
+                  1,
+                  1,
+                  1
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 3.550735891958862e-05,
+                "median": 2.5908921504604147e-05,
+                "min": 2.51309795070913e-05,
+                "samples": [
+                  3.550735891958862e-05,
+                  2.51309795070913e-05,
+                  2.5908921504604147e-05
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.00032639503479003906,
+                "median": 0.00023245811462402344,
+                "min": 0.0002238750457763672,
+                "samples": [
+                  0.00032639503479003906,
+                  0.0002238750457763672,
+                  0.00023245811462402344
+                ]
+              }
+            }
+          },
+          "fun_name": "scan",
+          "median_summed_category_seconds": 0.012893438339233398
+        },
+        {
+          "categories": {
+            "backend_or_cache_load": {
+              "event_counts": {
+                "max": 2,
+                "median": 2,
+                "min": 2,
+                "samples": [
+                  2,
+                  2,
+                  2
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.0008932200690796914,
+                "median": 0.0008836654550571707,
+                "min": 0.0008660443334630028,
+                "samples": [
+                  0.0008660443334630028,
+                  0.0008932200690796914,
+                  0.0008836654550571707
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.006036520004272461,
+                "median": 0.0059931278228759766,
+                "min": 0.005953788757324219,
+                "samples": [
+                  0.0059931278228759766,
+                  0.005953788757324219,
+                  0.006036520004272461
+                ]
+              }
+            },
+            "lower": {
+              "event_counts": {
+                "max": 2,
+                "median": 2,
+                "min": 2,
+                "samples": [
+                  2,
+                  2,
+                  2
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.0007383049303253424,
+                "median": 0.0007247491330261457,
+                "min": 0.0007028984785358766,
+                "samples": [
+                  0.0007383049303253424,
+                  0.0007028984785358766,
+                  0.0007247491330261457
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.004676342010498047,
+                "median": 0.004559040069580078,
+                "min": 0.004525184631347656,
+                "samples": [
+                  0.004676342010498047,
+                  0.004525184631347656,
+                  0.004559040069580078
+                ]
+              }
+            },
+            "trace": {
+              "event_counts": {
+                "max": 2,
+                "median": 2,
+                "min": 2,
+                "samples": [
+                  2,
+                  2,
+                  2
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 5.1069386203557336e-05,
+                "median": 4.6237459915908944e-05,
+                "min": 4.528393751437538e-05,
+                "samples": [
+                  5.1069386203557336e-05,
+                  4.528393751437538e-05,
+                  4.6237459915908944e-05
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.00046944618225097656,
+                "median": 0.00041484832763671875,
+                "min": 0.00040340423583984375,
+                "samples": [
+                  0.00046944618225097656,
+                  0.00040340423583984375,
+                  0.00041484832763671875
+                ]
+              }
+            }
+          },
+          "fun_name": "squeeze",
+          "median_summed_category_seconds": 0.010967016220092773
+        },
+        {
+          "categories": {
+            "backend_or_cache_load": {
+              "event_counts": {
+                "max": 2,
+                "median": 2,
+                "min": 2,
+                "samples": [
+                  2,
+                  2,
+                  2
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.0012129857520082723,
+                "median": 0.0011043994414906516,
+                "min": 0.0007589980904114811,
+                "samples": [
+                  0.0012129857520082723,
+                  0.0011043994414906516,
+                  0.0007589980904114811
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.008394002914428711,
+                "median": 0.007361412048339844,
+                "min": 0.00518488883972168,
+                "samples": [
+                  0.008394002914428711,
+                  0.007361412048339844,
+                  0.00518488883972168
+                ]
+              }
+            },
+            "lower": {
+              "event_counts": {
+                "max": 2,
+                "median": 2,
+                "min": 2,
+                "samples": [
+                  2,
+                  2,
+                  2
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.0005190418417587512,
+                "median": 0.00020168520095397173,
+                "min": 0.00020095282414520573,
+                "samples": [
+                  0.0005190418417587512,
+                  0.00020168520095397173,
+                  0.00020095282414520573
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.0032875537872314453,
+                "median": 0.0012984275817871094,
+                "min": 0.0012640953063964844,
+                "samples": [
+                  0.0032875537872314453,
+                  0.0012984275817871094,
+                  0.0012640953063964844
+                ]
+              }
+            },
+            "trace": {
+              "event_counts": {
+                "max": 2,
+                "median": 2,
+                "min": 2,
+                "samples": [
+                  2,
+                  2,
+                  2
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 7.956805332756382e-05,
+                "median": 3.754800624205709e-05,
+                "min": 3.675232110230612e-05,
+                "samples": [
+                  3.675232110230612e-05,
+                  7.956805332756382e-05,
+                  3.754800624205709e-05
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.0007088184356689453,
+                "median": 0.00033783912658691406,
+                "min": 0.0003368854522705078,
+                "samples": [
+                  0.00033783912658691406,
+                  0.0007088184356689453,
+                  0.0003368854522705078
+                ]
+              }
+            }
+          },
+          "fun_name": "empty",
+          "median_summed_category_seconds": 0.008997678756713867
+        },
+        {
+          "categories": {
+            "backend_or_cache_load": {
+              "event_counts": {
+                "max": 1,
+                "median": 1,
+                "min": 1,
+                "samples": [
+                  1,
+                  1,
+                  1
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.0010234902713697857,
+                "median": 0.0009964488289142287,
+                "min": 0.00040537834276586904,
+                "samples": [
+                  0.0009964488289142287,
+                  0.0010234902713697857,
+                  0.00040537834276586904
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.006895542144775391,
+                "median": 0.006822109222412109,
+                "min": 0.0027692317962646484,
+                "samples": [
+                  0.006895542144775391,
+                  0.006822109222412109,
+                  0.0027692317962646484
+                ]
+              }
+            },
+            "lower": {
+              "event_counts": {
+                "max": 1,
+                "median": 1,
+                "min": 1,
+                "samples": [
+                  1,
+                  1,
+                  1
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.00011006442420063735,
+                "median": 0.0001074502558377326,
+                "min": 0.00010558290633855554,
+                "samples": [
+                  0.00011006442420063735,
+                  0.00010558290633855554,
+                  0.0001074502558377326
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.0006971359252929688,
+                "median": 0.0006797313690185547,
+                "min": 0.0006759166717529297,
+                "samples": [
+                  0.0006971359252929688,
+                  0.0006797313690185547,
+                  0.0006759166717529297
+                ]
+              }
+            },
+            "trace": {
+              "event_counts": {
+                "max": 1,
+                "median": 1,
+                "min": 1,
+                "samples": [
+                  1,
+                  1,
+                  1
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 2.1444615029964664e-05,
+                "median": 2.0019140225031195e-05,
+                "min": 1.9426597392820945e-05,
+                "samples": [
+                  1.9426597392820945e-05,
+                  2.0019140225031195e-05,
+                  2.1444615029964664e-05
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.00019240379333496094,
+                "median": 0.0001785755157470703,
+                "min": 0.00017833709716796875,
+                "samples": [
+                  0.0001785755157470703,
+                  0.00017833709716796875,
+                  0.00019240379333496094
+                ]
+              }
+            }
+          },
+          "fun_name": "broadcast_in_dim",
+          "median_summed_category_seconds": 0.007680416107177734
+        },
+        {
+          "categories": {
+            "backend_or_cache_load": {
+              "event_counts": {
+                "max": 2,
+                "median": 2,
+                "min": 2,
+                "samples": [
+                  2,
+                  2,
+                  2
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.0007506811464750714,
+                "median": 0.0007348129667064058,
+                "min": 0.0007285990773637781,
+                "samples": [
+                  0.0007348129667064058,
+                  0.0007506811464750714,
+                  0.0007285990773637781
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.005084991455078125,
+                "median": 0.005003690719604492,
+                "min": 0.004977226257324219,
+                "samples": [
+                  0.005084991455078125,
+                  0.005003690719604492,
+                  0.004977226257324219
+                ]
+              }
+            },
+            "lower": {
+              "event_counts": {
+                "max": 2,
+                "median": 2,
+                "min": 2,
+                "samples": [
+                  2,
+                  2,
+                  2
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.0001972050336481324,
+                "median": 0.00019500231614995916,
+                "min": 0.00019209348831220188,
+                "samples": [
+                  0.0001972050336481324,
+                  0.00019209348831220188,
+                  0.00019500231614995916
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.001249074935913086,
+                "median": 0.0012366771697998047,
+                "min": 0.001226663589477539,
+                "samples": [
+                  0.001249074935913086,
+                  0.0012366771697998047,
+                  0.001226663589477539
+                ]
+              }
+            },
+            "trace": {
+              "event_counts": {
+                "max": 2,
+                "median": 2,
+                "min": 2,
+                "samples": [
+                  2,
+                  2,
+                  2
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 4.860247941735486e-05,
+                "median": 4.7398258473970914e-05,
+                "min": 4.704919582186541e-05,
+                "samples": [
+                  4.704919582186541e-05,
+                  4.7398258473970914e-05,
+                  4.860247941735486e-05
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.0004360675811767578,
+                "median": 0.0004324913024902344,
+                "min": 0.0004222393035888672,
+                "samples": [
+                  0.0004324913024902344,
+                  0.0004222393035888672,
+                  0.0004360675811767578
+                ]
+              }
+            }
+          },
+          "fun_name": "stack",
+          "median_summed_category_seconds": 0.006672859191894531
+        },
+        {
+          "categories": {
+            "backend_or_cache_load": {
+              "event_counts": {
+                "max": 1,
+                "median": 1,
+                "min": 1,
+                "samples": [
+                  1,
+                  1,
+                  1
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.00044746848727322363,
+                "median": 0.0004378972621360849,
+                "min": 0.0004199321756486385,
+                "samples": [
+                  0.0004378972621360849,
+                  0.00044746848727322363,
+                  0.0004199321756486385
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.0030303001403808594,
+                "median": 0.002982616424560547,
+                "min": 0.00286865234375,
+                "samples": [
+                  0.0030303001403808594,
+                  0.002982616424560547,
+                  0.00286865234375
+                ]
+              }
+            },
+            "lower": {
+              "event_counts": {
+                "max": 1,
+                "median": 1,
+                "min": 1,
+                "samples": [
+                  1,
+                  1,
+                  1
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.00013012746732612973,
+                "median": 0.00012495149981981283,
+                "min": 0.000124733259951315,
+                "samples": [
+                  0.00013012746732612973,
+                  0.00012495149981981283,
+                  0.000124733259951315
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.0008242130279541016,
+                "median": 0.0008044242858886719,
+                "min": 0.0007846355438232422,
+                "samples": [
+                  0.0008242130279541016,
+                  0.0008044242858886719,
+                  0.0007846355438232422
+                ]
+              }
+            },
+            "trace": {
+              "event_counts": {
+                "max": 0,
+                "median": 0,
+                "min": 0,
+                "samples": [
+                  0,
+                  0,
+                  0
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.0,
+                "median": 0.0,
+                "min": 0.0,
+                "samples": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "reported_seconds": {
+                "max": 0,
+                "median": 0,
+                "min": 0,
+                "samples": [
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          },
+          "fun_name": "true_divide",
+          "median_summed_category_seconds": 0.0037870407104492188
+        },
+        {
+          "categories": {
+            "backend_or_cache_load": {
+              "event_counts": {
+                "max": 1,
+                "median": 1,
+                "min": 1,
+                "samples": [
+                  1,
+                  1,
+                  1
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.00041481151454097315,
+                "median": 0.00040841475394284973,
+                "min": 0.0004026174197735868,
+                "samples": [
+                  0.0004026174197735868,
+                  0.00041481151454097315,
+                  0.00040841475394284973
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.0027899742126464844,
+                "median": 0.0027861595153808594,
+                "min": 0.0027649402618408203,
+                "samples": [
+                  0.0027861595153808594,
+                  0.0027649402618408203,
+                  0.0027899742126464844
+                ]
+              }
+            },
+            "lower": {
+              "event_counts": {
+                "max": 1,
+                "median": 1,
+                "min": 1,
+                "samples": [
+                  1,
+                  1,
+                  1
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.00013035331771778631,
+                "median": 0.00012939512290300497,
+                "min": 0.0001260625090061182,
+                "samples": [
+                  0.00013035331771778631,
+                  0.0001260625090061182,
+                  0.00012939512290300497
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.0008256435394287109,
+                "median": 0.0008139610290527344,
+                "min": 0.0008115768432617188,
+                "samples": [
+                  0.0008256435394287109,
+                  0.0008115768432617188,
+                  0.0008139610290527344
+                ]
+              }
+            },
+            "trace": {
+              "event_counts": {
+                "max": 0,
+                "median": 0,
+                "min": 0,
+                "samples": [
+                  0,
+                  0,
+                  0
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.0,
+                "median": 0.0,
+                "min": 0.0,
+                "samples": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "reported_seconds": {
+                "max": 0,
+                "median": 0,
+                "min": 0,
+                "samples": [
+                  0,
+                  0,
+                  0
+                ]
+              }
+            }
+          },
+          "fun_name": "less",
+          "median_summed_category_seconds": 0.0036001205444335938
+        },
+        {
+          "categories": {
+            "backend_or_cache_load": {
+              "event_counts": {
+                "max": 1,
+                "median": 1,
+                "min": 1,
+                "samples": [
+                  1,
+                  1,
+                  1
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 0.00037905158757051187,
+                "median": 0.0003713881137776084,
+                "min": 0.00035585342943097726,
+                "samples": [
+                  0.00037905158757051187,
+                  0.0003713881137776084,
+                  0.00035585342943097726
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.0026230812072753906,
+                "median": 0.0024755001068115234,
+                "min": 0.0024309158325195312,
+                "samples": [
+                  0.0026230812072753906,
+                  0.0024755001068115234,
+                  0.0024309158325195312
+                ]
+              }
+            },
+            "lower": {
+              "event_counts": {
+                "max": 1,
+                "median": 1,
+                "min": 1,
+                "samples": [
+                  1,
+                  1,
+                  1
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 9.557235740267382e-05,
+                "median": 8.428856360103557e-05,
+                "min": 8.076772317114927e-05,
+                "samples": [
+                  9.557235740267382e-05,
+                  8.428856360103557e-05,
+                  8.076772317114927e-05
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.0006053447723388672,
+                "median": 0.0005426406860351562,
+                "min": 0.0005080699920654297,
+                "samples": [
+                  0.0006053447723388672,
+                  0.0005426406860351562,
+                  0.0005080699920654297
+                ]
+              }
+            },
+            "trace": {
+              "event_counts": {
+                "max": 1,
+                "median": 1,
+                "min": 1,
+                "samples": [
+                  1,
+                  1,
+                  1
+                ]
+              },
+              "fraction_of_recorded_category_seconds": {
+                "max": 1.6028888102487777e-05,
+                "median": 1.5837658683840074e-05,
+                "min": 1.5549626297784924e-05,
+                "samples": [
+                  1.6028888102487777e-05,
+                  1.5549626297784924e-05,
+                  1.5837658683840074e-05
+                ]
+              },
+              "reported_seconds": {
+                "max": 0.00014734268188476562,
+                "median": 0.00014209747314453125,
+                "min": 0.0001385211944580078,
+                "samples": [
+                  0.00014734268188476562,
+                  0.0001385211944580078,
+                  0.00014209747314453125
+                ]
+              }
+            }
+          },
+          "fun_name": "iota",
+          "median_summed_category_seconds": 0.003160238265991211
+        }
+      ],
+      "native_cache_stages": [
+        {
+          "host_seconds": {
+            "max": 13.695599918000001,
+            "median": 13.66121937,
+            "min": 13.546579006,
+            "samples": [
+              13.66121937,
+              13.695599918000001,
+              13.546579006
+            ]
+          },
+          "invocation_counts": {
+            "max": 23,
+            "median": 23,
+            "min": 23,
+            "samples": [
+              23,
+              23,
+              23
+            ]
+          },
+          "stage": "coinc_resident_cluster_dispatch"
+        },
+        {
+          "host_seconds": {
+            "max": 4.702345135,
+            "median": 4.612232747,
+            "min": 4.57638766,
+            "samples": [
+              4.57638766,
+              4.612232747,
+              4.702345135
+            ]
+          },
+          "invocation_counts": {
+            "max": 63,
+            "median": 63,
+            "min": 63,
+            "samples": [
+              63,
+              63,
+              63
+            ]
+          },
+          "stage": "coinc_resident_query_dispatch"
+        }
+      ],
+      "suffix_cache_hit_notifications": {
+        "max": 425,
+        "median": 425,
+        "min": 425,
+        "samples": [
+          425,
+          425,
+          425
+        ]
+      },
+      "suffix_cache_miss_notifications": {
+        "max": 0,
+        "median": 0,
+        "min": 0,
+        "samples": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "1": {
+      "cache_growth": [],
+      "cache_snapshot_overhead_full_seconds": {
+        "max": 0.0,
+        "median": 0.0,
+        "min": 0.0,
+        "samples": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "category_reported_seconds": {
+        "backend_or_cache_load": {
+          "max": 0,
+          "median": 0,
+          "min": 0,
+          "samples": [
+            0,
+            0,
+            0
+          ]
+        },
+        "lower": {
+          "max": 0,
+          "median": 0,
+          "min": 0,
+          "samples": [
+            0,
+            0,
+            0
+          ]
+        },
+        "trace": {
+          "max": 0,
+          "median": 0,
+          "min": 0,
+          "samples": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "compile_observer_overhead_full_seconds": {
+        "max": 0.060601099,
+        "median": 0.059812551,
+        "min": 0.059238628,
+        "samples": [
+          0.059238628,
+          0.059812551,
+          0.060601099
+        ]
+      },
+      "functions": [],
+      "native_cache_stages": [],
+      "suffix_cache_hit_notifications": {
+        "max": 0,
+        "median": 0,
+        "min": 0,
+        "samples": [
+          0,
+          0,
+          0
+        ]
+      },
+      "suffix_cache_miss_notifications": {
+        "max": 0,
+        "median": 0,
+        "min": 0,
+        "samples": [
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "samples": [
+    "sample-01",
+    "sample-02",
+    "sample-03"
+  ],
+  "scope": "common post-two-valid-block suffix; not proven fully warmed",
+  "zero_warm_compilation": [
+    false,
+    false,
+    false
+  ]
+}

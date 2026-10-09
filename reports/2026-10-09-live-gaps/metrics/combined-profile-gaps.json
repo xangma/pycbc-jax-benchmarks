@@ -1,0 +1,929 @@
+{
+  "definition": "Complement of selected application recorded kernel+copy intervals; not proof that the whole device is idle. Host-stage and monitor overlap is temporal, not causal. Memsets are excluded.",
+  "scopes": {
+    "search": {
+      "gap_count": 103177,
+      "gap_union_ns": 58463836976,
+      "gaps_at_least_ns": {
+        "100000": {
+          "count": 26686,
+          "sum_ns": 58362515479
+        },
+        "1000000": {
+          "count": 4676,
+          "sum_ns": 50052468205
+        },
+        "10000000": {
+          "count": 328,
+          "sum_ns": 31270551737
+        },
+        "100000000": {
+          "count": 60,
+          "sum_ns": 23968024528
+        }
+      },
+      "longest_gaps": [
+        {
+          "duration_ns": 8598159936,
+          "end_ns": 9711131711,
+          "host_overlap_ns": [
+            {
+              "phase": "public_live",
+              "rank": "rank 0",
+              "union_ns": 8598159936
+            },
+            {
+              "phase": "startup/setup",
+              "rank": "rank 0",
+              "union_ns": 8598159936
+            },
+            {
+              "phase": "filter_bank_setup",
+              "rank": "rank 1",
+              "union_ns": 56828603
+            },
+            {
+              "phase": "filter_bank_sort",
+              "rank": "rank 1",
+              "union_ns": 744789
+            },
+            {
+              "phase": "filter_waveform_generation",
+              "rank": "rank 1",
+              "union_ns": 55473128
+            },
+            {
+              "phase": "public_live",
+              "rank": "rank 1",
+              "union_ns": 8578810677
+            },
+            {
+              "phase": "startup/setup",
+              "rank": "rank 1",
+              "union_ns": 8578810677
+            }
+          ],
+          "monitor_points_by_rank": {},
+          "start_ns": 1112971775
+        },
+        {
+          "duration_ns": 1219459743,
+          "end_ns": 32340074695,
+          "host_overlap_ns": [
+            {
+              "phase": "mpi_gather",
+              "rank": "rank 0",
+              "union_ns": 1219459743
+            },
+            {
+              "phase": "mpi_receive",
+              "rank": "rank 0",
+              "union_ns": 1219459743
+            },
+            {
+              "phase": "public_live",
+              "rank": "rank 0",
+              "union_ns": 1219459743
+            },
+            {
+              "phase": "filter_workspace_setup",
+              "rank": "rank 1",
+              "union_ns": 147733
+            },
+            {
+              "phase": "public_live",
+              "rank": "rank 1",
+              "union_ns": 1219459743
+            },
+            {
+              "phase": "startup/setup",
+              "rank": "rank 1",
+              "union_ns": 1219459743
+            }
+          ],
+          "monitor_points_by_rank": {
+            "rank 1": 5
+          },
+          "start_ns": 31120614952
+        },
+        {
+          "duration_ns": 1196968603,
+          "end_ns": 37861108232,
+          "host_overlap_ns": [
+            {
+              "phase": "mpi_gather",
+              "rank": "rank 0",
+              "union_ns": 1193891901
+            },
+            {
+              "phase": "mpi_receive",
+              "rank": "rank 0",
+              "union_ns": 1193850363
+            },
+            {
+              "phase": "psd_refresh_batch",
+              "rank": "rank 0",
+              "union_ns": 2938400
+            },
+            {
+              "phase": "public_live",
+              "rank": "rank 0",
+              "union_ns": 1196968603
+            },
+            {
+              "phase": "filter",
+              "rank": "rank 1",
+              "union_ns": 1196968603
+            },
+            {
+              "phase": "filter_overwhiten",
+              "rank": "rank 1",
+              "union_ns": 1196968603
+            },
+            {
+              "phase": "public_live",
+              "rank": "rank 1",
+              "union_ns": 1196968603
+            }
+          ],
+          "monitor_points_by_rank": {
+            "rank 1": 5
+          },
+          "start_ns": 36664139629
+        },
+        {
+          "duration_ns": 1148465646,
+          "end_ns": 33504652989,
+          "host_overlap_ns": [
+            {
+              "phase": "mpi_gather",
+              "rank": "rank 0",
+              "union_ns": 1148465646
+            },
+            {
+              "phase": "mpi_receive",
+              "rank": "rank 0",
+              "union_ns": 1148465646
+            },
+            {
+              "phase": "public_live",
+              "rank": "rank 0",
+              "union_ns": 1148465646
+            },
+            {
+              "phase": "public_live",
+              "rank": "rank 1",
+              "union_ns": 1148465646
+            },
+            {
+              "phase": "startup/setup",
+              "rank": "rank 1",
+              "union_ns": 1148465646
+            }
+          ],
+          "monitor_points_by_rank": {},
+          "start_ns": 32356187343
+        },
+        {
+          "duration_ns": 885433991,
+          "end_ns": 44645740900,
+          "host_overlap_ns": [
+            {
+              "phase": "coinc_resident_admitted",
+              "rank": "rank 0",
+              "union_ns": 279489
+            },
+            {
+              "phase": "coinc_resident_cluster_dispatch",
+              "rank": "rank 0",
+              "union_ns": 881577873
+            },
+            {
+              "phase": "coincidence_dispatch",
+              "rank": "rank 0",
+              "union_ns": 885433991
+            },
+            {
+              "phase": "public_live",
+              "rank": "rank 0",
+              "union_ns": 885433991
+            },
+            {
+              "phase": "mpi_ack_wait",
+              "rank": "rank 1",
+              "union_ns": 885433991
+            },
+            {
+              "phase": "mpi_snapshot_wait",
+              "rank": "rank 1",
+              "union_ns": 885433991
+            },
+            {
+              "phase": "public_live",
+              "rank": "rank 1",
+              "union_ns": 885433991
+            }
+          ],
+          "monitor_points_by_rank": {
+            "rank 0": 5
+          },
+          "start_ns": 43760306909
+        },
+        {
+          "duration_ns": 509725970,
+          "end_ns": 34792821735,
+          "host_overlap_ns": [
+            {
+              "phase": "mpi_gather",
+              "rank": "rank 0",
+              "union_ns": 509725970
+            },
+            {
+              "phase": "mpi_receive",
+              "rank": "rank 0",
+              "union_ns": 509725970
+            },
+            {
+              "phase": "public_live",
+              "rank": "rank 0",
+              "union_ns": 509725970
+            },
+            {
+              "phase": "frame_read",
+              "rank": "rank 1",
+              "union_ns": 509725970
+            },
+            {
+              "phase": "gwf_replay_buffer",
+              "rank": "rank 1",
+              "union_ns": 305898
+            },
+            {
+              "phase": "public_live",
+              "rank": "rank 1",
+              "union_ns": 509725970
+            }
+          ],
+          "monitor_points_by_rank": {
+            "rank 1": 5
+          },
+          "start_ns": 34283095765
+        },
+        {
+          "duration_ns": 438248702,
+          "end_ns": 33944930708,
+          "host_overlap_ns": [
+            {
+              "phase": "mpi_gather",
+              "rank": "rank 0",
+              "union_ns": 438248702
+            },
+            {
+              "phase": "mpi_receive",
+              "rank": "rank 0",
+              "union_ns": 438248702
+            },
+            {
+              "phase": "public_live",
+              "rank": "rank 0",
+              "union_ns": 438248702
+            },
+            {
+              "phase": "frame_read",
+              "rank": "rank 1",
+              "union_ns": 409336187
+            },
+            {
+              "phase": "gwf_cuda_decompress",
+              "rank": "rank 1",
+              "union_ns": 81003491
+            },
+            {
+              "phase": "gwf_parse",
+              "rank": "rank 1",
+              "union_ns": 310133485
+            },
+            {
+              "phase": "public_live",
+              "rank": "rank 1",
+              "union_ns": 438248702
+            },
+            {
+              "phase": "startup/setup",
+              "rank": "rank 1",
+              "union_ns": 6781796
+            }
+          ],
+          "monitor_points_by_rank": {},
+          "start_ns": 33506682006
+        },
+        {
+          "duration_ns": 429450340,
+          "end_ns": 56123471685,
+          "host_overlap_ns": [
+            {
+              "phase": "coinc_resident_admitted",
+              "rank": "rank 0",
+              "union_ns": 115288
+            },
+            {
+              "phase": "coinc_resident_cluster_dispatch",
+              "rank": "rank 0",
+              "union_ns": 428685213
+            },
+            {
+              "phase": "coincidence_dispatch",
+              "rank": "rank 0",
+              "union_ns": 429450340
+            },
+            {
+              "phase": "public_live",
+              "rank": "rank 0",
+              "union_ns": 429450340
+            },
+            {
+              "phase": "mpi_ack_wait",
+              "rank": "rank 1",
+              "union_ns": 429450340
+            },
+            {
+              "phase": "mpi_snapshot_wait",
+              "rank": "rank 1",
+              "union_ns": 429450340
+            },
+            {
+              "phase": "public_live",
+              "rank": "rank 1",
+              "union_ns": 429450340
+            }
+          ],
+          "monitor_points_by_rank": {
+            "rank 0": 5
+          },
+          "start_ns": 55694021345
+        },
+        {
+          "duration_ns": 420153420,
+          "end_ns": 52923859716,
+          "host_overlap_ns": [
+            {
+              "phase": "coinc_resident_admitted",
+              "rank": "rank 0",
+              "union_ns": 55875
+            },
+            {
+              "phase": "coinc_resident_cluster_dispatch",
+              "rank": "rank 0",
+              "union_ns": 419528890
+            },
+            {
+              "phase": "coincidence_dispatch",
+              "rank": "rank 0",
+              "union_ns": 420153420
+            },
+            {
+              "phase": "public_live",
+              "rank": "rank 0",
+              "union_ns": 420153420
+            },
+            {
+              "phase": "mpi_ack_wait",
+              "rank": "rank 1",
+              "union_ns": 420153420
+            },
+            {
+              "phase": "mpi_snapshot_wait",
+              "rank": "rank 1",
+              "union_ns": 420153420
+            },
+            {
+              "phase": "public_live",
+              "rank": "rank 1",
+              "union_ns": 420153420
+            }
+          ],
+          "monitor_points_by_rank": {
+            "rank 0": 5
+          },
+          "start_ns": 52503706296
+        },
+        {
+          "duration_ns": 406052833,
+          "end_ns": 57482731995,
+          "host_overlap_ns": [
+            {
+              "phase": "coinc_resident_admitted",
+              "rank": "rank 0",
+              "union_ns": 58721
+            },
+            {
+              "phase": "coinc_resident_cluster_dispatch",
+              "rank": "rank 0",
+              "union_ns": 405246429
+            },
+            {
+              "phase": "coincidence_dispatch",
+              "rank": "rank 0",
+              "union_ns": 406052833
+            },
+            {
+              "phase": "public_live",
+              "rank": "rank 0",
+              "union_ns": 406052833
+            },
+            {
+              "phase": "mpi_ack_wait",
+              "rank": "rank 1",
+              "union_ns": 406052833
+            },
+            {
+              "phase": "mpi_snapshot_wait",
+              "rank": "rank 1",
+              "union_ns": 406052833
+            },
+            {
+              "phase": "public_live",
+              "rank": "rank 1",
+              "union_ns": 406052833
+            }
+          ],
+          "monitor_points_by_rank": {
+            "rank 0": 5
+          },
+          "start_ns": 57076679162
+        }
+      ],
+      "per_rank_recorded_activity_union_ns": {
+        "rank 0": 125769068,
+        "rank 1": 1667046885
+      },
+      "recorded_activity_union_ns": 1789675343,
+      "scope_ns": 60253512319
+    },
+    "warm": {
+      "gap_count": 76764,
+      "gap_union_ns": 17812564434,
+      "gaps_at_least_ns": {
+        "100000": {
+          "count": 9819,
+          "sum_ns": 17743534224
+        },
+        "1000000": {
+          "count": 1428,
+          "sum_ns": 15063773604
+        },
+        "10000000": {
+          "count": 159,
+          "sum_ns": 11490667312
+        },
+        "100000000": {
+          "count": 32,
+          "sum_ns": 7017323406
+        }
+      },
+      "longest_gaps": [
+        {
+          "duration_ns": 885433991,
+          "end_ns": 44645740900,
+          "host_overlap_ns": [
+            {
+              "phase": "coinc_resident_admitted",
+              "rank": "rank 0",
+              "union_ns": 279489
+            },
+            {
+              "phase": "coinc_resident_cluster_dispatch",
+              "rank": "rank 0",
+              "union_ns": 881577873
+            },
+            {
+              "phase": "coincidence_dispatch",
+              "rank": "rank 0",
+              "union_ns": 885433991
+            },
+            {
+              "phase": "public_live",
+              "rank": "rank 0",
+              "union_ns": 885433991
+            },
+            {
+              "phase": "mpi_ack_wait",
+              "rank": "rank 1",
+              "union_ns": 885433991
+            },
+            {
+              "phase": "mpi_snapshot_wait",
+              "rank": "rank 1",
+              "union_ns": 885433991
+            },
+            {
+              "phase": "public_live",
+              "rank": "rank 1",
+              "union_ns": 885433991
+            }
+          ],
+          "monitor_points_by_rank": {
+            "rank 0": 5
+          },
+          "start_ns": 43760306909
+        },
+        {
+          "duration_ns": 429450340,
+          "end_ns": 56123471685,
+          "host_overlap_ns": [
+            {
+              "phase": "coinc_resident_admitted",
+              "rank": "rank 0",
+              "union_ns": 115288
+            },
+            {
+              "phase": "coinc_resident_cluster_dispatch",
+              "rank": "rank 0",
+              "union_ns": 428685213
+            },
+            {
+              "phase": "coincidence_dispatch",
+              "rank": "rank 0",
+              "union_ns": 429450340
+            },
+            {
+              "phase": "public_live",
+              "rank": "rank 0",
+              "union_ns": 429450340
+            },
+            {
+              "phase": "mpi_ack_wait",
+              "rank": "rank 1",
+              "union_ns": 429450340
+            },
+            {
+              "phase": "mpi_snapshot_wait",
+              "rank": "rank 1",
+              "union_ns": 429450340
+            },
+            {
+              "phase": "public_live",
+              "rank": "rank 1",
+              "union_ns": 429450340
+            }
+          ],
+          "monitor_points_by_rank": {
+            "rank 0": 5
+          },
+          "start_ns": 55694021345
+        },
+        {
+          "duration_ns": 420153420,
+          "end_ns": 52923859716,
+          "host_overlap_ns": [
+            {
+              "phase": "coinc_resident_admitted",
+              "rank": "rank 0",
+              "union_ns": 55875
+            },
+            {
+              "phase": "coinc_resident_cluster_dispatch",
+              "rank": "rank 0",
+              "union_ns": 419528890
+            },
+            {
+              "phase": "coincidence_dispatch",
+              "rank": "rank 0",
+              "union_ns": 420153420
+            },
+            {
+              "phase": "public_live",
+              "rank": "rank 0",
+              "union_ns": 420153420
+            },
+            {
+              "phase": "mpi_ack_wait",
+              "rank": "rank 1",
+              "union_ns": 420153420
+            },
+            {
+              "phase": "mpi_snapshot_wait",
+              "rank": "rank 1",
+              "union_ns": 420153420
+            },
+            {
+              "phase": "public_live",
+              "rank": "rank 1",
+              "union_ns": 420153420
+            }
+          ],
+          "monitor_points_by_rank": {
+            "rank 0": 5
+          },
+          "start_ns": 52503706296
+        },
+        {
+          "duration_ns": 406052833,
+          "end_ns": 57482731995,
+          "host_overlap_ns": [
+            {
+              "phase": "coinc_resident_admitted",
+              "rank": "rank 0",
+              "union_ns": 58721
+            },
+            {
+              "phase": "coinc_resident_cluster_dispatch",
+              "rank": "rank 0",
+              "union_ns": 405246429
+            },
+            {
+              "phase": "coincidence_dispatch",
+              "rank": "rank 0",
+              "union_ns": 406052833
+            },
+            {
+              "phase": "public_live",
+              "rank": "rank 0",
+              "union_ns": 406052833
+            },
+            {
+              "phase": "mpi_ack_wait",
+              "rank": "rank 1",
+              "union_ns": 406052833
+            },
+            {
+              "phase": "mpi_snapshot_wait",
+              "rank": "rank 1",
+              "union_ns": 406052833
+            },
+            {
+              "phase": "public_live",
+              "rank": "rank 1",
+              "union_ns": 406052833
+            }
+          ],
+          "monitor_points_by_rank": {
+            "rank 0": 5
+          },
+          "start_ns": 57076679162
+        },
+        {
+          "duration_ns": 332392145,
+          "end_ns": 54231434610,
+          "host_overlap_ns": [
+            {
+              "phase": "coinc_resident_admitted",
+              "rank": "rank 0",
+              "union_ns": 55215
+            },
+            {
+              "phase": "coinc_resident_cluster_dispatch",
+              "rank": "rank 0",
+              "union_ns": 331849985
+            },
+            {
+              "phase": "coincidence_dispatch",
+              "rank": "rank 0",
+              "union_ns": 332392145
+            },
+            {
+              "phase": "public_live",
+              "rank": "rank 0",
+              "union_ns": 332392145
+            },
+            {
+              "phase": "mpi_ack_wait",
+              "rank": "rank 1",
+              "union_ns": 332392145
+            },
+            {
+              "phase": "mpi_snapshot_wait",
+              "rank": "rank 1",
+              "union_ns": 332392145
+            },
+            {
+              "phase": "public_live",
+              "rank": "rank 1",
+              "union_ns": 332392145
+            }
+          ],
+          "monitor_points_by_rank": {
+            "rank 0": 5
+          },
+          "start_ns": 53899042465
+        },
+        {
+          "duration_ns": 329471759,
+          "end_ns": 48082714579,
+          "host_overlap_ns": [
+            {
+              "phase": "coinc_resident_admitted",
+              "rank": "rank 0",
+              "union_ns": 113013
+            },
+            {
+              "phase": "coinc_resident_cluster_dispatch",
+              "rank": "rank 0",
+              "union_ns": 329014500
+            },
+            {
+              "phase": "coincidence_dispatch",
+              "rank": "rank 0",
+              "union_ns": 329471759
+            },
+            {
+              "phase": "public_live",
+              "rank": "rank 0",
+              "union_ns": 329471759
+            },
+            {
+              "phase": "mpi_ack_wait",
+              "rank": "rank 1",
+              "union_ns": 329471759
+            },
+            {
+              "phase": "mpi_snapshot_wait",
+              "rank": "rank 1",
+              "union_ns": 329471759
+            },
+            {
+              "phase": "public_live",
+              "rank": "rank 1",
+              "union_ns": 329471759
+            }
+          ],
+          "monitor_points_by_rank": {
+            "rank 0": 5
+          },
+          "start_ns": 47753242820
+        },
+        {
+          "duration_ns": 327028790,
+          "end_ns": 51065685740,
+          "host_overlap_ns": [
+            {
+              "phase": "coinc_resident_admitted",
+              "rank": "rank 0",
+              "union_ns": 81023
+            },
+            {
+              "phase": "coinc_resident_cluster_dispatch",
+              "rank": "rank 0",
+              "union_ns": 326341369
+            },
+            {
+              "phase": "coincidence_dispatch",
+              "rank": "rank 0",
+              "union_ns": 327028790
+            },
+            {
+              "phase": "public_live",
+              "rank": "rank 0",
+              "union_ns": 327028790
+            },
+            {
+              "phase": "mpi_ack_wait",
+              "rank": "rank 1",
+              "union_ns": 327028790
+            },
+            {
+              "phase": "mpi_snapshot_wait",
+              "rank": "rank 1",
+              "union_ns": 327028790
+            },
+            {
+              "phase": "public_live",
+              "rank": "rank 1",
+              "union_ns": 327028790
+            }
+          ],
+          "monitor_points_by_rank": {
+            "rank 0": 5
+          },
+          "start_ns": 50738656950
+        },
+        {
+          "duration_ns": 260642618,
+          "end_ns": 49331647672,
+          "host_overlap_ns": [
+            {
+              "phase": "coinc_resident_query_dispatch",
+              "rank": "rank 0",
+              "union_ns": 260642618
+            },
+            {
+              "phase": "coincidence_dispatch",
+              "rank": "rank 0",
+              "union_ns": 260642618
+            },
+            {
+              "phase": "public_live",
+              "rank": "rank 0",
+              "union_ns": 260642618
+            },
+            {
+              "phase": "mpi_ack_wait",
+              "rank": "rank 1",
+              "union_ns": 260642618
+            },
+            {
+              "phase": "mpi_snapshot_wait",
+              "rank": "rank 1",
+              "union_ns": 260642618
+            },
+            {
+              "phase": "public_live",
+              "rank": "rank 1",
+              "union_ns": 260642618
+            }
+          ],
+          "monitor_points_by_rank": {
+            "rank 0": 5
+          },
+          "start_ns": 49071005054
+        },
+        {
+          "duration_ns": 236635503,
+          "end_ns": 52351904259,
+          "host_overlap_ns": [
+            {
+              "phase": "coinc_resident_query_dispatch",
+              "rank": "rank 0",
+              "union_ns": 236541008
+            },
+            {
+              "phase": "coincidence_dispatch",
+              "rank": "rank 0",
+              "union_ns": 236635503
+            },
+            {
+              "phase": "public_live",
+              "rank": "rank 0",
+              "union_ns": 236635503
+            },
+            {
+              "phase": "mpi_ack_wait",
+              "rank": "rank 1",
+              "union_ns": 236635503
+            },
+            {
+              "phase": "mpi_snapshot_wait",
+              "rank": "rank 1",
+              "union_ns": 236635503
+            },
+            {
+              "phase": "public_live",
+              "rank": "rank 1",
+              "union_ns": 236635503
+            }
+          ],
+          "monitor_points_by_rank": {
+            "rank 0": 5
+          },
+          "start_ns": 52115268756
+        },
+        {
+          "duration_ns": 227383618,
+          "end_ns": 43363053089,
+          "host_overlap_ns": [
+            {
+              "phase": "coinc_resident_query_dispatch",
+              "rank": "rank 0",
+              "union_ns": 227327238
+            },
+            {
+              "phase": "coincidence_dispatch",
+              "rank": "rank 0",
+              "union_ns": 227383618
+            },
+            {
+              "phase": "public_live",
+              "rank": "rank 0",
+              "union_ns": 227383618
+            },
+            {
+              "phase": "mpi_ack_wait",
+              "rank": "rank 1",
+              "union_ns": 227383618
+            },
+            {
+              "phase": "mpi_snapshot_wait",
+              "rank": "rank 1",
+              "union_ns": 227383618
+            },
+            {
+              "phase": "public_live",
+              "rank": "rank 1",
+              "union_ns": 227383618
+            }
+          ],
+          "monitor_points_by_rank": {
+            "rank 0": 5
+          },
+          "start_ns": 43135669471
+        }
+      ],
+      "per_rank_recorded_activity_union_ns": {
+        "rank 0": 47467353,
+        "rank 1": 1333845626
+      },
+      "recorded_activity_union_ns": 1379384798,
+      "scope_ns": 19191949232
+    }
+  }
+}
